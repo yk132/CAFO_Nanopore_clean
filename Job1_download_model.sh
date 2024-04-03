@@ -11,7 +11,8 @@ set -u
 
 #------------------------
 export DORADO_SIF_PATH='oras://gitlab-registry.oit.duke.edu/granek-lab/granek-container-images/dorado-simg:0.4.2'
-export DORADO_MODEL_DIR="${WORK_DIR}/${USER}/dorado_models" # CHANGE ME 
+export WORK_DIR="/work/${USER}" # CHANGE ME if needed 
+export DORADO_MODEL_DIR="${WORK_DIR}/dorado_models" # CHANGE ME 
 export DORADO_941_SUP="dna_r9.4.1_e8_sup@v3.6" # CHANGE ME 
 #------------------------
 
