@@ -39,7 +39,7 @@ mkdir -p $SPADES_2
 singularity exec \
 	--bind /work:/work \
 	--bind /hpc/group:/hpc/group \
-        docker://staphb/spades:spades:3.15.5 \
+        docker://staphb/spades:3.15.5 \
         spades.py --meta \
 	-t $SLURM_CPUS_PER_TASK \
 	-m 300 \
@@ -53,7 +53,7 @@ singularity exec \
 singularity exec \
 	--bind /work:/work \
 	--bind /hpc/group:/hpc/group \
-        docker://staphb/spades:spades:3.15.5 \
+        docker://staphb/spades:3.15.5 \
         spades.py --meta \
 	-t $SLURM_CPUS_PER_TASK \
 	-m 300 \

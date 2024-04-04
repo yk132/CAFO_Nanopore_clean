@@ -1,0 +1,4 @@
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+FATAL:   Unable to handle docker://staphb/spades:spades:3.15.5 uri: failed to get checksum for docker://staphb/spades:spades:3.15.5: unable to parse image name docker://staphb/spades:spades:3.15.5: invalid reference format
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+FATAL:   Unable to handle docker://staphb/spades:spades:3.15.5 uri: failed to get checksum for docker://staphb/spades:spades:3.15.5: unable to parse image name docker://staphb/spades:spades:3.15.5: invalid reference format
