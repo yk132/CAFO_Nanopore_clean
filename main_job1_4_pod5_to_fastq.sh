@@ -25,5 +25,3 @@ JOBID_3=$(sbatch --parsable --dependency=afterok:${JOBID_1}:${JOBID_2} --job-nam
 # Merge FASTQ files and check for quality with fastQC
 JOBID_4=$(sbatch --parsable --dependency=afterok:${JOBID_3} --job-name=fastqc --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err" Job4_merge_fastq_fastqc.sh)
 
-
-
