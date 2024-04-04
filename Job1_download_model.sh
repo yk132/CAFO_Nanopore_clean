@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #SBATCH --mail-type=ALL
 #SBATCH --partition=dmcshared
 #SBATCH --ntasks=1

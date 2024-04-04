@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+#SBATCH --mail-type=ALL
+#SBATCH --partition=dmcshared
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=20
+#SBATCH --mem=50G
 
 set -u
 
