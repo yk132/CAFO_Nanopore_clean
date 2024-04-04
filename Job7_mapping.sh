@@ -28,6 +28,7 @@ export SPADES_1="${SPADES_OUTPUT}/barcode01"
 export SPADES_2="${SPADES_OUTPUT}/barcode02"
 export CONTIG_01="${SPADES_1}/contigs.fasta"
 export CONTIG_02="${SPADES_2}/contigs.fasta"
+export ILAB_DIR="${STORE_DIR}/ILAB_Dust"
 #-------------------------------
 
 #-------------------------------
@@ -39,22 +40,14 @@ mkdir -p $QUAST_01
 mkdir -p $QUAST_02
 #-------------------------------
 
-# Run Quast on assembled contigs
+# map reads using bowtie2
+## barcode 1 is Farm C 
 singularity exec \
 	--bind /work:/work \
 	--bind /hpc/group:/hpc/group \
-        docker://staphb/quast:5.2.0 \
-        metaquast.py $CONTIG_01 \
-	-t $SLURM_CPUS_PER_TASK \
-	-o $QUAST_01
-
-singularity exec \
-	--bind /work:/work \
-	--bind /hpc/group:/hpc/group \
-        docker://staphb/quast:5.2.0 \
+        docker://staphb/bowtie2:2.5.1 \
         metaquast.py $CONTIG_02 \
 	-t $SLURM_CPUS_PER_TASK \
 	-o $QUAST_02
-
 
 
