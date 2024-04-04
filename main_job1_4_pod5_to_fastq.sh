@@ -17,7 +17,7 @@ mkdir -p ${LOG_DIR}
 JOBID_1=$(sbatch --parsable --job-name=download_model --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err" Job1_download_model.sh)
 
 # Migrate all pod5 files into a single folder
-JOBID_2=$(sbatch --parsable --job-name=merge --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err"  Job2_merge_pod5.sh)
+JOBID_2=$(sbatch --parsable --job-name=merge --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err" Job2_merge_pod5.sh)
 
 # Run Dorado
 JOBID_3=$(sbatch --parsable --dependency=afterok:${JOBID_1}:${JOBID_2} --job-name=dorado --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err" Job3_dorado_fastq_demux.sh)
