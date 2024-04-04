@@ -1,0 +1,14 @@
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+[2024-04-04 08:53:49.628] [info] > Creating basecall pipeline
+[2024-04-04 08:53:52.383] [info]  - set batch size for cuda:0 to 320
+[2024-04-04 10:22:03.350] [info] > Simplex reads basecalled: 608178
+[2024-04-04 10:22:03.401] [info] > Simplex reads filtered: 9
+[2024-04-04 10:22:03.401] [info] > Basecalled @ Samples/s: 2.108552e+06
+[2024-04-04 10:22:03.925] [info] > Finished
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+[2024-04-04 10:22:07.397] [info] > starting barcode demuxing
+[2024-04-04 10:24:11.042] [info] > Simplex reads basecalled: 608178
+[2024-04-04 10:24:11.043] [info] > 608178 reads demuxed @ classifications/s: 4.918783e+03
+[2024-04-04 10:24:11.043] [info] > finished barcode demuxing

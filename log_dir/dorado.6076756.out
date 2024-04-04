@@ -1,0 +1,2 @@
+cuda:all
+oras://gitlab-registry.oit.duke.edu/granek-lab/granek-container-images/dorado-simg:0.4.2

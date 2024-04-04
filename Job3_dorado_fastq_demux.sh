@@ -44,35 +44,35 @@ echo $DORADO_DEVICE
 echo ${DORADO_SIF_PATH}
 #------------------------
 
-#singularity exec \
-#       --nv \
-#       --bind /work:/work \
-#       --bind /hpc/group:/hpc/group \
-#       ${DORADO_SIF_PATH} \
-#       dorado basecaller -r \
-#       --emit-fastq \
-#       ${DORADO_MODEL_DIR}/${DORADO_941_SUP} \
-#       $BARCODE01_DIR/ > ${DORADO_RESULTS_DIR}/barcode_01.fastq
+singularity exec \
+       --nv \
+       --bind /work:/work \
+       --bind /hpc/group:/hpc/group \
+       ${DORADO_SIF_PATH} \
+       dorado basecaller -r \
+       --emit-fastq \
+       ${DORADO_MODEL_DIR}/${DORADO_941_SUP} \
+       $BARCODE01_DIR/ > ${DORADO_RESULTS_DIR}/barcode_01.fastq
 
-#singularity exec \
-#       --nv \
-#       --bind /work:/work \
-#       --bind /hpc/group:/hpc/group \
-#       ${DORADO_SIF_PATH} \
-#       dorado basecaller -r \
-#       --emit-fastq\
-#       ${DORADO_MODEL_DIR}/${DORADO_941_SUP} \
-#       $BARCODE02_DIR/ > ${DORADO_RESULTS_DIR}/barcode_02.fastq
+singularity exec \
+       --nv \
+       --bind /work:/work \
+       --bind /hpc/group:/hpc/group \
+       ${DORADO_SIF_PATH} \
+       dorado basecaller -r \
+       --emit-fastq\
+       ${DORADO_MODEL_DIR}/${DORADO_941_SUP} \
+       $BARCODE02_DIR/ > ${DORADO_RESULTS_DIR}/barcode_02.fastq
 
-#singularity exec \
-#       --nv \
-#       --bind /work:/work \
-#       --bind /hpc/group:/hpc/group \
-#       ${DORADO_SIF_PATH} \
-#       dorado basecaller -r \
-#       --emit-fastq \
-#       ${DORADO_MODEL_DIR}/${DORADO_941_SUP} \
-#       $BARCODE03_DIR/ > ${DORADO_RESULTS_DIR}/barcode_03.fastq
+singularity exec \
+       --nv \
+       --bind /work:/work \
+       --bind /hpc/group:/hpc/group \
+       ${DORADO_SIF_PATH} \
+       dorado basecaller -r \
+       --emit-fastq \
+       ${DORADO_MODEL_DIR}/${DORADO_941_SUP} \
+       $BARCODE03_DIR/ > ${DORADO_RESULTS_DIR}/barcode_03.fastq
 
 singularity exec \
        --nv \

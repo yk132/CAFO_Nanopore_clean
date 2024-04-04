@@ -1,0 +1,59 @@
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Started analysis of barcode01_merged.fastq
+Started analysis of barcode02_merged.fastq
+Approx 5% complete for barcode02_merged.fastq
+Started analysis of barcode03_merged.fastq
+Approx 10% complete for barcode02_merged.fastq
+Approx 15% complete for barcode02_merged.fastq
+Approx 20% complete for barcode02_merged.fastq
+Approx 25% complete for barcode02_merged.fastq
+Approx 30% complete for barcode02_merged.fastq
+Approx 35% complete for barcode02_merged.fastq
+Approx 40% complete for barcode02_merged.fastq
+Approx 45% complete for barcode02_merged.fastq
+Approx 50% complete for barcode02_merged.fastq
+Approx 55% complete for barcode02_merged.fastq
+Approx 60% complete for barcode02_merged.fastq
+Approx 65% complete for barcode02_merged.fastq
+Approx 70% complete for barcode02_merged.fastq
+Approx 75% complete for barcode02_merged.fastq
+Approx 80% complete for barcode02_merged.fastq
+Approx 85% complete for barcode02_merged.fastq
+Approx 90% complete for barcode02_merged.fastq
+Approx 95% complete for barcode02_merged.fastq
+Approx 5% complete for barcode01_merged.fastq
+Approx 10% complete for barcode01_merged.fastq
+Approx 15% complete for barcode01_merged.fastq
+Approx 20% complete for barcode01_merged.fastq
+Approx 25% complete for barcode01_merged.fastq
+Approx 30% complete for barcode01_merged.fastq
+Approx 35% complete for barcode01_merged.fastq
+Approx 40% complete for barcode01_merged.fastq
+Approx 45% complete for barcode01_merged.fastq
+Approx 50% complete for barcode01_merged.fastq
+Approx 55% complete for barcode01_merged.fastq
+Approx 60% complete for barcode01_merged.fastq
+Approx 65% complete for barcode01_merged.fastq
+Approx 70% complete for barcode01_merged.fastq
+Approx 75% complete for barcode01_merged.fastq
+Approx 80% complete for barcode01_merged.fastq
+Approx 85% complete for barcode01_merged.fastq
+Approx 90% complete for barcode01_merged.fastq
+Approx 95% complete for barcode01_merged.fastq
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
