@@ -15,9 +15,6 @@ export CAFO_GIT_DIR="${CAFO_DIR}/CAFO_Nanopore_clean"
 export WORK_DIR="/work/${USER}" # CHANGE ME if needed 
 export CAFO_WORK_DIR="${WORK_DIR}/CAFO_Nanopore_work"
 export OUTPUT_DIR="${CAFO_DIR}/Outputs"
-export QUAST_DIR="${OUTPUT_DIR}/Job6_quast"
-export QUAST_01="${QUAST_DIR}/barcode01"
-export QUAST_02="${QUAST_DIR}/barcode02"
 export SLURM_CPUS_PER_TASK="16" # CHANGE ME
 export MERGED_DIR="${OUTPUT_DIR}/Job4_merged_fastq"
 export BAR01_MERGED="${MERGED_DIR}/barcode01_merged.fastq"
@@ -29,25 +26,27 @@ export SPADES_2="${SPADES_OUTPUT}/barcode02"
 export CONTIG_01="${SPADES_1}/contigs.fasta"
 export CONTIG_02="${SPADES_2}/contigs.fasta"
 export ILAB_DIR="${STORE_DIR}/ILAB_Dust"
+export MAP_DIR="${OUTPUT_DIR}/Job7_mapping"
 #-------------------------------
 
 #-------------------------------
-echo $CONTIG_01
-echo $CONTIG_02
-
-mkdir -p $QUAST_OUTPUT
-mkdir -p $QUAST_01
-mkdir -p $QUAST_02
+mkdir -p $MAP_DIR
 #-------------------------------
 
-# map reads using bowtie2
+# Build indexer
 ## barcode 1 is Farm C 
 singularity exec \
 	--bind /work:/work \
 	--bind /hpc/group:/hpc/group \
         docker://staphb/bowtie2:2.5.1 \
-        metaquast.py $CONTIG_02 \
-	-t $SLURM_CPUS_PER_TASK \
-	-o $QUAST_02
+        bowtie2-build $SLURM_CPUS_PER_TASK $CONTIG_01 $MAP_DIR/barcode01_assembly \
+  --threads $SLURM_CPUS_PER_TASK
 
-
+# Build indexer
+## barcode 2 is Farm A 
+singularity exec \
+	--bind /work:/work \
+	--bind /hpc/group:/hpc/group \
+        docker://staphb/bowtie2:2.5.1 \
+        bowtie2-build $SLURM_CPUS_PER_TASK $CONTIG_02 $MAP_DIR/barcode02_assembly \
+  --threads $SLURM_CPUS_PER_TASK
