@@ -1,8 +1,6 @@
 #!/bin/bash
 #SBATCH --mail-type=ALL
-#SBATCH --partition=chsi
-#SBATCH -A chsi
-
+#SBATCH --partition=dmcshared
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=2
 #SBATCH --mem=10G

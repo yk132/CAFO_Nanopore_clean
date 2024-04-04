@@ -10,11 +10,35 @@ set -u
 #-------------------------------
 export STORE_DIR="/hpc/home/yk132/storage"
 export CAFO_DIR="${STORE_DIR}/20230908_Dust_Redo_R9"
-export CAFO_GIT_DIR="${CAFO_DIR}/CAFO_Nanopore"
-export WORK_DIR="/work/${USER}"
+export CAFO_GIT_DIR="${CAFO_DIR}/CAFO_Nanopore_clean"
+export WORK_DIR="/work/${USER}" # CHANGE ME if needed 
+export CAFO_WORK_DIR="${WORK_DIR}/CAFO_Nanopore_work"
+
+## PICK UP HERE
+export ALL_DIR="${CAFO_WORK_DIR}/pod5_all"
+export BARCODE01_DIR="${ALL_DIR}/barcode01"
+export BARCODE02_DIR="${ALL_DIR}/barcode02"
+export BARCODE03_DIR="${ALL_DIR}/barcode03"
+export UNCLASSIFIED_DIR="${ALL_DIR}/unclassified"
+export DORADO_MODEL_DIR="${WORK_DIR}/dorado_models" # CHANGE ME 
+export DORADO_941_SUP="dna_r9.4.1_e8_sup@v3.6" # CHANGE ME
+export OUTPUT_DIR="${STORE_DIR}/Outputs"
+export DORADO_RESULTS_DIR="${OUTPUT_DIR}/Job3_dorado_fastq_res"
+export DEMUXED_RESULTS_DIR="${DORADO_RESULTS_DIR}/unclassified_demuxed"
+
+
+
+
+
+
+
+
 export FILE_DIR="${CAFO_DIR}/20230908_1516_MN33275_FAK80584_b5659fa0"
-export DORADO_RESULTS_DIR="${FILE_DIR}/dorado_fastq_results"
-export IMAGEDIR="${WORK_DIR}/images"
+export OUTPUT_DIR="${STORE_DIR}/Outputs"
+export DORADO_RESULTS_DIR="${OUTPUT_DIR}/Job3_dorado_fastq_res"
+export DEMUXED_RESULTS_DIR="${DORADO_RESULTS_DIR}/unclassified_demuxed"
+export DORADO_MODEL_DIR="/work/${USER}/dorado_models" # CHANGE ME 
+export IMAGEDIR="$/work/${USER}//images"
 export SLURM_CPUS_PER_TASK="40" # CHANGE ME
 export MERGED_DIR="${DORADO_RESULTS_DIR}/Merged_bam_fastq"
 export BAR01_MERGED="${MERGED_DIR}/barcode01_merged.fastq"

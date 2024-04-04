@@ -10,15 +10,16 @@ export SKIP_DIR="${FILE_DIR}/pod5_skip"
 export PASS_DIR="${FILE_DIR}/pod5_pass"
 export FAIL_DIR="${FILE_DIR}/pod5_fail"
 ## output in work folder
-export WORK_DIR="/work/${USER}/CAFO_Nanopore_work" # CHANGE ME if needed 
-export ALL_DIR="${WORK_DIR}/pod5_all"
+export WORK_DIR="/work/${USER}" # CHANGE ME if needed
+export CAFO_WORK_DIR="${WORK_DIR}/CAFO_Nanopore_work"
+export ALL_DIR="${CAFO_WORK_DIR}/pod5_all"
 export BARCODE01_DIR="${ALL_DIR}/barcode01"
 export BARCODE02_DIR="${ALL_DIR}/barcode02"
 export BARCODE03_DIR="${ALL_DIR}/barcode03"
 export UNCLASSIFIED_DIR="${ALL_DIR}/unclassified"
 #--------------------------------------------
 
-mkdir -p $WORK_DIR
+mkdir -p CAFO_WORK_DIR
 mkdir -p $ALL_DIR
 mkdir -p $BARCODE01_DIR
 mkdir -p $BARCODE02_DIR
