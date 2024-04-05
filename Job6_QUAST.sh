@@ -34,7 +34,7 @@ export CONTIG_02="${SPADES_2}/contigs.fasta"
 echo $CONTIG_01
 echo $CONTIG_02
 
-mkdir -p $QUAST_OUTPUT
+mkdir -p $QUAST_DIR
 mkdir -p $QUAST_01
 mkdir -p $QUAST_02
 #-------------------------------
@@ -55,6 +55,4 @@ singularity exec \
         metaquast.py $CONTIG_02 \
 	-t $SLURM_CPUS_PER_TASK \
 	-o $QUAST_02
-
-
 
