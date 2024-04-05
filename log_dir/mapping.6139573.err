@@ -1,0 +1,115 @@
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Converting OCI blobs to SIF format
+INFO:    Starting build...
+Getting image source signatures
+Copying blob sha256:137a019d6f14d1f1a6ccc984ba3095c9065daf2e3a88c0d2ef9715d7be1c8b19
+Copying blob sha256:b51569e7c50720acf6860327847fe342a1afbe148d24c529fb81df105e3eed01
+Copying blob sha256:58690f9b18fca6469a14da4e212c96849469f9b1be6661d2342a4bf01774aa50
+Copying blob sha256:da8ef40b9ecabc2679fe2419957220c0272a965c5cf7e0269fa1aeeb8c56f2e1
+Copying blob sha256:fb15d46c38dcd1ea0b1990006c3366ecd10c79d374f341687eb2cb23a2c8672e
+Copying blob sha256:25d3b34345a2983a485bbfb951f51c9aa82f0f8f576718b1622e977d42161fb1
+Copying blob sha256:a6d1a18667118e2283323ee0224a19dcaedd82142322241dc6e248e8e6ba7e0e
+Copying blob sha256:7f9c5069d371776eabc0da9f071cedae73ac91eaaef785b907f10e3153f4598c
+Copying config sha256:55e8065e0e2e1688245b015e15c1b410e6f00163850e54766f677193c7f438df
+Writing manifest to image destination
+Storing signatures
+2024/04/05 11:18:05  info unpack layer: sha256:58690f9b18fca6469a14da4e212c96849469f9b1be6661d2342a4bf01774aa50
+2024/04/05 11:18:06  warn rootless{dev/agpgart} creating empty file in place of device 10:175
+2024/04/05 11:18:06  warn xattr{dev/agpgart} ignoring ENOTSUP on setxattr "user.rootlesscontainers"
+2024/04/05 11:18:06  warn xattr{/work/yk132/tmp/build-temp-465196580/rootfs/dev/agpgart} destination filesystem does not support xattrs, further warnings will be suppressed
+2024/04/05 11:18:06  warn rootless{dev/audio} creating empty file in place of device 14:4
+2024/04/05 11:18:06  warn rootless{dev/audio1} creating empty file in place of device 14:20
+2024/04/05 11:18:06  warn rootless{dev/audio2} creating empty file in place of device 14:36
+2024/04/05 11:18:06  warn rootless{dev/audio3} creating empty file in place of device 14:52
+2024/04/05 11:18:06  warn rootless{dev/audioctl} creating empty file in place of device 14:7
+2024/04/05 11:18:06  warn rootless{dev/console} creating empty file in place of device 5:1
+2024/04/05 11:18:06  warn rootless{dev/dsp} creating empty file in place of device 14:3
+2024/04/05 11:18:06  warn rootless{dev/dsp1} creating empty file in place of device 14:19
+2024/04/05 11:18:06  warn rootless{dev/dsp2} creating empty file in place of device 14:35
+2024/04/05 11:18:06  warn rootless{dev/dsp3} creating empty file in place of device 14:51
+2024/04/05 11:18:06  warn rootless{dev/full} creating empty file in place of device 1:7
+2024/04/05 11:18:06  warn rootless{dev/kmem} creating empty file in place of device 1:2
+2024/04/05 11:18:06  warn rootless{dev/loop0} creating empty file in place of device 7:0
+2024/04/05 11:18:06  warn rootless{dev/loop1} creating empty file in place of device 7:1
+2024/04/05 11:18:06  warn rootless{dev/loop2} creating empty file in place of device 7:2
+2024/04/05 11:18:06  warn rootless{dev/loop3} creating empty file in place of device 7:3
+2024/04/05 11:18:06  warn rootless{dev/loop4} creating empty file in place of device 7:4
+2024/04/05 11:18:06  warn rootless{dev/loop5} creating empty file in place of device 7:5
+2024/04/05 11:18:06  warn rootless{dev/loop6} creating empty file in place of device 7:6
+2024/04/05 11:18:06  warn rootless{dev/loop7} creating empty file in place of device 7:7
+2024/04/05 11:18:06  warn rootless{dev/mem} creating empty file in place of device 1:1
+2024/04/05 11:18:06  warn rootless{dev/midi0} creating empty file in place of device 35:0
+2024/04/05 11:18:06  warn rootless{dev/midi00} creating empty file in place of device 14:2
+2024/04/05 11:18:06  warn rootless{dev/midi01} creating empty file in place of device 14:18
+2024/04/05 11:18:06  warn rootless{dev/midi02} creating empty file in place of device 14:34
+2024/04/05 11:18:06  warn rootless{dev/midi03} creating empty file in place of device 14:50
+2024/04/05 11:18:06  warn rootless{dev/midi1} creating empty file in place of device 35:1
+2024/04/05 11:18:06  warn rootless{dev/midi2} creating empty file in place of device 35:2
+2024/04/05 11:18:06  warn rootless{dev/midi3} creating empty file in place of device 35:3
+2024/04/05 11:18:06  warn rootless{dev/mixer} creating empty file in place of device 14:0
+2024/04/05 11:18:06  warn rootless{dev/mixer1} creating empty file in place of device 14:16
+2024/04/05 11:18:06  warn rootless{dev/mixer2} creating empty file in place of device 14:32
+2024/04/05 11:18:06  warn rootless{dev/mixer3} creating empty file in place of device 14:48
+2024/04/05 11:18:06  warn rootless{dev/mpu401data} creating empty file in place of device 31:0
+2024/04/05 11:18:06  warn rootless{dev/mpu401stat} creating empty file in place of device 31:1
+2024/04/05 11:18:06  warn rootless{dev/null} creating empty file in place of device 1:3
+2024/04/05 11:18:06  warn rootless{dev/port} creating empty file in place of device 1:4
+2024/04/05 11:18:06  warn rootless{dev/ram0} creating empty file in place of device 1:0
+2024/04/05 11:18:06  warn rootless{dev/ram1} creating empty file in place of device 1:1
+2024/04/05 11:18:06  warn rootless{dev/ram10} creating empty file in place of device 1:10
+2024/04/05 11:18:06  warn rootless{dev/ram11} creating empty file in place of device 1:11
+2024/04/05 11:18:07  warn rootless{dev/ram12} creating empty file in place of device 1:12
+2024/04/05 11:18:07  warn rootless{dev/ram13} creating empty file in place of device 1:13
+2024/04/05 11:18:07  warn rootless{dev/ram14} creating empty file in place of device 1:14
+2024/04/05 11:18:07  warn rootless{dev/ram15} creating empty file in place of device 1:15
+2024/04/05 11:18:07  warn rootless{dev/ram16} creating empty file in place of device 1:16
+2024/04/05 11:18:07  warn rootless{dev/ram2} creating empty file in place of device 1:2
+2024/04/05 11:18:07  warn rootless{dev/ram3} creating empty file in place of device 1:3
+2024/04/05 11:18:07  warn rootless{dev/ram4} creating empty file in place of device 1:4
+2024/04/05 11:18:07  warn rootless{dev/ram5} creating empty file in place of device 1:5
+2024/04/05 11:18:07  warn rootless{dev/ram6} creating empty file in place of device 1:6
+2024/04/05 11:18:07  warn rootless{dev/ram7} creating empty file in place of device 1:7
+2024/04/05 11:18:07  warn rootless{dev/ram8} creating empty file in place of device 1:8
+2024/04/05 11:18:07  warn rootless{dev/ram9} creating empty file in place of device 1:9
+2024/04/05 11:18:07  warn rootless{dev/random} creating empty file in place of device 1:8
+2024/04/05 11:18:07  warn rootless{dev/rmidi0} creating empty file in place of device 35:64
+2024/04/05 11:18:07  warn rootless{dev/rmidi1} creating empty file in place of device 35:65
+2024/04/05 11:18:07  warn rootless{dev/rmidi2} creating empty file in place of device 35:66
+2024/04/05 11:18:07  warn rootless{dev/rmidi3} creating empty file in place of device 35:67
+2024/04/05 11:18:07  warn rootless{dev/sequencer} creating empty file in place of device 14:1
+2024/04/05 11:18:07  warn rootless{dev/smpte0} creating empty file in place of device 35:128
+2024/04/05 11:18:07  warn rootless{dev/smpte1} creating empty file in place of device 35:129
+2024/04/05 11:18:07  warn rootless{dev/smpte2} creating empty file in place of device 35:130
+2024/04/05 11:18:07  warn rootless{dev/smpte3} creating empty file in place of device 35:131
+2024/04/05 11:18:07  warn rootless{dev/sndstat} creating empty file in place of device 14:6
+2024/04/05 11:18:07  warn rootless{dev/tty} creating empty file in place of device 5:0
+2024/04/05 11:18:07  warn rootless{dev/tty0} creating empty file in place of device 4:0
+2024/04/05 11:18:07  warn rootless{dev/tty1} creating empty file in place of device 4:1
+2024/04/05 11:18:07  warn rootless{dev/tty2} creating empty file in place of device 4:2
+2024/04/05 11:18:07  warn rootless{dev/tty3} creating empty file in place of device 4:3
+2024/04/05 11:18:07  warn rootless{dev/tty4} creating empty file in place of device 4:4
+2024/04/05 11:18:07  warn rootless{dev/tty5} creating empty file in place of device 4:5
+2024/04/05 11:18:07  warn rootless{dev/tty6} creating empty file in place of device 4:6
+2024/04/05 11:18:07  warn rootless{dev/tty7} creating empty file in place of device 4:7
+2024/04/05 11:18:07  warn rootless{dev/tty8} creating empty file in place of device 4:8
+2024/04/05 11:18:07  warn rootless{dev/tty9} creating empty file in place of device 4:9
+2024/04/05 11:18:07  warn rootless{dev/urandom} creating empty file in place of device 1:9
+2024/04/05 11:18:07  warn rootless{dev/zero} creating empty file in place of device 1:5
+2024/04/05 11:19:07  info unpack layer: sha256:b51569e7c50720acf6860327847fe342a1afbe148d24c529fb81df105e3eed01
+2024/04/05 11:19:07  info unpack layer: sha256:da8ef40b9ecabc2679fe2419957220c0272a965c5cf7e0269fa1aeeb8c56f2e1
+2024/04/05 11:19:07  info unpack layer: sha256:fb15d46c38dcd1ea0b1990006c3366ecd10c79d374f341687eb2cb23a2c8672e
+2024/04/05 11:19:07  info unpack layer: sha256:25d3b34345a2983a485bbfb951f51c9aa82f0f8f576718b1622e977d42161fb1
+2024/04/05 11:20:05  warn xattr{usr/local/lib/python3.5} ignoring ENOTSUP on setxattr "user.rootlesscontainers"
+2024/04/05 11:20:05  warn xattr{/work/yk132/tmp/build-temp-465196580/rootfs/usr/local/lib/python3.5} destination filesystem does not support xattrs, further warnings will be suppressed
+2024/04/05 11:20:31  info unpack layer: sha256:137a019d6f14d1f1a6ccc984ba3095c9065daf2e3a88c0d2ef9715d7be1c8b19
+2024/04/05 11:20:37  info unpack layer: sha256:a6d1a18667118e2283323ee0224a19dcaedd82142322241dc6e248e8e6ba7e0e
+2024/04/05 11:20:56  info unpack layer: sha256:7f9c5069d371776eabc0da9f071cedae73ac91eaaef785b907f10e3153f4598c
+INFO:    Creating SIF file...
+Error: could not open 32
+Error: Encountered internal Bowtie 2 exception (#1)
+Command: /opt/bowtie2-2.5.1-linux-x86_64/bowtie2-build-s --wrapper basic-0 --threads 32 32 /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job5_metaSPAdes/barcode01/contigs.fasta /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job7_mapping/barcode01_assembly 
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+Error: could not open 32
+Error: Encountered internal Bowtie 2 exception (#1)
+Command: /opt/bowtie2-2.5.1-linux-x86_64/bowtie2-build-s --wrapper basic-0 --threads 32 32 /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job5_metaSPAdes/barcode02/contigs.fasta /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job7_mapping/barcode02_assembly 

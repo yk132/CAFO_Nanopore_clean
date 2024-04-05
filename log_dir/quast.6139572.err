@@ -1,0 +1,33 @@
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Converting OCI blobs to SIF format
+INFO:    Starting build...
+Getting image source signatures
+Copying blob sha256:23b26871704108c12aaa7d62c76b0e4260c96919c7ff97056a02c88fc8208707
+Copying blob sha256:73dc87f821cc58631773cc22d8676fb4526bad931444b9754c631af2f857db6f
+Copying blob sha256:058467452993d953966ed4059d0fbd2cc5dce1a608cffee0d3a5c2755f1e44a3
+Copying blob sha256:fa7985a1fb2863df90bc77944fc61bb3157f9029ddb8fa0456fe7e2ca640f428
+Copying blob sha256:b7e87f426080ce28e5578b28f0e9ee977084d1c9fd5e8c8142d94bec2cdc0144
+Copying blob sha256:96d54c3075c9eeaed5561fd620828fd6bb5d80ecae7cb25f9ba5f7d88ea6e15c
+Copying blob sha256:e9aa34ec1b842814bcd573033d6e97bd1e132f786cab8b7a986e6ae9db4d9110
+Copying config sha256:2e97fe51c43693b461290e789c4ac9148373c420395974d609adcede7b311407
+Writing manifest to image destination
+Storing signatures
+2024/04/05 09:38:28  info unpack layer: sha256:96d54c3075c9eeaed5561fd620828fd6bb5d80ecae7cb25f9ba5f7d88ea6e15c
+2024/04/05 09:38:29  warn xattr{etc/gshadow} ignoring ENOTSUP on setxattr "user.rootlesscontainers"
+2024/04/05 09:38:29  warn xattr{/work/yk132/tmp/build-temp-2503926610/rootfs/etc/gshadow} destination filesystem does not support xattrs, further warnings will be suppressed
+2024/04/05 09:39:14  info unpack layer: sha256:73dc87f821cc58631773cc22d8676fb4526bad931444b9754c631af2f857db6f
+2024/04/05 09:39:14  info unpack layer: sha256:058467452993d953966ed4059d0fbd2cc5dce1a608cffee0d3a5c2755f1e44a3
+2024/04/05 09:40:46  warn xattr{usr/local/lib/R} ignoring ENOTSUP on setxattr "user.rootlesscontainers"
+2024/04/05 09:40:46  warn xattr{/work/yk132/tmp/build-temp-2503926610/rootfs/usr/local/lib/R} destination filesystem does not support xattrs, further warnings will be suppressed
+2024/04/05 09:41:58  info unpack layer: sha256:fa7985a1fb2863df90bc77944fc61bb3157f9029ddb8fa0456fe7e2ca640f428
+2024/04/05 09:41:59  warn xattr{usr/local/lib/python2.7} ignoring ENOTSUP on setxattr "user.rootlesscontainers"
+2024/04/05 09:41:59  warn xattr{/work/yk132/tmp/build-temp-2503926610/rootfs/usr/local/lib/python2.7} destination filesystem does not support xattrs, further warnings will be suppressed
+2024/04/05 09:42:55  info unpack layer: sha256:b7e87f426080ce28e5578b28f0e9ee977084d1c9fd5e8c8142d94bec2cdc0144
+2024/04/05 09:42:55  warn xattr{quast-5.2.0/CHANGES.txt} ignoring ENOTSUP on setxattr "user.rootlesscontainers"
+2024/04/05 09:42:55  warn xattr{/work/yk132/tmp/build-temp-2503926610/rootfs/quast-5.2.0/CHANGES.txt} destination filesystem does not support xattrs, further warnings will be suppressed
+2024/04/05 09:43:58  info unpack layer: sha256:23b26871704108c12aaa7d62c76b0e4260c96919c7ff97056a02c88fc8208707
+2024/04/05 09:43:58  info unpack layer: sha256:e9aa34ec1b842814bcd573033d6e97bd1e132f786cab8b7a986e6ae9db4d9110
+INFO:    Creating SIF file...
+No handlers could be found for logger "quast"
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image

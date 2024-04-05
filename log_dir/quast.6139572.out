@@ -1,0 +1,1261 @@
+/hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job5_metaSPAdes/barcode01/contigs.fasta
+/hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job5_metaSPAdes/barcode02/contigs.fasta
+/quast-5.2.0/metaquast.py /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job5_metaSPAdes/barcode01/contigs.fasta -t 16 -o /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01
+
+Version: 5.2.0
+
+System information:
+  OS: Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-Ubuntu-20.04-focal (linux_64)
+  Python version: 2.7.18
+  CPUs number: 78
+
+Started: 2024-04-05 09:47:24
+
+Logging to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/metaquast.log
+INFO	font search path ['/usr/local/lib/python2.7/dist-packages/matplotlib/mpl-data/fonts/ttf', '/usr/local/lib/python2.7/dist-packages/matplotlib/mpl-data/fonts/afm', '/usr/local/lib/python2.7/dist-packages/matplotlib/mpl-data/fonts/pdfcorefonts']
+INFO	font search path ['/usr/local/lib/python2.7/dist-packages/matplotlib/mpl-data/fonts/ttf', '/usr/local/lib/python2.7/dist-packages/matplotlib/mpl-data/fonts/afm', '/usr/local/lib/python2.7/dist-packages/matplotlib/mpl-data/fonts/pdfcorefonts']
+INFO	generated new fontManager
+INFO	generated new fontManager
+
+Contigs:
+  Pre-processing...
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job5_metaSPAdes/barcode01/contigs.fasta ==> contigs
+
+No references are provided, starting to search for reference genomes in SILVA 16S rRNA database and to download them from NCBI...
+
+2024-04-05 09:49:15
+Downloading blast (file: makeblastdb)...
+ 0.0% of 27429520 bytes  1.0% of 27429520 bytes  2.0% of 27429520 bytes  3.0% of 27429520 bytes  4.0% of 27429520 bytes  5.0% of 27429520 bytes  6.0% of 27429520 bytes  7.0% of 27429520 bytes  8.0% of 27429520 bytes  9.0% of 27429520 bytes  10.0% of 27429520 bytes  11.0% of 27429520 bytes  12.0% of 27429520 bytes  13.0% of 27429520 bytes  14.0% of 27429520 bytes  15.0% of 27429520 bytes  16.0% of 27429520 bytes  17.0% of 27429520 bytes  18.0% of 27429520 bytes  19.0% of 27429520 bytes  20.0% of 27429520 bytes  21.0% of 27429520 bytes  22.0% of 27429520 bytes  23.0% of 27429520 bytes  24.0% of 27429520 bytes  25.0% of 27429520 bytes  26.0% of 27429520 bytes  27.0% of 27429520 bytes  28.0% of 27429520 bytes  29.0% of 27429520 bytes  30.0% of 27429520 bytes  31.0% of 27429520 bytes  32.0% of 27429520 bytes  33.0% of 27429520 bytes  34.0% of 27429520 bytes  35.0% of 27429520 bytes  36.0% of 27429520 bytes  37.0% of 27429520 bytes  38.0% of 27429520 bytes  39.0% of 27429520 bytes  40.0% of 27429520 bytes  41.0% of 27429520 bytes  42.0% of 27429520 bytes  43.0% of 27429520 bytes  44.0% of 27429520 bytes  45.0% of 27429520 bytes  46.0% of 27429520 bytes  47.0% of 27429520 bytes  48.0% of 27429520 bytes  49.0% of 27429520 bytes  50.0% of 27429520 bytes  51.0% of 27429520 bytes  52.0% of 27429520 bytes  53.0% of 27429520 bytes  54.0% of 27429520 bytes  55.0% of 27429520 bytes  56.0% of 27429520 bytes  57.0% of 27429520 bytes  58.0% of 27429520 bytes  59.0% of 27429520 bytes  60.0% of 27429520 bytes  61.0% of 27429520 bytes  62.0% of 27429520 bytes  63.0% of 27429520 bytes  64.0% of 27429520 bytes  65.0% of 27429520 bytes  66.0% of 27429520 bytes  67.0% of 27429520 bytes  68.0% of 27429520 bytes  68.0% of 27429520 bytes  69.0% of 27429520 bytes  70.0% of 27429520 bytes  71.0% of 27429520 bytes  72.0% of 27429520 bytes  73.0% of 27429520 bytes  74.0% of 27429520 bytes  75.0% of 27429520 bytes  76.0% of 27429520 bytes  77.0% of 27429520 bytes  78.0% of 27429520 bytes  79.0% of 27429520 bytes  80.0% of 27429520 bytes  81.0% of 27429520 bytes  82.0% of 27429520 bytes  83.0% of 27429520 bytes  84.0% of 27429520 bytes  85.0% of 27429520 bytes  86.0% of 27429520 bytes  87.0% of 27429520 bytes  88.0% of 27429520 bytes  89.0% of 27429520 bytes  90.0% of 27429520 bytes  91.0% of 27429520 bytes  92.0% of 27429520 bytes  93.0% of 27429520 bytes  94.0% of 27429520 bytes  95.0% of 27429520 bytes  96.0% of 27429520 bytes  97.0% of 27429520 bytes  98.0% of 27429520 bytes  99.0% of 27429520 bytesblast successfully downloaded!
+Downloading blast (file: blastn)...
+ 0.0% of 39777200 bytes  1.0% of 39777200 bytes  2.0% of 39777200 bytes  3.0% of 39777200 bytes  4.0% of 39777200 bytes  5.0% of 39777200 bytes  6.0% of 39777200 bytes  7.0% of 39777200 bytes  8.0% of 39777200 bytes  9.0% of 39777200 bytes  10.0% of 39777200 bytes  11.0% of 39777200 bytes  12.0% of 39777200 bytes  13.0% of 39777200 bytes  14.0% of 39777200 bytes  15.0% of 39777200 bytes  16.0% of 39777200 bytes  17.0% of 39777200 bytes  18.0% of 39777200 bytes  19.0% of 39777200 bytes  20.0% of 39777200 bytes  21.0% of 39777200 bytes  22.0% of 39777200 bytes  23.0% of 39777200 bytes  24.0% of 39777200 bytes  25.0% of 39777200 bytes  26.0% of 39777200 bytes  27.0% of 39777200 bytes  28.0% of 39777200 bytes  29.0% of 39777200 bytes  30.0% of 39777200 bytes  31.0% of 39777200 bytes  32.0% of 39777200 bytes  33.0% of 39777200 bytes  34.0% of 39777200 bytes  35.0% of 39777200 bytes  36.0% of 39777200 bytes  37.0% of 39777200 bytes  38.0% of 39777200 bytes  39.0% of 39777200 bytes  40.0% of 39777200 bytes  41.0% of 39777200 bytes  42.0% of 39777200 bytes  43.0% of 39777200 bytes  44.0% of 39777200 bytes  45.0% of 39777200 bytes  46.0% of 39777200 bytes  47.0% of 39777200 bytes  48.0% of 39777200 bytes  49.0% of 39777200 bytes  50.0% of 39777200 bytes  51.0% of 39777200 bytes  52.0% of 39777200 bytes  53.0% of 39777200 bytes  54.0% of 39777200 bytes  55.0% of 39777200 bytes  56.0% of 39777200 bytes  57.0% of 39777200 bytes  58.0% of 39777200 bytes  59.0% of 39777200 bytes  60.0% of 39777200 bytes  61.0% of 39777200 bytes  62.0% of 39777200 bytes  63.0% of 39777200 bytes  64.0% of 39777200 bytes  65.0% of 39777200 bytes  66.0% of 39777200 bytes  67.0% of 39777200 bytes  68.0% of 39777200 bytes  69.0% of 39777200 bytes  70.0% of 39777200 bytes  71.0% of 39777200 bytes  72.0% of 39777200 bytes  73.0% of 39777200 bytes  74.0% of 39777200 bytes  75.0% of 39777200 bytes  76.0% of 39777200 bytes  77.0% of 39777200 bytes  78.0% of 39777200 bytes  79.0% of 39777200 bytes  80.0% of 39777200 bytes  81.0% of 39777200 bytes  82.0% of 39777200 bytes  83.0% of 39777200 bytes  84.0% of 39777200 bytes  85.0% of 39777200 bytes  86.0% of 39777200 bytes  86.0% of 39777200 bytes  87.0% of 39777200 bytes  88.0% of 39777200 bytes  89.0% of 39777200 bytes  90.0% of 39777200 bytes  91.0% of 39777200 bytes  92.0% of 39777200 bytes  93.0% of 39777200 bytes  94.0% of 39777200 bytes  95.0% of 39777200 bytes  96.0% of 39777200 bytes  97.0% of 39777200 bytes  98.0% of 39777200 bytes  99.0% of 39777200 bytesblast successfully downloaded!
+NOTICE: Permission denied accessing /quast-5.2.0/quast_libs/silva. Silva will be downloaded to home directory /hpc/home/yk132/.quast
+
+Downloading SILVA 16S ribosomal RNA gene database (version 138.1)...
+ 0.0% of 197133995 bytes  1.0% of 197133995 bytes  2.0% of 197133995 bytes  3.0% of 197133995 bytes  4.0% of 197133995 bytes  5.0% of 197133995 bytes  6.0% of 197133995 bytes  7.0% of 197133995 bytes  8.0% of 197133995 bytes  9.0% of 197133995 bytes  10.0% of 197133995 bytes  11.0% of 197133995 bytes  12.0% of 197133995 bytes  13.0% of 197133995 bytes  14.0% of 197133995 bytes  15.0% of 197133995 bytes  16.0% of 197133995 bytes  17.0% of 197133995 bytes  18.0% of 197133995 bytes  19.0% of 197133995 bytes  20.0% of 197133995 bytes  21.0% of 197133995 bytes  22.0% of 197133995 bytes  23.0% of 197133995 bytes  24.0% of 197133995 bytes  25.0% of 197133995 bytes  26.0% of 197133995 bytes  27.0% of 197133995 bytes  28.0% of 197133995 bytes  29.0% of 197133995 bytes  30.0% of 197133995 bytes  31.0% of 197133995 bytes  32.0% of 197133995 bytes  33.0% of 197133995 bytes  34.0% of 197133995 bytes  35.0% of 197133995 bytes  36.0% of 197133995 bytes  37.0% of 197133995 bytes  38.0% of 197133995 bytes  39.0% of 197133995 bytes  40.0% of 197133995 bytes  41.0% of 197133995 bytes  42.0% of 197133995 bytes  43.0% of 197133995 bytes  44.0% of 197133995 bytes  45.0% of 197133995 bytes  46.0% of 197133995 bytes  47.0% of 197133995 bytes  48.0% of 197133995 bytes  49.0% of 197133995 bytes  50.0% of 197133995 bytes  51.0% of 197133995 bytes  52.0% of 197133995 bytes  53.0% of 197133995 bytes  54.0% of 197133995 bytes  55.0% of 197133995 bytes  56.0% of 197133995 bytes  57.0% of 197133995 bytes  58.0% of 197133995 bytes  59.0% of 197133995 bytes  60.0% of 197133995 bytes  61.0% of 197133995 bytes  62.0% of 197133995 bytes  63.0% of 197133995 bytes  64.0% of 197133995 bytes  65.0% of 197133995 bytes  66.0% of 197133995 bytes  67.0% of 197133995 bytes  68.0% of 197133995 bytes  69.0% of 197133995 bytes  70.0% of 197133995 bytes  71.0% of 197133995 bytes  72.0% of 197133995 bytes  73.0% of 197133995 bytes  74.0% of 197133995 bytes  75.0% of 197133995 bytes  76.0% of 197133995 bytes  77.0% of 197133995 bytes  78.0% of 197133995 bytes  79.0% of 197133995 bytes  80.0% of 197133995 bytes  81.0% of 197133995 bytes  82.0% of 197133995 bytes  83.0% of 197133995 bytes  84.0% of 197133995 bytes  85.0% of 197133995 bytes  86.0% of 197133995 bytes  87.0% of 197133995 bytes  88.0% of 197133995 bytes  89.0% of 197133995 bytes  90.0% of 197133995 bytes  91.0% of 197133995 bytes  92.0% of 197133995 bytes  93.0% of 197133995 bytes  94.0% of 197133995 bytes  95.0% of 197133995 bytes  96.0% of 197133995 bytes  97.0% of 197133995 bytes  98.0% of 197133995 bytes  99.0% of 197133995 bytesProcessing downloaded file. Logging to /hpc/home/yk132/.quast/silva/blastdb.log...
+Unpacking and replacing " " with "_"...
+Making BLAST database...
+Running BlastN..
+  processing contigs
+  BLAST results for contigs are saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/blast.res_contigs...
+
+
+2024-04-05 10:26:56
+Trying to download found references from NCBI. Totally 50 organisms to try.
+  wastewater_metagenome                                  | successfully downloaded (total 1, 49 more to go)
+  unidentified_marine_bacterioplankton                   | not found in the NCBI database
+  unidentified_marine_bacterioplankton was not found in NCBI database, trying to download the next best match
+  Symbiodinium_sp._clade_C                               | successfully downloaded (total 2, 48 more to go)
+  unidentified_archaeon                                  | not found in the NCBI database
+  unidentified_archaeon was not found in NCBI database, trying to download the next best match
+  marine_sediment_metagenome                             | successfully downloaded (total 3, 47 more to go)
+  uncultivated_soil_bacterium_clone_C019                 | not found in the NCBI database
+  uncultivated_soil_bacterium_clone_C019 was not found in NCBI database, trying to download the next best match
+  Candidatus_Udaeobacter_copiosus                        | not found in the NCBI database
+  Candidatus_Udaeobacter_copiosus was not found in NCBI database, trying to download the next best match
+  unidentified_eubacterium_EA25                          | not found in the NCBI database
+  unidentified_eubacterium_EA25 was not found in NCBI database, trying to download the next best match
+  bacterium_Ellin513                                     | not found in the NCBI database
+  soil_bacterium_WWH121                                  | not found in the NCBI database
+  soil_bacterium_WWH121 was not found in NCBI database, trying to download the next best match
+Failed downloading Candidatus Sumerlaeaceae bacterium!
+  Candidatus_Sumerlaeaceae_bacterium                     | not found in the NCBI database
+  Candidatus_Sumerlaeaceae_bacterium was not found in NCBI database, trying to download the next best match
+  Candidatus_Sumerlaea_chitinovorans                     | not found in the NCBI database
+  Candidatus_Sumerlaea_chitinovorans was not found in NCBI database, trying to download the next best match
+  Thermoleophilum_album                                  | successfully downloaded (total 4, 45 more to go)
+  permafrost_metagenome                                  | successfully downloaded (total 5, 44 more to go)
+  marine_metagenome                                      | successfully downloaded (total 6, 43 more to go)
+  iron-reducing_bacterium_enrichment_culture_clone_HN105 | not found in the NCBI database
+  iron-reducing_bacterium_enrichment_culture_clone_HN105 was not found in NCBI database, trying to download the next best match
+  Lentimicrobium_saccharophilum                          | successfully downloaded (total 7, 42 more to go)
+  candidate_division_TM7_bacterium_JGI_0001002-L20       | successfully downloaded (total 8, 41 more to go)
+  bacterium_enrichment_culture_clone_auto8_4W            | not found in the NCBI database
+  bacterium_enrichment_culture_clone_auto8_4W was not found in NCBI database, trying to download the next best match
+  unidentified_bacterium_wb1_P06                         | not found in the NCBI database
+  unidentified_bacterium_wb1_P06 was not found in NCBI database, trying to download the next best match
+  bacterium_Ellin5247                                    | not found in the NCBI database
+  bacterium_endosymbiont_of_Onthophagus_Taurus           | not found in the NCBI database
+  bacterium_endosymbiont_of_Onthophagus_Taurus was not found in NCBI database, trying to download the next best match
+  Pseudomonas_sagittaria                                 | successfully downloaded (total 9, 39 more to go)
+  bacterium_YC-ZSS-LKJ66                                 | not found in the NCBI database
+  bacterium_YC-ZSS-LKJ66 was not found in NCBI database, trying to download the next best match
+  bacterium_enrichment_culture_clone_auto222_4W          | not found in the NCBI database
+  bacterium_enrichment_culture_clone_auto222_4W was not found in NCBI database, trying to download the next best match
+  Aciditerrimonas_ferrireducens                          | successfully downloaded (total 10, 38 more to go)
+  bacterium_YC-ZSS-LKJ159                                | not found in the NCBI database
+  bacterium_YC-ZSS-LKJ159 was not found in NCBI database, trying to download the next best match
+  Solirubrobacter_sp._URHD0082                           | successfully downloaded (total 11, 37 more to go)
+  bacterium_YC-ZSS-LKJ147                                | not found in the NCBI database
+  bacterium_S2321                                        | not found in the NCBI database
+  bacterium_S2321 was not found in NCBI database, trying to download the next best match
+  Microlunatus_sagamiharensis                            | successfully downloaded (total 12, 35 more to go)
+  bacterium_QTYC46b                                      | not found in the NCBI database
+  bacterium_QTYC46b was not found in NCBI database, trying to download the next best match
+  Sphaerobacter_thermophilus                             | successfully downloaded (total 13, 34 more to go)
+  bacterium_BEL_B7                                       | not found in the NCBI database
+  bacterium_BEL_B7 was not found in NCBI database, trying to download the next best match
+  Chryseobacterium_caeni                                 | successfully downloaded (total 14, 33 more to go)
+  Xanthomonas_translucens_pv._undulosa                   | successfully downloaded (total 15, 32 more to go)
+  Xanthomonas_phaseoli_pv._dieffenbachiae                | successfully downloaded (total 16, 31 more to go)
+  Xanthomonas_campestris_pv._campestris_str._8004        | successfully downloaded (total 17, 30 more to go)
+  Xanthomonadales_bacterium_66-474                       | successfully downloaded (total 18, 29 more to go)
+  Weissella_paramesenteroides                            | successfully downloaded (total 19, 28 more to go)
+Failed downloading Vulgatibacter sp!
+  Vulgatibacter_sp                                       | not found in the NCBI database
+  Vulgatibacter_sp was not found in NCBI database, trying to download the next best match
+  bacterium_enrichment_culture_clone_heteroC6_4W         | not found in the NCBI database
+  bacterium_enrichment_culture_clone_heteroC6_4W was not found in NCBI database, trying to download the next best match
+  Myxococcus_macrosporus_DSM_14697                       | successfully downloaded (total 20, 27 more to go)
+  Vulgatibacter_incomptus                                | successfully downloaded (total 21, 26 more to go)
+  Vitiosangium_cumulatum                                 | not found in the NCBI database
+  Vitiosangium_cumulatum was not found in NCBI database, trying to download the next best match
+  Vitiosangium_sp                                        | not found in the NCBI database
+  Vitiosangium_sp was not found in NCBI database, trying to download the next best match
+  Cystobacter_sp._S236                                   | not found in the NCBI database
+  Cystobacter_sp._S236 was not found in NCBI database, trying to download the next best match
+  Archangium_violaceum                                   | successfully downloaded (total 22, 25 more to go)
+  Verticillium_nonalfalfae                               | successfully downloaded (total 23, 24 more to go)
+Verrucomicrobia bacterium ADurb.Bin063 has too fragmented reference genome! It will not be downloaded.
+  Verrucomicrobia_bacterium_ADurb.Bin063                 | not found in the NCBI database
+  Verrucomicrobia_bacterium_ADurb.Bin063 was not found in NCBI database, trying to download the next best match
+  Verrucomicrobia_bacterium_LX181                        | not found in the NCBI database
+  Verrucomicrobia_bacterium_LX181 was not found in NCBI database, trying to download the next best match
+  bacterium_Ellin5102                                    | not found in the NCBI database
+  bacterium_Ellin5102 was not found in NCBI database, trying to download the next best match
+  Pedosphaera_parvula_Ellin514                           | successfully downloaded (total 24, 23 more to go)
+  Turicibacter_sp._H121                                  | successfully downloaded (total 25, 22 more to go)
+  Turicibacter_sanguinis                                 | successfully downloaded (total 26, 21 more to go)
+  Tumebacillus_soli                                      | not found in the NCBI database
+  Tumebacillus_soli was not found in NCBI database, trying to download the next best match
+  Tumebacillus_ginsengisoli                              | not found in the NCBI database
+  Tumebacillus_ginsengisoli was not found in NCBI database, trying to download the next best match
+  Tumebacillus_algifaecis                                | successfully downloaded (total 27, 20 more to go)
+  Tolumonas_auensis_DSM_9187                             | successfully downloaded (total 28, 19 more to go)
+  Thermomarinilinea_lacunifontana                        | not found in the NCBI database
+  Thermomarinilinea_lacunifontana was not found in NCBI database, trying to download the next best match
+  Chloroflexi_bacterium_enrichment_culture_clone_AP-FeEnrich7 | not found in the NCBI database
+  Chloroflexi_bacterium_enrichment_culture_clone_AP-FeEnrich7 was not found in NCBI database, trying to download the next best match
+  Chloroflexi_bacterium_enrichment_culture_clone_VNC3B043 | not found in the NCBI database
+  Chloroflexi_bacterium_enrichment_culture_clone_VNC3B043 was not found in NCBI database, trying to download the next best match
+  Bellilinea_caldifistulae                               | successfully downloaded (total 29, 18 more to go)
+  Thermoactinomyces_vulgaris                             | successfully downloaded (total 30, 17 more to go)
+  Terrabacter_aeriphilus                                 | not found in the NCBI database
+  Terrabacter_aeriphilus was not found in NCBI database, trying to download the next best match
+  Terrabacter_sp._2APm3                                  | not found in the NCBI database
+  Terrabacter_sp._2APm3 was not found in NCBI database, trying to download the next best match
+  Intrasporangium_calvum                                 | successfully downloaded (total 31, 16 more to go)
+  Tepidibacter_sp._enrichment_culture_clone_KME55-7      | not found in the NCBI database
+  Tepidibacter_sp._enrichment_culture_clone_KME55-7 was not found in NCBI database, trying to download the next best match
+Tepidibacter formicigenes has too fragmented reference genome! It will not be downloaded.
+  Tepidibacter_formicigenes                              | not found in the NCBI database
+  Tepidibacter_formicigenes was not found in NCBI database, trying to download the next best match
+  Tepidibacter_sp._26TPM1-ana3                           | not found in the NCBI database
+  Tepidibacter_sp._26TPM1-ana3 was not found in NCBI database, trying to download the next best match
+  Tepidibacter_thalassicus                               | successfully downloaded (total 32, 15 more to go)
+  Talaromyces_marneffei                                  | successfully downloaded (total 33, 14 more to go)
+  TM7_bacterium_human_oral_taxon_HOT-869                 | not found in the NCBI database
+  TM7_bacterium_human_oral_taxon_HOT-869 was not found in NCBI database, trying to download the next best match
+  TM7_phylum_sp._canine_oral_taxon_250                   | not found in the NCBI database
+  TM7_phylum_sp._canine_oral_taxon_250 was not found in NCBI database, trying to download the next best match
+  TM7_phylum_sp._canine_oral_taxon_322                   | not found in the NCBI database
+  TM7_phylum_sp._canine_oral_taxon_322 was not found in NCBI database, trying to download the next best match
+  TM7_phylum_sp._canine_oral_taxon_308                   | not found in the NCBI database
+  Sulfitobacter_sp._EE-36                                | successfully downloaded (total 34, 12 more to go)
+  Streptomyces_sp._RB1-94                                | not found in the NCBI database
+  Streptomyces_sp._RB1-94 was not found in NCBI database, trying to download the next best match
+  Microbispora_hainanensis                               | successfully downloaded (total 35, 11 more to go)
+  Streptococcus_pneumoniae                               | successfully downloaded (total 36, 10 more to go)
+  Streptococcus_agalactiae_SS1219                        | successfully downloaded (total 37, 9 more to go)
+Stenotrophomonas daejeonensis has too fragmented reference genome! It will not be downloaded.
+  Stenotrophomonas_daejeonensis                          | not found in the NCBI database
+  Stenotrophomonas_daejeonensis was not found in NCBI database, trying to download the next best match
+  Stenotrophomonas_sp                                    | successfully downloaded (total 38, 8 more to go)
+  Staphylococcus_cohnii                                  | successfully downloaded (total 39, 7 more to go)
+  Sporacetigenium_mesophilum                             | not found in the NCBI database
+  Sporacetigenium_mesophilum was not found in NCBI database, trying to download the next best match
+  Romboutsia_hominis                                     | successfully downloaded (total 40, 6 more to go)
+  Sphingomonas_sp._ZY-3                                  | not found in the NCBI database
+  Sphingomonas_sp._ZY-3 was not found in NCBI database, trying to download the next best match
+  Sphingomonas_limnosediminicola                         | not found in the NCBI database
+  Sphingomonas_limnosediminicola was not found in NCBI database, trying to download the next best match
+  Sphingomonas_agri                                      | not found in the NCBI database
+  Sphingomonas_agri was not found in NCBI database, trying to download the next best match
+  Sphingomonas_sp._JGI_0001002-A17                       | successfully downloaded (total 41, 5 more to go)
+  Sphingobacterium_mizutaii                              | successfully downloaded (total 42, 4 more to go)
+  Sphingobacterium_cellulitidis                          | successfully downloaded (total 43, 3 more to go)
+  Sphaerobacter_thermophilus_DSM_20745                   | successfully downloaded (total 44, 2 more to go)
+  Solirubrobacterales_bacterium_67-14                    | successfully downloaded (total 45, 1 more to go)
+  Serratia_marcescens                                    | successfully downloaded (total 46, 0 more to go)
+
+Downloaded reference(s):
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Aciditerrimonas_ferrireducens.fasta ==> Aciditerrimonas_ferrireducens
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Archangium_violaceum.fasta ==> Archangium_violaceum
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Bellilinea_caldifistulae.fasta ==> Bellilinea_caldifistulae
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Chryseobacterium_caeni.fasta ==> Chryseobacterium_caeni
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Intrasporangium_calvum.fasta ==> Intrasporangium_calvum
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Lentimicrobium_saccharophilum.fasta ==> Lentimicrobium_saccharophilum
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Microbispora_hainanensis.fasta ==> Microbispora_hainanensis
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Microlunatus_sagamiharensis.fasta ==> Microlunatus_sagamiharensis
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Myxococcus_macrosporus_DSM_14697.fasta ==> Myxococcus_macrosporus_DSM_14697
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Pedosphaera_parvula_Ellin514.fasta ==> Pedosphaera_parvula_Ellin514
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Pseudomonas_sagittaria.fasta ==> Pseudomonas_sagittaria
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Romboutsia_hominis.fasta ==> Romboutsia_hominis
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Serratia_marcescens.fasta ==> Serratia_marcescens
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Solirubrobacter_sp._URHD0082.fasta ==> Solirubrobacter_sp._URHD0082
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Solirubrobacterales_bacterium_67-14.fasta ==> Solirubrobacterales_bacterium_67-14
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Sphaerobacter_thermophilus.fasta ==> Sphaerobacter_thermophilus
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Sphaerobacter_thermophilus_DSM_20745.fasta ==> Sphaerobacter_thermophilus_DSM_20745
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Sphingobacterium_cellulitidis.fasta ==> Sphingobacterium_cellulitidis
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Sphingobacterium_mizutaii.fasta ==> Sphingobacterium_mizutaii
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Sphingomonas_sp._JGI_0001002-A17.fasta ==> Sphingomonas_sp._JGI_0001002-A17
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Staphylococcus_cohnii.fasta ==> Staphylococcus_cohnii
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Stenotrophomonas_sp.fasta ==> Stenotrophomonas_sp
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Streptococcus_agalactiae_SS1219.fasta ==> Streptococcus_agalactiae_SS1219
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Streptococcus_pneumoniae.fasta ==> Streptococcus_pneumoniae
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Sulfitobacter_sp._EE-36.fasta ==> Sulfitobacter_sp._EE-36
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Symbiodinium_sp._clade_C.fasta ==> Symbiodinium_sp._clade_C
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Talaromyces_marneffei.fasta ==> Talaromyces_marneffei
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Tepidibacter_thalassicus.fasta ==> Tepidibacter_thalassicus
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Thermoactinomyces_vulgaris.fasta ==> Thermoactinomyces_vulgaris
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Thermoleophilum_album.fasta ==> Thermoleophilum_album
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Tolumonas_auensis_DSM_9187.fasta ==> Tolumonas_auensis_DSM_9187
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Tumebacillus_algifaecis.fasta ==> Tumebacillus_algifaecis
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Turicibacter_sanguinis.fasta ==> Turicibacter_sanguinis
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Turicibacter_sp._H121.fasta ==> Turicibacter_sp._H121
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Verticillium_nonalfalfae.fasta ==> Verticillium_nonalfalfae
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Vulgatibacter_incomptus.fasta ==> Vulgatibacter_incomptus
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Weissella_paramesenteroides.fasta ==> Weissella_paramesenteroides
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Xanthomonadales_bacterium_66-474.fasta ==> Xanthomonadales_bacterium_66-474
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Xanthomonas_campestris_pv._campestris_str._8004.fasta ==> Xanthomonas_campestris_pv._campestris_str._8004
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Xanthomonas_phaseoli_pv._dieffenbachiae.fasta ==> Xanthomonas_phaseoli_pv._dieffenbachiae
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Xanthomonas_translucens_pv._undulosa.fasta ==> Xanthomonas_translucens_pv._undulosa
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/candidate_division_TM7_bacterium_JGI_0001002-L20.fasta ==> candidate_division_TM7_bacterium_JGI_0001002-L20
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/marine_metagenome.fasta ==> marine_metagenome
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/marine_sediment_metagenome.fasta ==> marine_sediment_metagenome
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/permafrost_metagenome.fasta ==> permafrost_metagenome
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/wastewater_metagenome.fasta ==> wastewater_metagenome
+  All references were combined in combined_reference.fasta
+
+Starting quast.py for the combined reference...
+/quast-5.2.0/quast.py -t 16 --min-identity 90.0 --combined-ref --colors #E31A1C --ls solid --ambiguity-usage all /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job5_metaSPAdes/barcode01/contigs.fasta -R /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_corrected_input/combined_reference.fasta -o /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference --labels contigs
+
+Started: 2024-04-05 10:34:50
+
+Logging to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/quast.log
+
+CWD: /hpc/group/gunschlab/yk132/storage/20230908_Dust_Redo_R9/CAFO_Nanopore_clean
+Main parameters: 
+  MODE: meta, threads: 16, min contig length: 500, min alignment length: 65, min alignment IDY: 90.0, \
+  ambiguity: all, min local misassembly length: 200, min extensive misassembly length: 1000
+
+Reference:
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_corrected_input/combined_reference.fasta ==> combined_reference
+
+Contigs:
+  Pre-processing...
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job5_metaSPAdes/barcode01/contigs.fasta ==> contigs
+
+2024-04-05 10:35:41
+Running Basic statistics processor...
+  Reference genome:
+    combined_reference.fasta, length = 730253853, num fragments = 2310, GC % = 48.56
+WARNING:   Reference genome is fragmented. You may consider rerunning QUAST using --fragmented option. QUAST will try to detect misassemblies caused by the fragmentation and mark them fake (will be excluded from # misassemblies).
+  Contig files: 
+    contigs
+  Calculating N50 and L50...
+    contigs, N50 = 1503, L50 = 50203, auN = 6099.7, Total length = 401443132, GC % = 64.62, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/basic_stats/GC_content_plot.pdf
+  Drawing contigs GC content plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/basic_stats/contigs_GC_content_plot.pdf
+  Drawing Coverage histogram (bin size: 1x)...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/basic_stats/coverage_histogram.pdf
+  Drawing contigs coverage histogram (bin size: 1x)...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/basic_stats/contigs_coverage_histogram.pdf
+Done.
+
+2024-04-05 10:37:17
+Running Contig analyzer...
+  contigs
+  Logging to files /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/contigs_reports/contigs_report_contigs.stdout and contigs_report_contigs.stderr...
+  Aligning contigs to the reference
+  Analysis is finished.
+  Information about interspecies translocations by references for contigs is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/contigs_reports/interspecies_translocations_by_refs_contigs.info
+  Drawing Intergenomic misassemblies (found and supposed) metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/contigs_reports/intergenomic_misassemblies.pdf
+  Creating total report...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/contigs_reports/misassemblies_plot.pdf
+  Drawing misassemblies FRCurve plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/contigs_reports/misassemblies_frcurve_plot.pdf
+Done.
+
+2024-04-05 10:39:00
+Running NA-NGA calculation...
+  contigs, Largest alignment = 5198, NA50 = None, LA50 = None
+  Drawing cumulative plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/aligned_stats/NAx_plot.pdf
+Done.
+
+2024-04-05 10:39:16
+Running Genome analyzer...
+  NOTICE: No file with genomic features were provided. Use the --features option if you want to specify it.
+
+  NOTICE: No file with operons were provided. Use the -O option if you want to specify it.
+  contigs
+  Analysis is finished.
+  Skipping drawing Genome fraction, % histogram... (less than 2 columns histogram makes no sense)
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2024-04-05 10:41:34
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2024-04-05 10:42:22
+RESULTS:
+  Text versions of total report are saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/report.html
+  PDF version (tables and plots) is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/report.pdf
+  Icarus (contig browser) is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/icarus.html
+
+Excluding downloaded references with low genome fraction from further analysis..
+
+Filtered reference(s):
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_downloaded_references/Turicibacter_sp._H121.fasta ==> Turicibacter_sp._H121
+  All references were combined in combined_reference.fasta
+  Pre-processing...
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job5_metaSPAdes/barcode01/contigs.fasta ==> contigs
+
+Starting quast.py for the corrected combined reference...
+/quast-5.2.0/quast.py -t 16 --min-identity 90.0 --combined-ref --colors #E31A1C --ls solid --ambiguity-usage all /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job5_metaSPAdes/barcode01/contigs.fasta -R /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_corrected_input/combined_reference.fasta -o /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference --labels contigs
+
+Started: 2024-04-05 10:44:23
+
+Logging to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/quast.log
+NOTICE: Output directory already exists and looks like a QUAST output dir. Existing results can be reused (e.g. previously generated alignments)!
+
+CWD: /hpc/group/gunschlab/yk132/storage/20230908_Dust_Redo_R9/CAFO_Nanopore_clean
+Main parameters: 
+  MODE: meta, threads: 16, min contig length: 500, min alignment length: 65, min alignment IDY: 90.0, \
+  ambiguity: all, min local misassembly length: 200, min extensive misassembly length: 1000
+
+Reference:
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_corrected_input/combined_reference.fasta ==> combined_reference
+
+Contigs:
+  Pre-processing...
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job5_metaSPAdes/barcode01/contigs.fasta ==> contigs
+
+2024-04-05 10:45:13
+Running Basic statistics processor...
+  Reference genome:
+    combined_reference.fasta, length = 2622031, num fragments = 1, GC % = 34.83
+  Contig files: 
+    contigs
+  Calculating N50 and L50...
+    contigs, N50 = 1503, L50 = 50203, auN = 6099.7, Total length = 401443132, GC % = 64.62, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/basic_stats/GC_content_plot.pdf
+  Drawing contigs GC content plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/basic_stats/contigs_GC_content_plot.pdf
+  Drawing Coverage histogram (bin size: 1x)...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/basic_stats/coverage_histogram.pdf
+  Drawing contigs coverage histogram (bin size: 1x)...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/basic_stats/contigs_coverage_histogram.pdf
+Done.
+
+2024-04-05 10:45:55
+Running Contig analyzer...
+  contigs
+  Logging to files /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/contigs_reports/contigs_report_contigs.stdout and contigs_report_contigs.stderr...
+  Aligning contigs to the reference
+  Analysis is finished.
+  Information about interspecies translocations by references for contigs is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/contigs_reports/interspecies_translocations_by_refs_contigs.info
+  Drawing Intergenomic misassemblies (found and supposed) metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/contigs_reports/intergenomic_misassemblies.pdf
+  Creating total report...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/contigs_reports/misassemblies_plot.pdf
+  Drawing misassemblies FRCurve plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/contigs_reports/misassemblies_frcurve_plot.pdf
+Done.
+
+2024-04-05 10:46:14
+Running NA-NGA calculation...
+  contigs, Largest alignment = 5198, NA50 = None, LA50 = None
+  Drawing cumulative plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/aligned_stats/NAx_plot.pdf
+Done.
+
+2024-04-05 10:46:19
+Running Genome analyzer...
+  NOTICE: No file with genomic features were provided. Use the --features option if you want to specify it.
+
+  NOTICE: No file with operons were provided. Use the -O option if you want to specify it.
+  contigs
+  Analysis is finished.
+  Skipping drawing Genome fraction, % histogram... (less than 2 columns histogram makes no sense)
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2024-04-05 10:46:27
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2024-04-05 10:46:32
+RESULTS:
+  Text versions of total report are saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/report.html
+  PDF version (tables and plots) is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/report.pdf
+  Icarus (contig browser) is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/combined_reference/icarus.html
+
+Partitioning contigs into bins aligned to each reference..
+  processing contigs
+
+Starting quast.py for the contigs aligned to Turicibacter_sp._H121... (logging to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/runs_per_reference/Turicibacter_sp._H121/quast.log)
+/quast-5.2.0/quast.py -t 16 --min-identity 90.0 --colors #E31A1C --ls solid --no-check-meta --contig-thresholds 1000,5000,10000,25000,50000 /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_corrected_input/contigs_to_Turicibacter_sp._H121.fasta -R /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_corrected_input/Turicibacter_sp._H121.fasta__1 -o /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/runs_per_reference/Turicibacter_sp._H121 --labels contigs
+
+Started: 2024-04-05 10:46:56
+
+Logging to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/runs_per_reference/Turicibacter_sp._H121/quast.log
+
+CWD: /hpc/group/gunschlab/yk132/storage/20230908_Dust_Redo_R9/CAFO_Nanopore_clean
+Main parameters: 
+  MODE: meta, threads: 16, min contig length: 500, min alignment length: 65, min alignment IDY: 90.0, \
+  ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 1000
+
+Reference:
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_corrected_input/Turicibacter_sp._H121.fasta__1 ==> Turicibacter_sp._H121
+
+Contigs:
+  Pre-processing...
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_corrected_input/contigs_to_Turicibacter_sp._H121.fasta ==> contigs
+
+2024-04-05 10:46:56
+Running Basic statistics processor...
+  Reference genome:
+    Turicibacter_sp._H121.fasta__1, length = 2622031, num fragments = 1, GC % = 34.83
+  Contig files: 
+    contigs
+  Calculating N50 and L50...
+    contigs, N50 = 1006, L50 = 375, auN = 1348.7, Total length = 1212763, GC % = 35.42, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/runs_per_reference/Turicibacter_sp._H121/basic_stats/Nx_plot.pdf
+  Drawing NGx plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/runs_per_reference/Turicibacter_sp._H121/basic_stats/NGx_plot.pdf
+  Drawing cumulative plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/runs_per_reference/Turicibacter_sp._H121/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/runs_per_reference/Turicibacter_sp._H121/basic_stats/GC_content_plot.pdf
+  Drawing contigs GC content plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/runs_per_reference/Turicibacter_sp._H121/basic_stats/contigs_GC_content_plot.pdf
+  Drawing Coverage histogram (bin size: 1x)...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/runs_per_reference/Turicibacter_sp._H121/basic_stats/coverage_histogram.pdf
+  Drawing contigs coverage histogram (bin size: 1x)...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/runs_per_reference/Turicibacter_sp._H121/basic_stats/contigs_coverage_histogram.pdf
+Done.
+
+2024-04-05 10:46:57
+Running Contig analyzer...
+  contigs
+  Logging to files /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/runs_per_reference/Turicibacter_sp._H121/contigs_reports/contigs_report_contigs.stdout and contigs_report_contigs.stderr...
+  Aligning contigs to the reference
+  Analysis is finished.
+  Creating total report...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/runs_per_reference/Turicibacter_sp._H121/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/runs_per_reference/Turicibacter_sp._H121/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/runs_per_reference/Turicibacter_sp._H121/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/runs_per_reference/Turicibacter_sp._H121/contigs_reports/misassemblies_plot.pdf
+  Drawing misassemblies FRCurve plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/runs_per_reference/Turicibacter_sp._H121/contigs_reports/misassemblies_frcurve_plot.pdf
+Done.
+
+2024-04-05 10:47:01
+Running NA-NGA calculation...
+  contigs, Largest alignment = 5198, NA50 = 907, LA50 = 407
+  Drawing cumulative plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/runs_per_reference/Turicibacter_sp._H121/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/runs_per_reference/Turicibacter_sp._H121/aligned_stats/NAx_plot.pdf
+  Drawing NGAx plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/runs_per_reference/Turicibacter_sp._H121/aligned_stats/NGAx_plot.pdf
+Done.
+
+2024-04-05 10:47:01
+Running Genome analyzer...
+  NOTICE: No file with genomic features were provided. Use the --features option if you want to specify it.
+
+  NOTICE: No file with operons were provided. Use the -O option if you want to specify it.
+  contigs
+  Analysis is finished.
+  Skipping drawing Genome fraction, % histogram... (less than 2 columns histogram makes no sense)
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2024-04-05 10:47:02
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2024-04-05 10:47:03
+RESULTS:
+  Text versions of total report are saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/runs_per_reference/Turicibacter_sp._H121/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/runs_per_reference/Turicibacter_sp._H121/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/runs_per_reference/Turicibacter_sp._H121/report.html
+  PDF version (tables and plots) is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/runs_per_reference/Turicibacter_sp._H121/report.pdf
+  Icarus (contig browser) is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/runs_per_reference/Turicibacter_sp._H121/icarus.html
+
+Starting quast.py for the contigs not aligned anywhere... (logging to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/not_aligned/quast.log)
+/quast-5.2.0/quast.py -t 16 --min-identity 90.0 --colors #E31A1C --ls solid --no-check-meta --contig-thresholds 1000,5000,10000,25000,50000 -t 16 /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_corrected_input/contigs_not_aligned_anywhere.fasta -o /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/not_aligned --labels contigs
+
+Started: 2024-04-05 10:47:03
+
+Logging to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/not_aligned/quast.log
+
+CWD: /hpc/group/gunschlab/yk132/storage/20230908_Dust_Redo_R9/CAFO_Nanopore_clean
+Main parameters: 
+  MODE: meta, threads: 16, min contig length: 500, min alignment length: 65, min alignment IDY: 90.0, \
+  ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 1000
+
+Contigs:
+  Pre-processing...
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/quast_corrected_input/contigs_not_aligned_anywhere.fasta ==> contigs
+
+2024-04-05 10:47:15
+Running Basic statistics processor...
+  Contig files: 
+    contigs
+  Calculating N50 and L50...
+    contigs, N50 = 1507, L50 = 49875, auN = 6114.1, Total length = 400230369, GC % = 64.71, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/not_aligned/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/not_aligned/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/not_aligned/basic_stats/GC_content_plot.pdf
+  Drawing contigs GC content plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/not_aligned/basic_stats/contigs_GC_content_plot.pdf
+  Drawing Coverage histogram (bin size: 1x)...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/not_aligned/basic_stats/coverage_histogram.pdf
+  Drawing contigs coverage histogram (bin size: 1x)...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/not_aligned/basic_stats/contigs_coverage_histogram.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2024-04-05 10:47:45
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2024-04-05 10:47:52
+RESULTS:
+  Text versions of total report are saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/not_aligned/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/not_aligned/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/not_aligned/report.html
+  PDF version (tables and plots) is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/not_aligned/report.pdf
+  Icarus (contig browser) is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/not_aligned/icarus.html
+
+2024-04-05 10:47:52
+Summarizing results...
+  Drawing # contigs metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/summary/PDF/num_contigs.pdf
+  Drawing Largest contig metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/summary/PDF/Largest_contig.pdf
+  Drawing Total length metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/summary/PDF/Total_length.pdf
+  Drawing Largest alignment metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/summary/PDF/Largest_alignment.pdf
+  Drawing Total aligned length metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/summary/PDF/Total_aligned_length.pdf
+  Drawing Total length (>= 1000 bp) metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/summary/PDF/Total_length_(ge_1000_bp).pdf
+  Drawing Total length (>= 10000 bp) metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/summary/PDF/Total_length_(ge_10000_bp).pdf
+  Drawing Total length (>= 50000 bp) metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/summary/PDF/Total_length_(ge_50000_bp).pdf
+  Drawing # misassemblies metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/summary/PDF/num_misassemblies.pdf
+  Drawing metaQUAST summary misassemblies plot for contigs...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/summary/PDF/contigs_misassemblies.pdf
+  Drawing Misassembled contigs length metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/summary/PDF/Misassembled_contigs_length.pdf
+  Drawing # mismatches per 100 kbp metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/summary/PDF/num_mismatches_per_100_kbp.pdf
+  Drawing # indels per 100 kbp metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/summary/PDF/num_indels_per_100_kbp.pdf
+  Drawing # N's per 100 kbp metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/summary/PDF/num_Ns_per_100_kbp.pdf
+  Drawing Genome fraction (%) metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/summary/PDF/Genome_fraction.pdf
+  Drawing Duplication ratio metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/summary/PDF/Duplication_ratio.pdf
+  Drawing NGA50 metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/summary/PDF/NGA50.pdf
+  Drawing LGA50 metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/summary/PDF/LGA50.pdf
+
+  Text versions of reports and plots for each metric (for all references and assemblies) are saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/summary/
+  Icarus (contig browser) is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/icarus.html
+  Drawing interactive Krona plots...
+  Krona chart for contigs is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/krona_charts/contigs_taxonomy_chart.html
+  Extended version of HTML-report (for all references and assemblies) is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/report.html
+
+MetaQUAST finished.
+  Log is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode01/metaquast.log
+
+Finished: 2024-04-05 10:48:03
+Elapsed time: 1:00:39.315831
+Total NOTICEs: 8; WARNINGs: 1; non-fatal ERRORs: 0
+
+Thank you for using QUAST!
+/quast-5.2.0/metaquast.py /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job5_metaSPAdes/barcode02/contigs.fasta -t 16 -o /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02
+
+Version: 5.2.0
+
+System information:
+  OS: Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-Ubuntu-20.04-focal (linux_64)
+  Python version: 2.7.18
+  CPUs number: 78
+
+Started: 2024-04-05 10:48:09
+
+Logging to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/metaquast.log
+
+Contigs:
+  Pre-processing...
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job5_metaSPAdes/barcode02/contigs.fasta ==> contigs
+
+No references are provided, starting to search for reference genomes in SILVA 16S rRNA database and to download them from NCBI...
+
+2024-04-05 10:48:49
+Running BlastN..
+  processing contigs
+  BLAST results for contigs are saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/blast.res_contigs...
+
+
+2024-04-05 11:04:30
+Trying to download found references from NCBI. Totally 50 organisms to try.
+  unidentified_Hailaer_soda_lake_bacterium_F6 | not found in the NCBI database
+  unidentified_Hailaer_soda_lake_bacterium_F6 was not found in NCBI database, trying to download the next best match
+  Bacillus_sp._(in:_Bacteria)                 | not found in the NCBI database
+  Bacillus_sp._(in:_Bacteria) was not found in NCBI database, trying to download the next best match
+  Bacillus_cohnii                             | successfully downloaded (total 1, 49 more to go)
+  swine_fecal_bacterium_SD-Pec10              | not found in the NCBI database
+  swine_fecal_bacterium_SD-Pec10 was not found in NCBI database, trying to download the next best match
+  Clostridium_disporicum                      | successfully downloaded (total 2, 48 more to go)
+  planctomycete_WY108                         | not found in the NCBI database
+  planctomycete_WY108 was not found in NCBI database, trying to download the next best match
+  Isosphaera_sp._SD2-3                        | not found in the NCBI database
+  Isosphaera_sp._SD2-3 was not found in NCBI database, trying to download the next best match
+  Isosphaera_sp._Io3-6                        | not found in the NCBI database
+  Isosphaera_sp._Io3-6 was not found in NCBI database, trying to download the next best match
+Isosphaeraceae bacterium GM2012 has too fragmented reference genome! It will not be downloaded.
+  Isosphaeraceae_bacterium_GM2012             | not found in the NCBI database
+human gut metagenome has too fragmented reference genome! It will not be downloaded.
+  human_gut_metagenome                        | not found in the NCBI database
+  human_gut_metagenome was not found in NCBI database, trying to download the next best match
+  Eubacterium_oxidoreducens                   | successfully downloaded (total 3, 46 more to go)
+  bacterium_YC-ZSS-LKJ142                     | not found in the NCBI database
+  bacterium_YC-ZSS-LKJ142 was not found in NCBI database, trying to download the next best match
+  Tumebacillus_sp._AR23202                    | not found in the NCBI database
+  Tumebacillus_sp._AR23202 was not found in NCBI database, trying to download the next best match
+  Tumebacillus_permanentifrigoris             | successfully downloaded (total 4, 45 more to go)
+  bacterium_QTYC46b                           | not found in the NCBI database
+  bacterium_QTYC46b was not found in NCBI database, trying to download the next best match
+Nitrolancea hollandica Lb has too fragmented reference genome! It will not be downloaded.
+  Nitrolancea_hollandica_Lb                   | not found in the NCBI database
+  Nitrolancea_hollandica_Lb was not found in NCBI database, trying to download the next best match
+  Thermomicrobium_roseum_DSM_5159             | successfully downloaded (total 5, 44 more to go)
+  Zasmidium_cellare                           | successfully downloaded (total 6, 43 more to go)
+  Turicibacter_sp._H121                       | successfully downloaded (total 7, 42 more to go)
+  Tumebacillus_ginsengisoli                   | not found in the NCBI database
+  Tumebacillus_ginsengisoli was not found in NCBI database, trying to download the next best match
+  Tumebacillus_avium                          | successfully downloaded (total 8, 41 more to go)
+Tolypocladium paradoxum has too fragmented reference genome! It will not be downloaded.
+  Tolypocladium_paradoxum                     | not found in the NCBI database
+  Tolypocladium_paradoxum was not found in NCBI database, trying to download the next best match
+  Tolypocladium_inegoense                     | not found in the NCBI database
+  Tolypocladium_japonicum                     | not found in the NCBI database
+  Tolypocladium_japonicum was not found in NCBI database, trying to download the next best match
+Tolypocladium ophioglossoides has too fragmented reference genome! It will not be downloaded.
+  Tolypocladium_ophioglossoides               | not found in the NCBI database
+  Tolypocladium_ophioglossoides was not found in NCBI database, trying to download the next best match
+  Tolypocladium_inegoense                     | not found in the NCBI database
+  Tolypocladium_inegoense was not found in NCBI database, trying to download the next best match
+  Hypomyces_aurantius                         | not found in the NCBI database
+  Tissierella_praeacuta                       | successfully downloaded (total 9, 38 more to go)
+  Thermomarinilinea_lacunifontana             | not found in the NCBI database
+  Thermomarinilinea_lacunifontana was not found in NCBI database, trying to download the next best match
+  Thermanaerothrix_daxensis                   | successfully downloaded (total 10, 37 more to go)
+  Thermoactinomyces_vulgaris                  | successfully downloaded (total 11, 36 more to go)
+  Terrisporobacter_glycolicus                 | successfully downloaded (total 12, 35 more to go)
+  Talaromyces_marneffei                       | successfully downloaded (total 13, 34 more to go)
+  Streptosporangium_sp._'caverna'             | successfully downloaded (total 14, 33 more to go)
+  Streptomyces_leeuwenhoekii                  | successfully downloaded (total 15, 32 more to go)
+  Streptomyces_albidoflavus                   | successfully downloaded (total 16, 31 more to go)
+  Streptococcus_pneumoniae                    | successfully downloaded (total 17, 30 more to go)
+  Streptococcus_agalactiae_SS1219             | successfully downloaded (total 18, 29 more to go)
+  Sporosarcina_sp._P33                        | successfully downloaded (total 19, 28 more to go)
+  Sphaerisporangium_aureirubrum               | not found in the NCBI database
+  Sphaerisporangium_aureirubrum was not found in NCBI database, trying to download the next best match
+  Sphaerisporangium_rubeum                    | successfully downloaded (total 20, 27 more to go)
+  Sorangiineae_bacterium_706                  | not found in the NCBI database
+  Sorangiineae_bacterium_706 was not found in NCBI database, trying to download the next best match
+  bacterium_enrichment_culture_clone_heteroA71_4W | not found in the NCBI database
+  bacterium_enrichment_culture_clone_heteroA71_4W was not found in NCBI database, trying to download the next best match
+  Labilithrix_luteola                         | successfully downloaded (total 21, 26 more to go)
+  Romboutsia_sedimentorum                     | successfully downloaded (total 22, 25 more to go)
+  Romboutsia_ilealis                          | successfully downloaded (total 23, 24 more to go)
+  Romboutsia_hominis                          | successfully downloaded (total 24, 23 more to go)
+  Rhynchosporium_orthosporum                  | not found in the NCBI database
+  Rhynchosporium_orthosporum was not found in NCBI database, trying to download the next best match
+Cladonia rangiferina has too fragmented reference genome! It will not be downloaded.
+  Cladonia_rangiferina                        | not found in the NCBI database
+  Cladonia_rangiferina was not found in NCBI database, trying to download the next best match
+  Rhynchosporium_secalis_(leaf_blotch_of_barley) | not found in the NCBI database
+  Rhynchosporium_secalis_(leaf_blotch_of_barley) was not found in NCBI database, trying to download the next best match
+Imshaugia aleurites has too fragmented reference genome! It will not be downloaded.
+  Imshaugia_aleurites                         | not found in the NCBI database
+  Rhodococcus_zopfii                          | successfully downloaded (total 25, 21 more to go)
+  Pseudonocardia_sp._HH130629-09              | successfully downloaded (total 26, 20 more to go)
+  Pseudogymnoascus_sp._VKM_F-3775             | successfully downloaded (total 27, 19 more to go)
+  Penicillium_griseofulvum                    | successfully downloaded (total 28, 18 more to go)
+  Penicillium_expansum                        | successfully downloaded (total 29, 17 more to go)
+  Paracoccus_kocurii                          | not found in the NCBI database
+  Paracoccus_kocurii was not found in NCBI database, trying to download the next best match
+  Paracoccus_koreensis                        | not found in the NCBI database
+  Paracoccus_koreensis was not found in NCBI database, trying to download the next best match
+  Paracoccus_denitrificans                    | successfully downloaded (total 30, 16 more to go)
+  Paeniclostridium_sordellii                  | successfully downloaded (total 31, 15 more to go)
+  Paenibacillus_sp._MT24                      | successfully downloaded (total 32, 14 more to go)
+  Micrococcus_luteus_NCTC_2665                | successfully downloaded (total 33, 13 more to go)
+  Methanosarcina_barkeri_CM1                  | successfully downloaded (total 34, 12 more to go)
+  Luteipulveratus_halotolerans                | successfully downloaded (total 35, 11 more to go)
+  Leptographium_truncatum                     | not found in the NCBI database
+Leptographium lundbergii has too fragmented reference genome! It will not be downloaded.
+  Leptographium_lundbergii                    | not found in the NCBI database
+  Leptographium_lundbergii was not found in NCBI database, trying to download the next best match
+  Ophiostoma_minus                            | not found in the NCBI database
+  Lactobacillus_saniviri                      | successfully downloaded (total 36, 8 more to go)
+  Klebsiella_pneumoniae                       | successfully downloaded (total 37, 7 more to go)
+Janibacter anophelis has too fragmented reference genome! It will not be downloaded.
+  Janibacter_anophelis                        | not found in the NCBI database
+  Janibacter_anophelis was not found in NCBI database, trying to download the next best match
+  Janibacter_indicus                          | successfully downloaded (total 38, 6 more to go)
+  Grosmannia_sp._WIN(M)_165                   | not found in the NCBI database
+  Fusarium_solani                             | successfully downloaded (total 39, 4 more to go)
+  Flavisolibacter_ginsengisoli                | successfully downloaded (total 40, 3 more to go)
+  Echinochloa_colona                          | not found in the NCBI database
+  Echinochloa_colona was not found in NCBI database, trying to download the next best match
+  Talaromyces_piceae                          | successfully downloaded (total 41, 2 more to go)
+Colletotrichum tamarilloi has too fragmented reference genome! It will not be downloaded.
+  Colletotrichum_tamarilloi                   | not found in the NCBI database
+  Colletotrichum_tamarilloi was not found in NCBI database, trying to download the next best match
+  Colletotrichum_fioriniae                    | successfully downloaded (total 42, 1 more to go)
+Colletotrichum lindemuthianum has too fragmented reference genome! It will not be downloaded.
+  Colletotrichum_lindemuthianum               | not found in the NCBI database
+  Colletotrichum_lindemuthianum was not found in NCBI database, trying to download the next best match
+  Colletotrichum_aenigma                      | successfully downloaded (total 43, 0 more to go)
+
+Downloaded reference(s):
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Bacillus_cohnii.fasta ==> Bacillus_cohnii
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Clostridium_disporicum.fasta ==> Clostridium_disporicum
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Colletotrichum_aenigma.fasta ==> Colletotrichum_aenigma
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Colletotrichum_fioriniae.fasta ==> Colletotrichum_fioriniae
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Eubacterium_oxidoreducens.fasta ==> Eubacterium_oxidoreducens
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Flavisolibacter_ginsengisoli.fasta ==> Flavisolibacter_ginsengisoli
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Fusarium_solani.fasta ==> Fusarium_solani
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Janibacter_indicus.fasta ==> Janibacter_indicus
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Klebsiella_pneumoniae.fasta ==> Klebsiella_pneumoniae
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Labilithrix_luteola.fasta ==> Labilithrix_luteola
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Lactobacillus_saniviri.fasta ==> Lactobacillus_saniviri
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Luteipulveratus_halotolerans.fasta ==> Luteipulveratus_halotolerans
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Methanosarcina_barkeri_CM1.fasta ==> Methanosarcina_barkeri_CM1
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Micrococcus_luteus_NCTC_2665.fasta ==> Micrococcus_luteus_NCTC_2665
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Paenibacillus_sp._MT24.fasta ==> Paenibacillus_sp._MT24
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Paeniclostridium_sordellii.fasta ==> Paeniclostridium_sordellii
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Paracoccus_denitrificans.fasta ==> Paracoccus_denitrificans
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Penicillium_expansum.fasta ==> Penicillium_expansum
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Penicillium_griseofulvum.fasta ==> Penicillium_griseofulvum
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Pseudogymnoascus_sp._VKM_F-3775.fasta ==> Pseudogymnoascus_sp._VKM_F-3775
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Pseudonocardia_sp._HH130629-09.fasta ==> Pseudonocardia_sp._HH130629-09
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Rhodococcus_zopfii.fasta ==> Rhodococcus_zopfii
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Romboutsia_hominis.fasta ==> Romboutsia_hominis
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Romboutsia_ilealis.fasta ==> Romboutsia_ilealis
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Romboutsia_sedimentorum.fasta ==> Romboutsia_sedimentorum
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Sphaerisporangium_rubeum.fasta ==> Sphaerisporangium_rubeum
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Sporosarcina_sp._P33.fasta ==> Sporosarcina_sp._P33
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Streptococcus_agalactiae_SS1219.fasta ==> Streptococcus_agalactiae_SS1219
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Streptococcus_pneumoniae.fasta ==> Streptococcus_pneumoniae
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Streptomyces_albidoflavus.fasta ==> Streptomyces_albidoflavus
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Streptomyces_leeuwenhoekii.fasta ==> Streptomyces_leeuwenhoekii
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Streptosporangium_sp.__caverna_.fasta ==> Streptosporangium_sp.__caverna_
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Talaromyces_marneffei.fasta ==> Talaromyces_marneffei
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Talaromyces_piceae.fasta ==> Talaromyces_piceae
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Terrisporobacter_glycolicus.fasta ==> Terrisporobacter_glycolicus
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Thermanaerothrix_daxensis.fasta ==> Thermanaerothrix_daxensis
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Thermoactinomyces_vulgaris.fasta ==> Thermoactinomyces_vulgaris
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Thermomicrobium_roseum_DSM_5159.fasta ==> Thermomicrobium_roseum_DSM_5159
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Tissierella_praeacuta.fasta ==> Tissierella_praeacuta
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Tumebacillus_avium.fasta ==> Tumebacillus_avium
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Tumebacillus_permanentifrigoris.fasta ==> Tumebacillus_permanentifrigoris
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Turicibacter_sp._H121.fasta ==> Turicibacter_sp._H121
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Zasmidium_cellare.fasta ==> Zasmidium_cellare
+  All references were combined in combined_reference.fasta
+
+Starting quast.py for the combined reference...
+/quast-5.2.0/quast.py -t 16 --min-identity 90.0 --combined-ref --colors #E31A1C --ls solid --ambiguity-usage all /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job5_metaSPAdes/barcode02/contigs.fasta -R /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_corrected_input/combined_reference.fasta -o /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference --labels contigs
+
+Started: 2024-04-05 11:10:23
+
+Logging to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/quast.log
+
+CWD: /hpc/group/gunschlab/yk132/storage/20230908_Dust_Redo_R9/CAFO_Nanopore_clean
+Main parameters: 
+  MODE: meta, threads: 16, min contig length: 500, min alignment length: 65, min alignment IDY: 90.0, \
+  ambiguity: all, min local misassembly length: 200, min extensive misassembly length: 1000
+
+Reference:
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_corrected_input/combined_reference.fasta ==> combined_reference
+
+Contigs:
+  Pre-processing...
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job5_metaSPAdes/barcode02/contigs.fasta ==> contigs
+
+2024-04-05 11:10:44
+Running Basic statistics processor...
+  Reference genome:
+    combined_reference.fasta, length = 503390451, num fragments = 7566, GC % = 51.52
+WARNING:   Reference genome is fragmented. You may consider rerunning QUAST using --fragmented option. QUAST will try to detect misassemblies caused by the fragmentation and mark them fake (will be excluded from # misassemblies).
+  Contig files: 
+    contigs
+  Calculating N50 and L50...
+    contigs, N50 = 4259, L50 = 8700, auN = 20531.1, Total length = 212007209, GC % = 56.32, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/basic_stats/GC_content_plot.pdf
+  Drawing contigs GC content plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/basic_stats/contigs_GC_content_plot.pdf
+  Drawing Coverage histogram (bin size: 1x)...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/basic_stats/coverage_histogram.pdf
+  Drawing contigs coverage histogram (bin size: 1x)...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/basic_stats/contigs_coverage_histogram.pdf
+Done.
+
+2024-04-05 11:11:38
+Running Contig analyzer...
+  contigs
+  Logging to files /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/contigs_reports/contigs_report_contigs.stdout and contigs_report_contigs.stderr...
+  Aligning contigs to the reference
+  Analysis is finished.
+  Information about interspecies translocations by references for contigs is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/contigs_reports/interspecies_translocations_by_refs_contigs.info
+  Drawing Intergenomic misassemblies (found and supposed) metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/contigs_reports/intergenomic_misassemblies.pdf
+  Creating total report...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/contigs_reports/misassemblies_plot.pdf
+  Drawing misassemblies FRCurve plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/contigs_reports/misassemblies_frcurve_plot.pdf
+Done.
+
+2024-04-05 11:12:58
+Running NA-NGA calculation...
+  contigs, Largest alignment = 9712, NA50 = None, LA50 = None
+  Drawing cumulative plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/aligned_stats/NAx_plot.pdf
+Done.
+
+2024-04-05 11:13:07
+Running Genome analyzer...
+  NOTICE: No file with genomic features were provided. Use the --features option if you want to specify it.
+
+  NOTICE: No file with operons were provided. Use the -O option if you want to specify it.
+  contigs
+  Analysis is finished.
+  Skipping drawing Genome fraction, % histogram... (less than 2 columns histogram makes no sense)
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2024-04-05 11:14:42
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2024-04-05 11:14:58
+RESULTS:
+  Text versions of total report are saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/report.html
+  PDF version (tables and plots) is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/report.pdf
+  Icarus (contig browser) is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/icarus.html
+
+Excluding downloaded references with low genome fraction from further analysis..
+
+Filtered reference(s):
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_downloaded_references/Turicibacter_sp._H121.fasta ==> Turicibacter_sp._H121
+  All references were combined in combined_reference.fasta
+  Pre-processing...
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job5_metaSPAdes/barcode02/contigs.fasta ==> contigs
+
+Starting quast.py for the corrected combined reference...
+/quast-5.2.0/quast.py -t 16 --min-identity 90.0 --combined-ref --colors #E31A1C --ls solid --ambiguity-usage all /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job5_metaSPAdes/barcode02/contigs.fasta -R /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_corrected_input/combined_reference.fasta -o /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference --labels contigs
+
+Started: 2024-04-05 11:15:39
+
+Logging to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/quast.log
+NOTICE: Output directory already exists and looks like a QUAST output dir. Existing results can be reused (e.g. previously generated alignments)!
+
+CWD: /hpc/group/gunschlab/yk132/storage/20230908_Dust_Redo_R9/CAFO_Nanopore_clean
+Main parameters: 
+  MODE: meta, threads: 16, min contig length: 500, min alignment length: 65, min alignment IDY: 90.0, \
+  ambiguity: all, min local misassembly length: 200, min extensive misassembly length: 1000
+
+Reference:
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_corrected_input/combined_reference.fasta ==> combined_reference
+
+Contigs:
+  Pre-processing...
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job5_metaSPAdes/barcode02/contigs.fasta ==> contigs
+
+2024-04-05 11:16:00
+Running Basic statistics processor...
+  Reference genome:
+    combined_reference.fasta, length = 2622031, num fragments = 1, GC % = 34.83
+  Contig files: 
+    contigs
+  Calculating N50 and L50...
+    contigs, N50 = 4259, L50 = 8700, auN = 20531.1, Total length = 212007209, GC % = 56.32, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/basic_stats/GC_content_plot.pdf
+  Drawing contigs GC content plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/basic_stats/contigs_GC_content_plot.pdf
+  Drawing Coverage histogram (bin size: 1x)...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/basic_stats/coverage_histogram.pdf
+  Drawing contigs coverage histogram (bin size: 1x)...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/basic_stats/contigs_coverage_histogram.pdf
+Done.
+
+2024-04-05 11:16:18
+Running Contig analyzer...
+  contigs
+  Logging to files /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/contigs_reports/contigs_report_contigs.stdout and contigs_report_contigs.stderr...
+  Aligning contigs to the reference
+  Analysis is finished.
+  Information about interspecies translocations by references for contigs is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/contigs_reports/interspecies_translocations_by_refs_contigs.info
+  Drawing Intergenomic misassemblies (found and supposed) metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/contigs_reports/intergenomic_misassemblies.pdf
+  Creating total report...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/contigs_reports/misassemblies_plot.pdf
+  Drawing misassemblies FRCurve plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/contigs_reports/misassemblies_frcurve_plot.pdf
+Done.
+
+2024-04-05 11:16:44
+Running NA-NGA calculation...
+  contigs, Largest alignment = 8602, NA50 = None, LA50 = None
+  Drawing cumulative plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/aligned_stats/NAx_plot.pdf
+Done.
+
+2024-04-05 11:16:46
+Running Genome analyzer...
+  NOTICE: No file with genomic features were provided. Use the --features option if you want to specify it.
+
+  NOTICE: No file with operons were provided. Use the -O option if you want to specify it.
+  contigs
+  Analysis is finished.
+  Skipping drawing Genome fraction, % histogram... (less than 2 columns histogram makes no sense)
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2024-04-05 11:16:49
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2024-04-05 11:16:51
+RESULTS:
+  Text versions of total report are saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/report.html
+  PDF version (tables and plots) is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/report.pdf
+  Icarus (contig browser) is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/combined_reference/icarus.html
+
+Partitioning contigs into bins aligned to each reference..
+  processing contigs
+
+Starting quast.py for the contigs aligned to Turicibacter_sp._H121... (logging to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/runs_per_reference/Turicibacter_sp._H121/quast.log)
+/quast-5.2.0/quast.py -t 16 --min-identity 90.0 --colors #E31A1C --ls solid --no-check-meta --contig-thresholds 1000,5000,10000,25000,50000 /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_corrected_input/contigs_to_Turicibacter_sp._H121.fasta -R /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_corrected_input/Turicibacter_sp._H121.fasta__1 -o /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/runs_per_reference/Turicibacter_sp._H121 --labels contigs
+
+Started: 2024-04-05 11:17:04
+
+Logging to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/runs_per_reference/Turicibacter_sp._H121/quast.log
+
+CWD: /hpc/group/gunschlab/yk132/storage/20230908_Dust_Redo_R9/CAFO_Nanopore_clean
+Main parameters: 
+  MODE: meta, threads: 16, min contig length: 500, min alignment length: 65, min alignment IDY: 90.0, \
+  ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 1000
+
+Reference:
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_corrected_input/Turicibacter_sp._H121.fasta__1 ==> Turicibacter_sp._H121
+
+Contigs:
+  Pre-processing...
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_corrected_input/contigs_to_Turicibacter_sp._H121.fasta ==> contigs
+
+2024-04-05 11:17:04
+Running Basic statistics processor...
+  Reference genome:
+    Turicibacter_sp._H121.fasta__1, length = 2622031, num fragments = 1, GC % = 34.83
+  Contig files: 
+    contigs
+  Calculating N50 and L50...
+    contigs, N50 = 1250, L50 = 357, auN = 1830.8, Total length = 1545253, GC % = 34.79, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/runs_per_reference/Turicibacter_sp._H121/basic_stats/Nx_plot.pdf
+  Drawing NGx plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/runs_per_reference/Turicibacter_sp._H121/basic_stats/NGx_plot.pdf
+  Drawing cumulative plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/runs_per_reference/Turicibacter_sp._H121/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/runs_per_reference/Turicibacter_sp._H121/basic_stats/GC_content_plot.pdf
+  Drawing contigs GC content plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/runs_per_reference/Turicibacter_sp._H121/basic_stats/contigs_GC_content_plot.pdf
+  Drawing Coverage histogram (bin size: 1x)...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/runs_per_reference/Turicibacter_sp._H121/basic_stats/coverage_histogram.pdf
+  Drawing contigs coverage histogram (bin size: 1x)...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/runs_per_reference/Turicibacter_sp._H121/basic_stats/contigs_coverage_histogram.pdf
+Done.
+
+2024-04-05 11:17:06
+Running Contig analyzer...
+  contigs
+  Logging to files /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/runs_per_reference/Turicibacter_sp._H121/contigs_reports/contigs_report_contigs.stdout and contigs_report_contigs.stderr...
+  Aligning contigs to the reference
+  Analysis is finished.
+  Creating total report...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/runs_per_reference/Turicibacter_sp._H121/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/runs_per_reference/Turicibacter_sp._H121/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/runs_per_reference/Turicibacter_sp._H121/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/runs_per_reference/Turicibacter_sp._H121/contigs_reports/misassemblies_plot.pdf
+  Drawing misassemblies FRCurve plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/runs_per_reference/Turicibacter_sp._H121/contigs_reports/misassemblies_frcurve_plot.pdf
+Done.
+
+2024-04-05 11:17:24
+Running NA-NGA calculation...
+  contigs, Largest alignment = 8602, NA50 = 1170, NGA50 = 625, LA50 = 390, LGA50 = 1032
+  Drawing cumulative plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/runs_per_reference/Turicibacter_sp._H121/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/runs_per_reference/Turicibacter_sp._H121/aligned_stats/NAx_plot.pdf
+  Drawing NGAx plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/runs_per_reference/Turicibacter_sp._H121/aligned_stats/NGAx_plot.pdf
+Done.
+
+2024-04-05 11:17:25
+Running Genome analyzer...
+  NOTICE: No file with genomic features were provided. Use the --features option if you want to specify it.
+
+  NOTICE: No file with operons were provided. Use the -O option if you want to specify it.
+  contigs
+  Analysis is finished.
+  Skipping drawing Genome fraction, % histogram... (less than 2 columns histogram makes no sense)
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2024-04-05 11:17:26
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2024-04-05 11:17:27
+RESULTS:
+  Text versions of total report are saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/runs_per_reference/Turicibacter_sp._H121/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/runs_per_reference/Turicibacter_sp._H121/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/runs_per_reference/Turicibacter_sp._H121/report.html
+  PDF version (tables and plots) is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/runs_per_reference/Turicibacter_sp._H121/report.pdf
+  Icarus (contig browser) is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/runs_per_reference/Turicibacter_sp._H121/icarus.html
+
+Starting quast.py for the contigs not aligned anywhere... (logging to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/not_aligned/quast.log)
+/quast-5.2.0/quast.py -t 16 --min-identity 90.0 --colors #E31A1C --ls solid --no-check-meta --contig-thresholds 1000,5000,10000,25000,50000 -t 16 /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_corrected_input/contigs_not_aligned_anywhere.fasta -o /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/not_aligned --labels contigs
+
+Started: 2024-04-05 11:17:27
+
+Logging to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/not_aligned/quast.log
+
+CWD: /hpc/group/gunschlab/yk132/storage/20230908_Dust_Redo_R9/CAFO_Nanopore_clean
+Main parameters: 
+  MODE: meta, threads: 16, min contig length: 500, min alignment length: 65, min alignment IDY: 90.0, \
+  ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 1000
+
+Contigs:
+  Pre-processing...
+  /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/quast_corrected_input/contigs_not_aligned_anywhere.fasta ==> contigs
+
+2024-04-05 11:17:32
+Running Basic statistics processor...
+  Contig files: 
+    contigs
+  Calculating N50 and L50...
+    contigs, N50 = 4310, L50 = 8528, auN = 20668.4, Total length = 210461956, GC % = 56.48, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/not_aligned/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/not_aligned/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/not_aligned/basic_stats/GC_content_plot.pdf
+  Drawing contigs GC content plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/not_aligned/basic_stats/contigs_GC_content_plot.pdf
+  Drawing Coverage histogram (bin size: 1x)...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/not_aligned/basic_stats/coverage_histogram.pdf
+  Drawing contigs coverage histogram (bin size: 1x)...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/not_aligned/basic_stats/contigs_coverage_histogram.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2024-04-05 11:17:47
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2024-04-05 11:17:50
+RESULTS:
+  Text versions of total report are saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/not_aligned/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/not_aligned/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/not_aligned/report.html
+  PDF version (tables and plots) is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/not_aligned/report.pdf
+  Icarus (contig browser) is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/not_aligned/icarus.html
+
+2024-04-05 11:17:51
+Summarizing results...
+  Drawing # contigs metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/summary/PDF/num_contigs.pdf
+  Drawing Largest contig metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/summary/PDF/Largest_contig.pdf
+  Drawing Total length metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/summary/PDF/Total_length.pdf
+  Drawing Largest alignment metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/summary/PDF/Largest_alignment.pdf
+  Drawing Total aligned length metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/summary/PDF/Total_aligned_length.pdf
+  Drawing Total length (>= 1000 bp) metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/summary/PDF/Total_length_(ge_1000_bp).pdf
+  Drawing Total length (>= 10000 bp) metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/summary/PDF/Total_length_(ge_10000_bp).pdf
+  Drawing Total length (>= 50000 bp) metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/summary/PDF/Total_length_(ge_50000_bp).pdf
+  Drawing # misassemblies metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/summary/PDF/num_misassemblies.pdf
+  Drawing metaQUAST summary misassemblies plot for contigs...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/summary/PDF/contigs_misassemblies.pdf
+  Drawing Misassembled contigs length metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/summary/PDF/Misassembled_contigs_length.pdf
+  Drawing # mismatches per 100 kbp metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/summary/PDF/num_mismatches_per_100_kbp.pdf
+  Drawing # indels per 100 kbp metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/summary/PDF/num_indels_per_100_kbp.pdf
+  Drawing # N's per 100 kbp metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/summary/PDF/num_Ns_per_100_kbp.pdf
+  Drawing Genome fraction (%) metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/summary/PDF/Genome_fraction.pdf
+  Drawing Duplication ratio metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/summary/PDF/Duplication_ratio.pdf
+  Drawing NGA50 metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/summary/PDF/NGA50.pdf
+  Drawing LGA50 metaQUAST summary plot...
+    saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/summary/PDF/LGA50.pdf
+
+  Text versions of reports and plots for each metric (for all references and assemblies) are saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/summary/
+  Icarus (contig browser) is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/icarus.html
+  Drawing interactive Krona plots...
+  Krona chart for contigs is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/krona_charts/contigs_taxonomy_chart.html
+  Extended version of HTML-report (for all references and assemblies) is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/report.html
+
+MetaQUAST finished.
+  Log is saved to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job6_quast/barcode02/metaquast.log
+
+Finished: 2024-04-05 11:17:54
+Elapsed time: 0:29:44.145253
+Total NOTICEs: 7; WARNINGs: 1; non-fatal ERRORs: 0
+
+Thank you for using QUAST!
