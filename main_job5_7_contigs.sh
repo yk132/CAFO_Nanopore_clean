@@ -23,7 +23,7 @@ mkdir -p ${LOG_DIR}
 # JOBID_7=$(sbatch --parsable --dependency=afterok:${JOBID_5}:${JOBID_6} --job-name=mapping --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err" Job7_mapping.sh)
 
 ## This is for CHECKING new code only! Dependency has been removed. 
-JOBID_6=$(sbatch --parsable --job-name=quast --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err" Job6_QUAST.sh)
+#JOBID_6=$(sbatch --parsable --job-name=quast --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err" Job6_QUAST.sh)
 
-## This is for CHECKING new code only! Dependency on job 5 has been removed. 
-JOBID_7=$(sbatch --parsable --dependency=afterok:${JOBID_6} --job-name=mapping --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err" Job7_mapping.sh)
+## This is for CHECKING new code only! Dependency has been removed. 
+JOBID_7=$(sbatch --parsable --job-name=mapping --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err" Job7_mapping.sh)

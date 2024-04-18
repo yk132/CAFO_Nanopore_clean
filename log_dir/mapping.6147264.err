@@ -1,0 +1,18 @@
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+Building a SMALL index
+Renaming /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job7_mapping/barcode01_assembly.3.bt2.tmp to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job7_mapping/barcode01_assembly.3.bt2
+Renaming /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job7_mapping/barcode01_assembly.4.bt2.tmp to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job7_mapping/barcode01_assembly.4.bt2
+Renaming /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job7_mapping/barcode01_assembly.1.bt2.tmp to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job7_mapping/barcode01_assembly.1.bt2
+Renaming /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job7_mapping/barcode01_assembly.2.bt2.tmp to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job7_mapping/barcode01_assembly.2.bt2
+Renaming /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job7_mapping/barcode01_assembly.rev.1.bt2.tmp to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job7_mapping/barcode01_assembly.rev.1.bt2
+Renaming /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job7_mapping/barcode01_assembly.rev.2.bt2.tmp to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job7_mapping/barcode01_assembly.rev.2.bt2
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+Building a SMALL index
+Renaming /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job7_mapping/barcode02_assembly.3.bt2.tmp to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job7_mapping/barcode02_assembly.3.bt2
+Renaming /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job7_mapping/barcode02_assembly.4.bt2.tmp to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job7_mapping/barcode02_assembly.4.bt2
+Renaming /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job7_mapping/barcode02_assembly.1.bt2.tmp to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job7_mapping/barcode02_assembly.1.bt2
+Renaming /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job7_mapping/barcode02_assembly.2.bt2.tmp to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job7_mapping/barcode02_assembly.2.bt2
+Renaming /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job7_mapping/barcode02_assembly.rev.1.bt2.tmp to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job7_mapping/barcode02_assembly.rev.1.bt2
+Renaming /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job7_mapping/barcode02_assembly.rev.2.bt2.tmp to /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job7_mapping/barcode02_assembly.rev.2.bt2
