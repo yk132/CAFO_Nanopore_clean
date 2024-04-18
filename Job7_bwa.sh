@@ -26,25 +26,24 @@ export SPADES_2="${SPADES_OUTPUT}/barcode02"
 export CONTIG_01="${SPADES_1}/contigs.fasta"
 export CONTIG_02="${SPADES_2}/contigs.fasta"
 export ILAB_DIR="${STORE_DIR}/ILAB_Dust"
-export MAP_DIR="${OUTPUT_DIR}/Job7_mapping"
+export MAP_DIR="${OUTPUT_DIR}/Job7_mapping_bwa"
 #-------------------------------
 
 #-------------------------------
 mkdir -p $MAP_DIR
 #-------------------------------
 
-# Build indexer
+# Build index
 ## barcode 1 is Farm C 
 singularity exec \
 	--bind /work:/work \
 	--bind /hpc/group:/hpc/group \
-        docker://staphb/bowtie2:2.5.1 \
-        bowtie2-build --threads $SLURM_CPUS_PER_TASK $CONTIG_01 $MAP_DIR/barcode01_assembly 
-
+        docker://staphb/bwa:0.7.17 \
+        bwa index $CONTIG_01
+	
 # Build indexer
-## barcode 2 is Farm A 
-singularity exec \
-	--bind /work:/work \
-	--bind /hpc/group:/hpc/group \
-        docker://staphb/bowtie2:2.5.1 \
-        bowtie2-build --threads $SLURM_CPUS_PER_TASK $CONTIG_02 $MAP_DIR/barcode02_assembly 
+#singularity exec \
+#	--bind /work:/work \
+#	--bind /hpc/group:/hpc/group \
+#        docker://staphb/bwa:0.7.17 \
+#        bowtie2-build --threads $SLURM_CPUS_PER_TASK $CONTIG_02 $MAP_DIR/barcode02_assembly 
