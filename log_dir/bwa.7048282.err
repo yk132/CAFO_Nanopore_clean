@@ -1,0 +1,13 @@
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+[E::bwa_idx_load_from_disk] fail to locate the index files
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+[E::bwa_idx_load_from_disk] fail to locate the index files
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+[E::bwa_idx_load_from_disk] fail to locate the index files
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+[E::bwa_idx_load_from_disk] fail to locate the index files
+/var/spool/slurmd/job7048282/slurm_script: line 87: /hpc/home/yk132/storage/ILAB_Dust/Farm_A_Dust_S3_L001_R2_001.fastq.gz: Permission denied
