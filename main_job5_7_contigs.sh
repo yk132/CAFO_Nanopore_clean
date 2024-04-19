@@ -26,4 +26,4 @@ mkdir -p ${LOG_DIR}
 #JOBID_6=$(sbatch --parsable --job-name=quast --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err" Job6_QUAST.sh)
 
 ## This is for CHECKING new code only! Dependency has been removed. 
-JOBID_7=$(sbatch --parsable --job-name=mapping --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err" Job7_mapping.sh)
+JOBID_7=$(sbatch --parsable --job-name=bwa --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err" Job7_bwa.sh)

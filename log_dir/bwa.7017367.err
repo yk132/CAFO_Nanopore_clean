@@ -1,0 +1,82 @@
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+[bwa_index] Pack FASTA... 8.77 sec
+[bwa_index] Construct BWT for the packed sequence...
+[BWTIncCreate] textLength=2178399732, availableWord=165279840
+[BWTIncConstructFromPacked] 10 iterations done. 99999988 characters processed.
+[BWTIncConstructFromPacked] 20 iterations done. 199999988 characters processed.
+[BWTIncConstructFromPacked] 30 iterations done. 299999988 characters processed.
+[BWTIncConstructFromPacked] 40 iterations done. 399999988 characters processed.
+[BWTIncConstructFromPacked] 50 iterations done. 499999988 characters processed.
+[BWTIncConstructFromPacked] 60 iterations done. 599999988 characters processed.
+[BWTIncConstructFromPacked] 70 iterations done. 699999988 characters processed.
+[BWTIncConstructFromPacked] 80 iterations done. 799999988 characters processed.
+[BWTIncConstructFromPacked] 90 iterations done. 899999988 characters processed.
+[BWTIncConstructFromPacked] 100 iterations done. 999999988 characters processed.
+[BWTIncConstructFromPacked] 110 iterations done. 1099999988 characters processed.
+[BWTIncConstructFromPacked] 120 iterations done. 1199999988 characters processed.
+[BWTIncConstructFromPacked] 130 iterations done. 1299999988 characters processed.
+[BWTIncConstructFromPacked] 140 iterations done. 1399999988 characters processed.
+[BWTIncConstructFromPacked] 150 iterations done. 1499999988 characters processed.
+[BWTIncConstructFromPacked] 160 iterations done. 1594526964 characters processed.
+[BWTIncConstructFromPacked] 170 iterations done. 1678538788 characters processed.
+[BWTIncConstructFromPacked] 180 iterations done. 1753204692 characters processed.
+[BWTIncConstructFromPacked] 190 iterations done. 1819563972 characters processed.
+[BWTIncConstructFromPacked] 200 iterations done. 1878540228 characters processed.
+[BWTIncConstructFromPacked] 210 iterations done. 1930954484 characters processed.
+[BWTIncConstructFromPacked] 220 iterations done. 1977536372 characters processed.
+[BWTIncConstructFromPacked] 230 iterations done. 2018934452 characters processed.
+[BWTIncConstructFromPacked] 240 iterations done. 2055725140 characters processed.
+[BWTIncConstructFromPacked] 250 iterations done. 2088420756 characters processed.
+[BWTIncConstructFromPacked] 260 iterations done. 2117476660 characters processed.
+[BWTIncConstructFromPacked] 270 iterations done. 2143297620 characters processed.
+[BWTIncConstructFromPacked] 280 iterations done. 2166243316 characters processed.
+[bwt_gen] Finished constructing BWT in 286 iterations.
+[bwa_index] 716.04 seconds elapse.
+[bwa_index] Update BWT... 5.02 sec
+[bwa_index] Pack forward-only FASTA... 6.18 sec
+[bwa_index] Construct SA from BWT and Occ... 331.00 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: /bwa/bwa-0.7.17/bwa index -p barcode01 /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job5_metaSPAdes/barcode01/contigs.fasta
+[main] Real time: 1097.209 sec; CPU: 1067.111 sec
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+[bwa_index] Pack FASTA... 3.41 sec
+[bwa_index] Construct BWT for the packed sequence...
+[BWTIncCreate] textLength=861253492, availableWord=72600932
+[BWTIncConstructFromPacked] 10 iterations done. 99999988 characters processed.
+[BWTIncConstructFromPacked] 20 iterations done. 199862964 characters processed.
+[BWTIncConstructFromPacked] 30 iterations done. 292445140 characters processed.
+[BWTIncConstructFromPacked] 40 iterations done. 374728420 characters processed.
+[BWTIncConstructFromPacked] 50 iterations done. 447858020 characters processed.
+[BWTIncConstructFromPacked] 60 iterations done. 512851764 characters processed.
+[BWTIncConstructFromPacked] 70 iterations done. 570614388 characters processed.
+[BWTIncConstructFromPacked] 80 iterations done. 621949924 characters processed.
+[BWTIncConstructFromPacked] 90 iterations done. 667573044 characters processed.
+[BWTIncConstructFromPacked] 100 iterations done. 708118964 characters processed.
+[BWTIncConstructFromPacked] 110 iterations done. 744152260 characters processed.
+[BWTIncConstructFromPacked] 120 iterations done. 776174724 characters processed.
+[BWTIncConstructFromPacked] 130 iterations done. 804632324 characters processed.
+[BWTIncConstructFromPacked] 140 iterations done. 829921524 characters processed.
+[BWTIncConstructFromPacked] 150 iterations done. 852394580 characters processed.
+[bwt_gen] Finished constructing BWT in 155 iterations.
+[bwa_index] 243.33 seconds elapse.
+[bwa_index] Update BWT... 2.17 sec
+[bwa_index] Pack forward-only FASTA... 2.40 sec
+[bwa_index] Construct SA from BWT and Occ... 125.15 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: /bwa/bwa-0.7.17/bwa index -p barcode02 /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job5_metaSPAdes/barcode02/contigs.fasta
+[main] Real time: 385.788 sec; CPU: 376.566 sec
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+[E::bwa_idx_load_from_disk] fail to locate the index files
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+[E::bwa_idx_load_from_disk] fail to locate the index files
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+[E::bwa_idx_load_from_disk] fail to locate the index files
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+[E::bwa_idx_load_from_disk] fail to locate the index files
+/var/spool/slurmd/job7017367/slurm_script: line 83: /hpc/home/yk132/storage/ILAB_Dust/Farm_A_Dust_S3_L001_R2_001.fastq.gz: Permission denied
