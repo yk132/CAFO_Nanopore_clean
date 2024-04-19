@@ -1,0 +1,11 @@
+N E X T F L O W  ~  version 23.04.3
+NOTE: Your local project version looks outdated - a different revision is available in the remote repository [b12d893856]
+Launching `https://github.com/epi2me-labs/wf-metagenomics` [boring_yalow] DSL2 - revision: 441c081893 [master]
+WARN: NEXTFLOW RECURSION IS A PREVIEW FEATURE - SYNTAX AND FUNCTIONALITY CAN CHANGE IN FUTURE RELEASES
+
+ERROR ~ Validation of pipeline parameters failed!
+
+ -- Check '.nextflow.log' file for details
+ERROR ~ * --store_dir: expected type: String, found: Boolean (true)
+
+ -- Check '.nextflow.log' file for details

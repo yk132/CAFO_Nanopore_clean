@@ -1,0 +1,5 @@
+/var/spool/slurmd/job7117142/slurm_script: line 24: ${$OUTPUT_DIR}/Job8_db: bad substitution
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+mkdir: missing operand
+Try 'mkdir --help' for more information.
