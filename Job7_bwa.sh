@@ -34,29 +34,34 @@ mkdir -p $MAP_DIR
 
 # Barcode 1 is Farm C
 ## build index
+# cd $SPADES_1
+# singularity exec \
+#	--bind /work:/work \
+#	--bind /hpc/group:/hpc/group \
+#        docker://staphb/bwa:0.7.17 \
+#        bwa index $CONTIG_01 -p barcode01
+
+## Run bwa mem on Nanopore long reads: NOT paired end!!
+#singularity exec \
+#	--bind /work:/work \
+#	--bind /hpc/group:/hpc/group \
+#        docker://staphb/bwa:0.7.17 \
+#        bwa mem barcode01 -t $SLURM_CPUS_PER_TASK \
+#	$BAR01_MERGED > $MAP_DIR/barcode01_nanopore.sam
+
+## Illumina short reads
+### First, must uncompress the files! 
+cd $ILAB_DIR
+gunzip -k *.gz
+
 cd $SPADES_1
 singularity exec \
 	--bind /work:/work \
 	--bind /hpc/group:/hpc/group \
         docker://staphb/bwa:0.7.17 \
-        bwa index $CONTIG_01 -p barcode01
-
-## Run bwa mem on Nanopore long reads: NOT paired end!!
-singularity exec \
-	--bind /work:/work \
-	--bind /hpc/group:/hpc/group \
-        docker://staphb/bwa:0.7.17 \
         bwa mem barcode01 -t $SLURM_CPUS_PER_TASK \
-	$BAR01_MERGED > $MAP_DIR/barcode01_nanopore.sam
-
-## Illumina short reads
-singularity exec \
-	--bind /work:/work \
-	--bind /hpc/group:/hpc/group \
-        docker://staphb/bwa:0.7.17 \
-        bwa mem barcode01 -t $SLURM_CPUS_PER_TASK \
-	$ILAB_DIR/Farm_C_Dust_S2_L001_R1_001.fastq.gz \
- 	$ILAB_DIR/Farm_C_Dust_S2_L001_R2_001.fastq.gz  > $MAP_DIR/barcode01_illumina_pe.sam
+	$ILAB_DIR/Farm_C_Dust_S2_L001_R1_001.fastq \
+ 	$ILAB_DIR/Farm_C_Dust_S2_L001_R2_001.fastq  > $MAP_DIR/barcode01_illumina_pe.sam
 
 
  
@@ -83,5 +88,5 @@ singularity exec \
 	--bind /hpc/group:/hpc/group \
         docker://staphb/bwa:0.7.17 \
         bwa mem barcode02 -t $SLURM_CPUS_PER_TASK \
-	$ILAB_DIR/Farm_A_Dust_S3_L001_R1_001.fastq.gz 
- 	$ILAB_DIR/Farm_A_Dust_S3_L001_R2_001.fastq.gz  > $MAP_DIR/barcode02_illumina_pe.sam
+	$ILAB_DIR/Farm_A_Dust_S3_L001_R1_001.fastq 
+ 	$ILAB_DIR/Farm_A_Dust_S3_L001_R2_001.fastq  > $MAP_DIR/barcode02_illumina_pe.sam
