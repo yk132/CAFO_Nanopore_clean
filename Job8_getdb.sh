@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+#SBATCH --partition=dmcshared
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=30
+#SBATCH --mem=300G
+#SBATCH --mail-type=ALL
 
 # https://github.com/epi2me-labs/wf-metagenomics
 # using pipeline ONLY to download the RefSeq marker gene database formatted for MiniMap2
