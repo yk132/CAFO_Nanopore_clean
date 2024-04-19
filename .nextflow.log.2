@@ -1,54 +1,169 @@
-Apr-19 13:09:12.318 [main] DEBUG nextflow.cli.Launcher - $> nextflow run epi2me-labs/wf-metagenomics/main.nf -profile singularity -c ./nextflow.config --fastq /hpc/home/yk132/storage/20230908_Dust_Redo_R9/20230908_1516_MN33275_FAK80584_b5659fa0/dorado_fastq_results/Merged_bam_fastq/barcode03_merged.fastq --database_set ncbi_16s_18s_28s_ITS --classifier minimap2 --threads 30 --out_dir /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job8_wf_meta_barcode03_res --min_len 50 --store_dir
-Apr-19 13:09:12.440 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.04.3
-Apr-19 13:09:12.504 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/hpc/home/yk132/.nextflow/plugins; core-plugins: nf-amazon@1.16.2,nf-azure@1.0.1,nf-codecommit@0.1.4,nf-console@1.0.5,nf-ga4gh@1.0.5,nf-google@1.7.3,nf-tower@1.5.12,nf-wave@0.8.4
-Apr-19 13:09:12.528 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Apr-19 13:09:12.530 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Apr-19 13:09:12.534 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
-Apr-19 13:09:12.551 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Apr-19 13:09:12.655 [main] DEBUG nextflow.scm.ProviderConfig - Using SCM config path: /hpc/home/yk132/.nextflow/scm
-Apr-19 13:09:13.838 [main] DEBUG nextflow.scm.AssetManager - Git config: /hpc/home/yk132/.nextflow/assets/epi2me-labs/wf-metagenomics/.git/config; branch: master; remote: origin; url: https://github.com/epi2me-labs/wf-metagenomics.git
-Apr-19 13:09:13.861 [main] DEBUG nextflow.scm.RepositoryFactory - Found Git repository result: [RepositoryFactory]
-Apr-19 13:09:13.905 [main] DEBUG nextflow.scm.AssetManager - Git config: /hpc/home/yk132/.nextflow/assets/epi2me-labs/wf-metagenomics/.git/config; branch: master; remote: origin; url: https://github.com/epi2me-labs/wf-metagenomics.git
-Apr-19 13:09:16.280 [main] INFO  nextflow.scm.AssetManager - NOTE: Your local project version looks outdated - a different revision is available in the remote repository [b12d893856]
-Apr-19 13:09:16.289 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /hpc/home/yk132/.nextflow/assets/epi2me-labs/wf-metagenomics/nextflow.config
-Apr-19 13:09:16.291 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /hpc/group/gunschlab/yk132/storage/20230908_Dust_Redo_R9/CAFO_Nanopore_clean/nextflow.config
-Apr-19 13:09:16.293 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /hpc/group/gunschlab/yk132/storage/20230908_Dust_Redo_R9/CAFO_Nanopore_clean/./nextflow.config
-Apr-19 13:09:16.293 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /hpc/home/yk132/.nextflow/assets/epi2me-labs/wf-metagenomics/nextflow.config
-Apr-19 13:09:16.293 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /hpc/group/gunschlab/yk132/storage/20230908_Dust_Redo_R9/CAFO_Nanopore_clean/nextflow.config
-Apr-19 13:09:16.293 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /hpc/group/gunschlab/yk132/storage/20230908_Dust_Redo_R9/CAFO_Nanopore_clean/nextflow.config
-Apr-19 13:09:16.303 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `singularity`
-Apr-19 13:09:16.427 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `singularity`
-Apr-19 13:09:16.469 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `singularity`
-Apr-19 13:09:16.475 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [standard, conda, singularity, awsbatch, local]
-Apr-19 13:09:16.525 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
-Apr-19 13:09:16.525 [main] INFO  nextflow.cli.CmdRun - Launching `https://github.com/epi2me-labs/wf-metagenomics` [boring_yalow] DSL2 - revision: 441c081893 [master]
-Apr-19 13:09:16.526 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Apr-19 13:09:16.526 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Apr-19 13:09:16.529 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /hpc/home/yk132/.nextflow/secrets/store.json
-Apr-19 13:09:16.532 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@bbb6f0] - activable => nextflow.secret.LocalSecretsProvider@bbb6f0
-Apr-19 13:09:16.647 [main] DEBUG nextflow.Session - Session UUID: 6d2a1530-047e-48f8-91ea-4c9bb6fd542a
-Apr-19 13:09:16.647 [main] DEBUG nextflow.Session - Run name: boring_yalow
-Apr-19 13:09:16.647 [main] DEBUG nextflow.Session - Executor pool size: 30
-Apr-19 13:09:16.661 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=90; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
-Apr-19 13:09:16.730 [main] DEBUG nextflow.cli.CmdRun - 
+Apr-19 13:14:16.360 [main] DEBUG nextflow.cli.Launcher - $> nextflow run epi2me-labs/wf-metagenomics/main.nf -profile singularity -c ./nextflow.config --fastq /hpc/home/yk132/storage/20230908_Dust_Redo_R9/20230908_1516_MN33275_FAK80584_b5659fa0/dorado_fastq_results/Merged_bam_fastq/barcode03_merged.fastq --database_set ncbi_16s_18s_28s_ITS --classifier minimap2 --threads 30 --out_dir /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job8_wf_meta_barcode03_res --min_len 50 --store_dir /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job8_db
+Apr-19 13:14:16.478 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.04.3
+Apr-19 13:14:16.500 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/hpc/home/yk132/.nextflow/plugins; core-plugins: nf-amazon@1.16.2,nf-azure@1.0.1,nf-codecommit@0.1.4,nf-console@1.0.5,nf-ga4gh@1.0.5,nf-google@1.7.3,nf-tower@1.5.12,nf-wave@0.8.4
+Apr-19 13:14:16.517 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Apr-19 13:14:16.518 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Apr-19 13:14:16.522 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Apr-19 13:14:16.535 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Apr-19 13:14:16.554 [main] DEBUG nextflow.scm.ProviderConfig - Using SCM config path: /hpc/home/yk132/.nextflow/scm
+Apr-19 13:14:17.431 [main] DEBUG nextflow.scm.AssetManager - Git config: /hpc/home/yk132/.nextflow/assets/epi2me-labs/wf-metagenomics/.git/config; branch: master; remote: origin; url: https://github.com/epi2me-labs/wf-metagenomics.git
+Apr-19 13:14:17.451 [main] DEBUG nextflow.scm.RepositoryFactory - Found Git repository result: [RepositoryFactory]
+Apr-19 13:14:17.463 [main] DEBUG nextflow.scm.AssetManager - Git config: /hpc/home/yk132/.nextflow/assets/epi2me-labs/wf-metagenomics/.git/config; branch: master; remote: origin; url: https://github.com/epi2me-labs/wf-metagenomics.git
+Apr-19 13:14:18.187 [main] INFO  nextflow.scm.AssetManager - NOTE: Your local project version looks outdated - a different revision is available in the remote repository [b12d893856]
+Apr-19 13:14:18.195 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /hpc/home/yk132/.nextflow/assets/epi2me-labs/wf-metagenomics/nextflow.config
+Apr-19 13:14:18.196 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /hpc/group/gunschlab/yk132/storage/20230908_Dust_Redo_R9/CAFO_Nanopore_clean/nextflow.config
+Apr-19 13:14:18.197 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /hpc/group/gunschlab/yk132/storage/20230908_Dust_Redo_R9/CAFO_Nanopore_clean/./nextflow.config
+Apr-19 13:14:18.198 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /hpc/home/yk132/.nextflow/assets/epi2me-labs/wf-metagenomics/nextflow.config
+Apr-19 13:14:18.198 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /hpc/group/gunschlab/yk132/storage/20230908_Dust_Redo_R9/CAFO_Nanopore_clean/nextflow.config
+Apr-19 13:14:18.198 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /hpc/group/gunschlab/yk132/storage/20230908_Dust_Redo_R9/CAFO_Nanopore_clean/nextflow.config
+Apr-19 13:14:18.207 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `singularity`
+Apr-19 13:14:18.400 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `singularity`
+Apr-19 13:14:18.427 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `singularity`
+Apr-19 13:14:18.437 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [standard, conda, singularity, awsbatch, local]
+Apr-19 13:14:18.476 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+Apr-19 13:14:18.477 [main] INFO  nextflow.cli.CmdRun - Launching `https://github.com/epi2me-labs/wf-metagenomics` [fabulous_shockley] DSL2 - revision: 441c081893 [master]
+Apr-19 13:14:18.477 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Apr-19 13:14:18.477 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Apr-19 13:14:18.480 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /hpc/home/yk132/.nextflow/secrets/store.json
+Apr-19 13:14:18.483 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@132e3594] - activable => nextflow.secret.LocalSecretsProvider@132e3594
+Apr-19 13:14:18.549 [main] DEBUG nextflow.Session - Session UUID: cab898c2-e16d-4883-9304-b8635204228a
+Apr-19 13:14:18.549 [main] DEBUG nextflow.Session - Run name: fabulous_shockley
+Apr-19 13:14:18.550 [main] DEBUG nextflow.Session - Executor pool size: 30
+Apr-19 13:14:18.561 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=90; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Apr-19 13:14:18.600 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 23.04.3 build 5875
   Created: 11-08-2023 18:37 UTC (14:37 EDT)
   System: Linux 5.14.0-362.8.1.el9_3.x86_64
   Runtime: Groovy 3.0.16 on OpenJDK 64-Bit Server VM 11.0.13+7-b1751.21
   Encoding: UTF-8 (UTF-8)
-  Process: 2826896@dcc-gunschlab-01 [10.183.15.34]
-  CPUs: 30 - Mem: 343.7 GB (1.8 GB) - Swap: 3.9 GB (3.7 GB)
-Apr-19 13:09:16.856 [main] DEBUG nextflow.Session - Work-dir: /work/yk132/CAFO_Nanopore_work/nf_working [nfs]
-Apr-19 13:09:16.886 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Apr-19 13:09:16.911 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Apr-19 13:09:17.072 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Apr-19 13:09:17.180 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 31; maxThreads: 1000
-Apr-19 13:09:17.862 [main] DEBUG nextflow.Session - Session start
-Apr-19 13:09:17.870 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job8_wf_meta_barcode03_res/execution/trace.txt
-Apr-19 13:09:18.115 [main] DEBUG nextflow.Session - Using default localLib path: /hpc/home/yk132/.nextflow/assets/epi2me-labs/wf-metagenomics/lib
-Apr-19 13:09:18.124 [main] DEBUG nextflow.Session - Adding to the classpath library: /hpc/home/yk132/.nextflow/assets/epi2me-labs/wf-metagenomics/lib
-Apr-19 13:09:18.125 [main] DEBUG nextflow.Session - Adding to the classpath library: /hpc/home/yk132/.nextflow/assets/epi2me-labs/wf-metagenomics/lib/nfcore_external_java_deps.jar
-Apr-19 13:09:20.090 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Apr-19 13:09:27.745 [main] WARN  nextflow.NextflowMeta$Preview - NEXTFLOW RECURSION IS A PREVIEW FEATURE - SYNTAX AND FUNCTIONALITY CAN CHANGE IN FUTURE RELEASES
-Apr-19 13:09:28.040 [main] ERROR nextflow.Nextflow - Validation of pipeline parameters failed!
-Apr-19 13:09:28.049 [main] ERROR nextflow.Nextflow - * --store_dir: expected type: String, found: Boolean (true)
+  Process: 2827334@dcc-gunschlab-01 [10.183.15.34]
+  CPUs: 30 - Mem: 343.7 GB (3 GB) - Swap: 3.9 GB (3.7 GB)
+Apr-19 13:14:18.642 [main] DEBUG nextflow.Session - Work-dir: /work/yk132/CAFO_Nanopore_work/nf_working [nfs]
+Apr-19 13:14:18.666 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Apr-19 13:14:18.677 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Apr-19 13:14:18.752 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Apr-19 13:14:18.764 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 31; maxThreads: 1000
+Apr-19 13:14:18.930 [main] DEBUG nextflow.Session - Session start
+Apr-19 13:14:18.938 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job8_wf_meta_barcode03_res/execution/trace.txt
+Apr-19 13:14:18.963 [main] DEBUG nextflow.Session - Using default localLib path: /hpc/home/yk132/.nextflow/assets/epi2me-labs/wf-metagenomics/lib
+Apr-19 13:14:18.973 [main] DEBUG nextflow.Session - Adding to the classpath library: /hpc/home/yk132/.nextflow/assets/epi2me-labs/wf-metagenomics/lib
+Apr-19 13:14:18.974 [main] DEBUG nextflow.Session - Adding to the classpath library: /hpc/home/yk132/.nextflow/assets/epi2me-labs/wf-metagenomics/lib/nfcore_external_java_deps.jar
+Apr-19 13:14:20.792 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Apr-19 13:14:32.717 [main] WARN  nextflow.NextflowMeta$Preview - NEXTFLOW RECURSION IS A PREVIEW FEATURE - SYNTAX AND FUNCTIONALITY CAN CHANGE IN FUTURE RELEASES
+Apr-19 13:14:32.909 [main] INFO  nextflow.Nextflow - 
+[0;92m||||||||||   [0m[2m_____ ____ ___ ____  __  __ _____      _       _
+[0;92m||||||||||  [0m[2m| ____|  _ \_ _|___ \|  \/  | ____|    | | __ _| |__  ___
+[0;33m|||||       [0m[2m|  _| | |_) | |  __) | |\/| |  _| _____| |/ _` | '_ \/ __|
+[0;33m|||||       [0m[2m| |___|  __/| | / __/| |  | | |__|_____| | (_| | |_) \__ \
+[0;94m||||||||||  [0m[2m|_____|_|  |___|_____|_|  |_|_____|    |_|\__,_|_.__/|___/
+[0;94m||||||||||  [0m[1mwf-metagenomics v2.9.1-g441c081[0m
+[2m--------------------------------------------------------------------------------[0m
+[1mCore Nextflow options[0m
+  [0;34mrevision       : [0;32mmaster[0m
+  [0;34mrunName        : [0;32mfabulous_shockley[0m
+  [0;34mcontainerEngine: [0;32msingularity[0m
+  [0;34mlaunchDir      : [0;32m/hpc/group/gunschlab/yk132/storage/20230908_Dust_Redo_R9/CAFO_Nanopore_clean[0m
+  [0;34mworkDir        : [0;32m/work/yk132/CAFO_Nanopore_work/nf_working[0m
+  [0;34mprojectDir     : [0;32m/hpc/home/yk132/.nextflow/assets/epi2me-labs/wf-metagenomics[0m
+  [0;34muserName       : [0;32myk132[0m
+  [0;34mprofile        : [0;32msingularity[0m
+  [0;34mconfigFiles    : [0;32m/hpc/home/yk132/.nextflow/assets/epi2me-labs/wf-metagenomics/nextflow.config, /hpc/group/gunschlab/yk132/storage/20230908_Dust_Redo_R9/CAFO_Nanopore_clean/nextflow.config, /hpc/group/gunschlab/yk132/storage/20230908_Dust_Redo_R9/CAFO_Nanopore_clean/./nextflow.config[0m
+
+[1mInput Options[0m
+  [0;34mfastq          : [0;32m/hpc/home/yk132/storage/20230908_Dust_Redo_R9/20230908_1516_MN33275_FAK80584_b5659fa0/dorado_fastq_results/Merged_bam_fastq/barcode03_merged.fastq[0m
+  [0;34mclassifier     : [0;32mminimap2[0m
+
+[1mReference Options[0m
+  [0;34mdatabase_set   : [0;32mncbi_16s_18s_28s_ITS[0m
+  [0;34mstore_dir      : [0;32m/hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job8_db[0m
+  [0;34mdatabase_sets  : [0;32m[ncbi_16s_18s:[reference:https://ont-exd-int-s3-euwst1-epi2me-labs.s3.amazonaws.com/wf-metagenomics/ncbi_16s_18s/ncbi_targeted_loci_16s_18s.fna, database:https://ont-exd-int-s3-euwst1-epi2me-labs.s3.amazonaws.com/wf-metagenomics/ncbi_16s_18s/ncbi_targeted_loci_kraken2.tar.gz, ref2taxid:https://ont-exd-int-s3-euwst1-epi2me-labs.s3.amazonaws.com/wf-metagenomics/ncbi_16s_18s/ref2taxid.targloci.tsv, taxonomy:https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump_archive/taxdmp_2023-01-01.zip], ncbi_16s_18s_28s_ITS:[reference:https://ont-exd-int-s3-euwst1-epi2me-labs.s3.amazonaws.com/wf-metagenomics/ncbi_16s_18s_28s_ITS/ncbi_16s_18s_28s_ITS.fna, database:https://ont-exd-int-s3-euwst1-epi2me-labs.s3.amazonaws.com/wf-metagenomics/ncbi_16s_18s_28s_ITS/ncbi_16s_18s_28s_ITS_kraken2.tar.gz, ref2taxid:https://ont-exd-int-s3-euwst1-epi2me-labs.s3.amazonaws.com/wf-metagenomics/ncbi_16s_18s_28s_ITS/ref2taxid.ncbi_16s_18s_28s_ITS.tsv, taxonomy:https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump_archive/taxdmp_2023-01-01.zip], SILVA_138_1:[database:null], Standard-8:[database:https://genome-idx.s3.amazonaws.com/kraken/k2_standard_08gb_20231009.tar.gz, taxonomy:https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump_archive/new_taxdump_2023-03-01.zip], PlusPF-8:[database:https://genome-idx.s3.amazonaws.com/kraken/k2_pluspf_08gb_20230314.tar.gz, taxonomy:https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump_archive/new_taxdump_2023-03-01.zip], PlusPFP-8:[database:https://genome-idx.s3.amazonaws.com/kraken/k2_pluspfp_08gb_20230314.tar.gz, taxonomy:https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump_archive/new_taxdump_2023-03-01.zip]][0m
+
+[1mOutput Options[0m
+  [0;34mout_dir        : [0;32m/hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job8_wf_meta_barcode03_res[0m
+
+[1mAdvanced Options[0m
+  [0;34mmin_len        : [0;32m50[0m
+  [0;34mthreads        : [0;32m30[0m
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+[2m--------------------------------------------------------------------------------[0m
+If you use epi2me-labs/wf-metagenomics for your analysis please cite:
+
+* The nf-core framework
+  https://doi.org/10.1038/s41587-020-0439-x
+
+
+[2m--------------------------------------------------------------------------------[0m
+This is epi2me-labs/wf-metagenomics v2.9.1-g441c081.
+[2m--------------------------------------------------------------------------------[0m
+Apr-19 13:14:33.486 [main] INFO  nextflow.Nextflow - Checking inputs.
+Apr-19 13:14:33.495 [main] INFO  nextflow.Nextflow - Searching input for [.fastq, .fastq.gz, .fq, .fq.gz] files.
+Apr-19 13:14:33.505 [main] DEBUG nextflow.Session - Session aborted -- Cause: Input path /hpc/home/yk132/storage/20230908_Dust_Redo_R9/20230908_1516_MN33275_FAK80584_b5659fa0/dorado_fastq_results/Merged_bam_fastq/barcode03_merged.fastq does not exist.
+Apr-19 13:14:33.642 [main] ERROR nextflow.cli.Launcher - @unknown
+nextflow.exception.WorkflowScriptErrorException: Input path /hpc/home/yk132/storage/20230908_Dust_Redo_R9/20230908_1516_MN33275_FAK80584_b5659fa0/dorado_fastq_results/Merged_bam_fastq/barcode03_merged.fastq does not exist.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at nextflow.Nextflow.error(Nextflow.groovy:215)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite$StaticMetaMethodSiteNoUnwrap.invoke(StaticMetaMethodSite.java:131)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite.callStatic(StaticMetaMethodSite.java:100)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:231)
+	at Script_f3883a99.get_valid_inputs(Script_f3883a99:530)
+	at Script_f3883a99$get_valid_inputs$0.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:194)
+	at Script_f3883a99.fastq_ingress(Script_f3883a99:94)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at nextflow.script.FunctionDef.invoke_a(FunctionDef.groovy:64)
+	at nextflow.script.ComponentDef.invoke_o(ComponentDef.groovy:40)
+	at nextflow.script.WorkflowBinding.invokeMethod(WorkflowBinding.groovy:102)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeOnDelegationObjects(ClosureMetaClass.java:408)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:350)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at Script_109ca4d6$_runScript_closure1$_closure4.doCall(Script_109ca4d6:100)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:274)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at groovy.lang.Closure.call(Closure.java:406)
+	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:204)
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:188)
+	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
+	at nextflow.script.ChainableDef$invoke_a.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at nextflow.script.BaseScript.run0(BaseScript.groovy:183)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:192)
+	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:229)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:224)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:130)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:368)
+	at nextflow.cli.Launcher.run(Launcher.groovy:494)
+	at nextflow.cli.Launcher.main(Launcher.groovy:653)

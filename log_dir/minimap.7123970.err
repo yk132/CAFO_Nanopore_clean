@@ -1,0 +1,21 @@
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+[ERROR] failed to open file '/hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job8_db/ncbi_16s_18s_28s_ITS_db/ncbi_16s_18s_28s_ITS.fna': No such file or directory
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+[ERROR] failed to open file '/hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job8_db/ncbi_16s_18s_28s_ITS_db/ncbi_16s_18s_28s_ITS.mmi': No such file or directory
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+[ERROR] failed to open file '/hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job8_db/ncbi_16s_18s_28s_ITS_db/ncbi_16s_18s_28s_ITS.mmi': No such file or directory
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+[ERROR] failed to open file '/hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job8_db/ncbi_16s_18s_28s_ITS_db/ncbi_16s_18s_28s_ITS.mmi': No such file or directory
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+[main_samview] fail to read the header from "/hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job9_Minimap/barcode01_alignment.sam".
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+[main_samview] fail to read the header from "/hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job9_Minimap/barcode02_alignment.sam".
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+[main_samview] fail to read the header from "/hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job9_Minimap/barcode03_alignment.sam".

@@ -1,0 +1,213 @@
+N E X T F L O W  ~  version 23.04.3
+NOTE: Your local project version looks outdated - a different revision is available in the remote repository [b12d893856]
+Launching `https://github.com/epi2me-labs/wf-metagenomics` [jovial_moriondo] DSL2 - revision: 441c081893 [master]
+WARN: NEXTFLOW RECURSION IS A PREVIEW FEATURE - SYNTAX AND FUNCTIONALITY CAN CHANGE IN FUTURE RELEASES
+
+||||||||||   _____ ____ ___ ____  __  __ _____      _       _
+||||||||||  | ____|  _ \_ _|___ \|  \/  | ____|    | | __ _| |__  ___
+|||||       |  _| | |_) | |  __) | |\/| |  _| _____| |/ _` | '_ \/ __|
+|||||       | |___|  __/| | / __/| |  | | |__|_____| | (_| | |_) \__ \
+||||||||||  |_____|_|  |___|_____|_|  |_|_____|    |_|\__,_|_.__/|___/
+||||||||||  wf-metagenomics v2.9.1-g441c081
+--------------------------------------------------------------------------------
+Core Nextflow options
+  revision       : master
+  runName        : jovial_moriondo
+  containerEngine: singularity
+  launchDir      : /hpc/group/gunschlab/yk132/storage/20230908_Dust_Redo_R9/CAFO_Nanopore_clean
+  workDir        : /work/yk132/CAFO_Nanopore_work/nf_working
+  projectDir     : /hpc/home/yk132/.nextflow/assets/epi2me-labs/wf-metagenomics
+  userName       : yk132
+  profile        : singularity
+  configFiles    : /hpc/home/yk132/.nextflow/assets/epi2me-labs/wf-metagenomics/nextflow.config, /hpc/group/gunschlab/yk132/storage/20230908_Dust_Redo_R9/CAFO_Nanopore_clean/nextflow.config, /hpc/group/gunschlab/yk132/storage/20230908_Dust_Redo_R9/CAFO_Nanopore_clean/./nextflow.config
+
+Input Options
+  fastq          : /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job4_merged_fastq/barcode03_merged.fastq
+  classifier     : minimap2
+
+Reference Options
+  database_set   : ncbi_16s_18s_28s_ITS
+  store_dir      : /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job8_db
+  database_sets  : [ncbi_16s_18s:[reference:https://ont-exd-int-s3-euwst1-epi2me-labs.s3.amazonaws.com/wf-metagenomics/ncbi_16s_18s/ncbi_targeted_loci_16s_18s.fna, database:https://ont-exd-int-s3-euwst1-epi2me-labs.s3.amazonaws.com/wf-metagenomics/ncbi_16s_18s/ncbi_targeted_loci_kraken2.tar.gz, ref2taxid:https://ont-exd-int-s3-euwst1-epi2me-labs.s3.amazonaws.com/wf-metagenomics/ncbi_16s_18s/ref2taxid.targloci.tsv, taxonomy:https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump_archive/taxdmp_2023-01-01.zip], ncbi_16s_18s_28s_ITS:[reference:https://ont-exd-int-s3-euwst1-epi2me-labs.s3.amazonaws.com/wf-metagenomics/ncbi_16s_18s_28s_ITS/ncbi_16s_18s_28s_ITS.fna, database:https://ont-exd-int-s3-euwst1-epi2me-labs.s3.amazonaws.com/wf-metagenomics/ncbi_16s_18s_28s_ITS/ncbi_16s_18s_28s_ITS_kraken2.tar.gz, ref2taxid:https://ont-exd-int-s3-euwst1-epi2me-labs.s3.amazonaws.com/wf-metagenomics/ncbi_16s_18s_28s_ITS/ref2taxid.ncbi_16s_18s_28s_ITS.tsv, taxonomy:https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump_archive/taxdmp_2023-01-01.zip], SILVA_138_1:[database:null], Standard-8:[database:https://genome-idx.s3.amazonaws.com/kraken/k2_standard_08gb_20231009.tar.gz, taxonomy:https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump_archive/new_taxdump_2023-03-01.zip], PlusPF-8:[database:https://genome-idx.s3.amazonaws.com/kraken/k2_pluspf_08gb_20230314.tar.gz, taxonomy:https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump_archive/new_taxdump_2023-03-01.zip], PlusPFP-8:[database:https://genome-idx.s3.amazonaws.com/kraken/k2_pluspfp_08gb_20230314.tar.gz, taxonomy:https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump_archive/new_taxdump_2023-03-01.zip]]
+
+Output Options
+  out_dir        : /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job8_wf_meta_barcode03_res
+
+Advanced Options
+  min_len        : 50
+  threads        : 30
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+--------------------------------------------------------------------------------
+If you use epi2me-labs/wf-metagenomics for your analysis please cite:
+
+* The nf-core framework
+  https://doi.org/10.1038/s41587-020-0439-x
+
+
+--------------------------------------------------------------------------------
+This is epi2me-labs/wf-metagenomics v2.9.1-g441c081.
+--------------------------------------------------------------------------------
+Checking inputs.
+Searching input for [.fastq, .fastq.gz, .fq, .fq.gz] files.
+[-        ] process > fastcat                        -
+[-        ] process > prepare_databases:download_... -
+[-        ] process > prepare_databases:download_... -
+[-        ] process > minimap_pipeline:run_common... -
+[-        ] process > minimap_pipeline:run_common... -
+[-        ] process > minimap_pipeline:minimap       -
+[-        ] process > minimap_pipeline:createAbun... -
+[-        ] process > minimap_pipeline:makeReport    -
+[-        ] process > minimap_pipeline:output_res... -
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+
+[-        ] process > fastcat                        [  0%] 0 of 1
+[skipped  ] process > prepare_databases:download_... [100%] 1 of 1, stored: 1 ✔
+[skipped  ] process > prepare_databases:download_... [100%] 1 of 1, stored: 1 ✔
+[-        ] process > minimap_pipeline:run_common... [  0%] 0 of 1
+[-        ] process > minimap_pipeline:run_common... [  0%] 0 of 1
+[-        ] process > minimap_pipeline:minimap       -
+[-        ] process > minimap_pipeline:createAbun... -
+[-        ] process > minimap_pipeline:makeReport    -
+[-        ] process > minimap_pipeline:output_res... -
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+[skipping] Stored process > prepare_databases:download_reference_ref2taxid
+[skipping] Stored process > prepare_databases:download_unpack_taxonomy
+
+executor >  slurm (2)
+[-        ] process > fastcat                        [  0%] 0 of 1
+[skipped  ] process > prepare_databases:download_... [100%] 1 of 1, stored: 1 ✔
+[skipped  ] process > prepare_databases:download_... [100%] 1 of 1, stored: 1 ✔
+[bc/0a4e78] process > minimap_pipeline:run_common... [  0%] 0 of 1
+[d2/e0e091] process > minimap_pipeline:run_common... [  0%] 0 of 1
+[-        ] process > minimap_pipeline:minimap       -
+[-        ] process > minimap_pipeline:createAbun... -
+[-        ] process > minimap_pipeline:makeReport    -
+[-        ] process > minimap_pipeline:output_res... -
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+[skipping] Stored process > prepare_databases:download_reference_ref2taxid
+[skipping] Stored process > prepare_databases:download_unpack_taxonomy
+
+executor >  slurm (3)
+[e6/a4366d] process > fastcat (1)                    [  0%] 0 of 1
+[skipped  ] process > prepare_databases:download_... [100%] 1 of 1, stored: 1 ✔
+[skipped  ] process > prepare_databases:download_... [100%] 1 of 1, stored: 1 ✔
+[bc/0a4e78] process > minimap_pipeline:run_common... [  0%] 0 of 1
+[d2/e0e091] process > minimap_pipeline:run_common... [  0%] 0 of 1
+[-        ] process > minimap_pipeline:minimap       -
+[-        ] process > minimap_pipeline:createAbun... -
+[-        ] process > minimap_pipeline:makeReport    -
+[-        ] process > minimap_pipeline:output_res... -
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+[skipping] Stored process > prepare_databases:download_reference_ref2taxid
+[skipping] Stored process > prepare_databases:download_unpack_taxonomy
+
+executor >  slurm (3)
+[e6/a4366d] process > fastcat (1)                    [  0%] 0 of 1
+[skipped  ] process > prepare_databases:download_... [100%] 1 of 1, stored: 1 ✔
+[skipped  ] process > prepare_databases:download_... [100%] 1 of 1, stored: 1 ✔
+[bc/0a4e78] process > minimap_pipeline:run_common... [  0%] 0 of 1
+[d2/e0e091] process > minimap_pipeline:run_common... [100%] 1 of 1 ✔
+[-        ] process > minimap_pipeline:minimap       -
+[-        ] process > minimap_pipeline:createAbun... -
+[-        ] process > minimap_pipeline:makeReport    -
+[-        ] process > minimap_pipeline:output_res... [  0%] 0 of 1
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+[skipping] Stored process > prepare_databases:download_reference_ref2taxid
+[skipping] Stored process > prepare_databases:download_unpack_taxonomy
+
+executor >  slurm (4)
+[e6/a4366d] process > fastcat (1)                    [  0%] 0 of 1
+[skipped  ] process > prepare_databases:download_... [100%] 1 of 1, stored: 1 ✔
+[skipped  ] process > prepare_databases:download_... [100%] 1 of 1, stored: 1 ✔
+[bc/0a4e78] process > minimap_pipeline:run_common... [  0%] 0 of 1
+[d2/e0e091] process > minimap_pipeline:run_common... [100%] 1 of 1 ✔
+[-        ] process > minimap_pipeline:minimap       -
+[-        ] process > minimap_pipeline:createAbun... -
+[-        ] process > minimap_pipeline:makeReport    -
+[d6/0bf3d2] process > minimap_pipeline:output_res... [  0%] 0 of 1
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+[skipping] Stored process > prepare_databases:download_reference_ref2taxid
+[skipping] Stored process > prepare_databases:download_unpack_taxonomy
+
+executor >  slurm (4)
+[e6/a4366d] process > fastcat (1)                    [  0%] 0 of 1
+[skipped  ] process > prepare_databases:download_... [100%] 1 of 1, stored: 1 ✔
+[skipped  ] process > prepare_databases:download_... [100%] 1 of 1, stored: 1 ✔
+[bc/0a4e78] process > minimap_pipeline:run_common... [  0%] 0 of 1
+[d2/e0e091] process > minimap_pipeline:run_common... [100%] 1 of 1 ✔
+[-        ] process > minimap_pipeline:minimap       -
+[-        ] process > minimap_pipeline:createAbun... -
+[-        ] process > minimap_pipeline:makeReport    -
+[d6/0bf3d2] process > minimap_pipeline:output_res... [100%] 1 of 1
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+[skipping] Stored process > prepare_databases:download_reference_ref2taxid
+[skipping] Stored process > prepare_databases:download_unpack_taxonomy
+
+executor >  slurm (4)
+[e6/a4366d] process > fastcat (1)                    [100%] 1 of 1 ✔
+[skipped  ] process > prepare_databases:download_... [100%] 1 of 1, stored: 1 ✔
+[skipped  ] process > prepare_databases:download_... [100%] 1 of 1, stored: 1 ✔
+[bc/0a4e78] process > minimap_pipeline:run_common... [100%] 1 of 1 ✔
+[d2/e0e091] process > minimap_pipeline:run_common... [100%] 1 of 1 ✔
+[-        ] process > minimap_pipeline:minimap       -
+[-        ] process > minimap_pipeline:createAbun... -
+[-        ] process > minimap_pipeline:makeReport    -
+[d6/0bf3d2] process > minimap_pipeline:output_res... [ 50%] 1 of 2
+[skipping] Stored process > prepare_databases:download_reference_ref2taxid
+[skipping] Stored process > prepare_databases:download_unpack_taxonomy
+
+
+
+
+
+executor >  slurm (6)
+[e6/a4366d] process > fastcat (1)                    [100%] 1 of 1 ✔
+[skipped  ] process > prepare_databases:download_... [100%] 1 of 1, stored: 1 ✔
+[skipped  ] process > prepare_databases:download_... [100%] 1 of 1, stored: 1 ✔
+[bc/0a4e78] process > minimap_pipeline:run_common... [100%] 1 of 1 ✔
+[d2/e0e091] process > minimap_pipeline:run_common... [100%] 1 of 1 ✔
+[86/ee8150] process > minimap_pipeline:minimap (b... [  0%] 0 of 1
+[-        ] process > minimap_pipeline:createAbun... -
+[-        ] process > minimap_pipeline:makeReport    -
+[25/58936f] process > minimap_pipeline:output_res... [ 50%] 1 of 2
+
+
+
+
+
+
+
+executor >  slurm (6)
+[e6/a4366d] process > fastcat (1)                    [100%] 1 of 1 ✔
+[skipped  ] process > prepare_databases:download_... [100%] 1 of 1, stored: 1 ✔
+[skipped  ] process > prepare_databases:download_... [100%] 1 of 1, stored: 1 ✔
+[bc/0a4e78] process > minimap_pipeline:run_common... [100%] 1 of 1 ✔
+[d2/e0e091] process > minimap_pipeline:run_common... [100%] 1 of 1 ✔
+[86/ee8150] process > minimap_pipeline:minimap (b... [  0%] 0 of 1
+[-        ] process > minimap_pipeline:createAbun... -
+[-        ] process > minimap_pipeline:makeReport    -
+[25/58936f] process > minimap_pipeline:output_res... [100%] 2 of 2
+
+

@@ -20,28 +20,27 @@ export NXF_SINGULARITY_CACHEDIR="$APPTAINER_CACHEDIR"
 export NXF_WORK="${CAFO_WORK_DIR}/nf_working"
 export NXF_TEMP="${CAFO_WORK_DIR}/nf_temp"
 export DATA_DIR="${CAFO_DIR}/20230908_1516_MN33275_FAK80584_b5659fa0"
-export MERGED_DIR="${DATA_DIR}/dorado_fastq_results/Merged_bam_fastq"
-export BARCODE03_FASTQ="${MERGED_DIR}/barcode03_merged.fastq"
 export OUTPUT_DIR="${CAFO_DIR}/Outputs"
-export DB_DIR="${$OUTPUT_DIR}/Job8_db"
+export DB_DIR="${OUTPUT_DIR}/Job8_db"
+export MERGED_DIR="${OUTPUT_DIR}/Job4_merged_fastq"
+export BARCODE03_FASTQ="${MERGED_DIR}/barcode03_merged.fastq"
 export SLURM_CPUS_PER_TASK="40" # CHANGE ME
-export MERGED_DIR="${DORADO_RESULTS_DIR}/Merged_bam_fastq"
 export MINIMAP2_OUTPUT="${OUTPUT_DIR}/Job9_Minimap"
 export BAR01_BAM="${MINIMAP2_OUTPUT}/barcode01_alignment.bam"
 export BAR02_BAM="${MINIMAP2_OUTPUT}/barcode02_alignment.bam"
 export BAR03_BAM="${MINIMAP2_OUTPUT}/barcode03_alignment.bam"
-export RES_DIR="${TSV_OUTDIR}/Job10_bam_to_tsv"
-export RES_DIR01="${TSV_OUTDIR}/res_barcode01"
-export RES_DIR02="${TSV_OUTDIR}/res_barcode02"
-export RES_DIR03="${TSV_OUTDIR}/res_barcode03"
+export TSV_DIR="${OUTPUT_DIR}/Job10_bam_to_tsv"
+export RES_DIR01="${TSV_DIR}/res_barcode01"
+export RES_DIR02="${TSV_DIR}/res_barcode02"
+export RES_DIR03="${TSV_DIR}/res_barcode03"
 #------------------------------
 
 # make directories
 
 mkdir -p $SCRATCH_DIR
-mkdir -p $DB_DIR
 mkdir -p $NXF_WORK
 mkdir -p $NXF_TEMP
+mkdir -p $TSV_DIR
 mkdir -p $RES_DIR01
 mkdir -p $RES_DIR02
 mkdir -p $RES_DIR03

@@ -1,0 +1,2 @@
+/var/spool/slurmd/job7122594/slurm_script: line 24: ${$OUTPUT_DIR}/Job8_db: bad substitution
+/var/spool/slurmd/job7122594/slurm_script: line 27: DORADO_RESULTS_DIR: unbound variable
