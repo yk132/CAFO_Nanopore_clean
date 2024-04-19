@@ -51,36 +51,35 @@ mkdir -p $MAP_DIR
 
 ## Illumina short reads
 ### First, must uncompress the files! 
-cd $ILAB_DIR
-gunzip -k *.gz
+# cd $ILAB_DIR
+# gunzip -k *.gz
 
-cd $SPADES_1
-singularity exec \
-	--bind /work:/work \
-	--bind /hpc/group:/hpc/group \
-        docker://staphb/bwa:0.7.17 \
-        bwa mem barcode01 -t $SLURM_CPUS_PER_TASK \
-	$ILAB_DIR/Farm_C_Dust_S2_L001_R1_001.fastq \
- 	$ILAB_DIR/Farm_C_Dust_S2_L001_R2_001.fastq  > $MAP_DIR/barcode01_illumina_pe.sam
-
+# cd $SPADES_1
+#singularity exec \
+#	--bind /work:/work \
+#	--bind /hpc/group:/hpc/group \
+#        docker://staphb/bwa:0.7.17 \
+#        bwa mem barcode01 -t $SLURM_CPUS_PER_TASK \
+#	$ILAB_DIR/Farm_C_Dust_S2_L001_R1_001.fastq \
+# 	$ILAB_DIR/Farm_C_Dust_S2_L001_R2_001.fastq  > $MAP_DIR/barcode01_illumina_pe.sam
 
  
 # barcode 2 is Farm A 
 ## build index
 cd $SPADES_2
-singularity exec \
-	--bind /work:/work \
-	--bind /hpc/group:/hpc/group \
-        docker://staphb/bwa:0.7.17 \
-        bwa index $CONTIG_02 -p barcode02
+#singularity exec \
+#	--bind /work:/work \
+#	--bind /hpc/group:/hpc/group \
+#        docker://staphb/bwa:0.7.17 \
+#        bwa index $CONTIG_02 -p barcode02
 
 ## map Nanopore reads
-singularity exec \
-	--bind /work:/work \
-	--bind /hpc/group:/hpc/group \
-        docker://staphb/bwa:0.7.17 \
-        bwa mem barcode02 -t $SLURM_CPUS_PER_TASK \
-	$BAR02_MERGED > $MAP_DIR/barcode02_nanopore.sam
+#singularity exec \
+#	--bind /work:/work \
+#	--bind /hpc/group:/hpc/group \
+#        docker://staphb/bwa:0.7.17 \
+#        bwa mem barcode02 -t $SLURM_CPUS_PER_TASK \
+#	$BAR02_MERGED > $MAP_DIR/barcode02_nanopore.sam
 
 ## map Illumina reads
 singularity exec \
@@ -88,5 +87,5 @@ singularity exec \
 	--bind /hpc/group:/hpc/group \
         docker://staphb/bwa:0.7.17 \
         bwa mem barcode02 -t $SLURM_CPUS_PER_TASK \
-	$ILAB_DIR/Farm_A_Dust_S3_L001_R1_001.fastq 
- 	$ILAB_DIR/Farm_A_Dust_S3_L001_R2_001.fastq  > $MAP_DIR/barcode02_illumina_pe.sam
+	$ILAB_DIR/Farm_A_Dust_S3_L001_R1_001.fastq \
+        $ILAB_DIR/Farm_A_Dust_S3_L001_R2_001.fastq  > $MAP_DIR/barcode02_illumina_pe.sam
