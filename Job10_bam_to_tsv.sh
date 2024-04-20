@@ -37,7 +37,6 @@ export RES_DIR03="${TSV_DIR}/res_barcode03"
 
 # make directories
 
-mkdir -p $SCRATCH_DIR
 mkdir -p $NXF_WORK
 mkdir -p $NXF_TEMP
 mkdir -p $TSV_DIR

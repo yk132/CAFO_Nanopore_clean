@@ -1,0 +1,48 @@
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+[M::mm_idx_gen::2.517*0.91] collected minimizers
+[M::mm_idx_gen::2.866*1.17] sorted minimizers
+[M::main::3.010*1.16] loaded/built the index for 55312 target sequence(s)
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 55312
+[M::mm_idx_stat::3.032*1.16] distinct minimizers: 1207899 (63.22% are singletons); average occurrences: 9.231; average spacing: 5.554; total length: 61933031
+[M::main] Version: 2.26-r1175
+[M::main] CMD: /minimap2-2.26_x64-linux/minimap2 -ax map-ont -d /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job8_db/ncbi_16s_18s_28s_ITS/ncbi_16s_18s_28s_ITS_db/ncbi_16s_18s_28s_ITS.mmi /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job8_db/ncbi_16s_18s_28s_ITS/ncbi_16s_18s_28s_ITS_db/ncbi_16s_18s_28s_ITS.fna
+[M::main] Real time: 3.700 sec; CPU: 3.559 sec; Peak RSS: 0.397 GB
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+[M::main::0.525*0.66] loaded/built the index for 55312 target sequence(s)
+[M::mm_mapopt_update::0.558*0.68] mid_occ = 4248
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 55312
+[M::mm_idx_stat::0.579*0.69] distinct minimizers: 1207899 (63.22% are singletons); average occurrences: 9.231; average spacing: 5.554; total length: 61933031
+[M::worker_pipeline::15.120*2.09] mapped 543793 sequences
+[M::worker_pipeline::22.690*2.44] mapped 1881692 sequences
+[M::worker_pipeline::23.834*2.44] mapped 745633 sequences
+[M::main] Version: 2.26-r1175
+[M::main] CMD: /minimap2-2.26_x64-linux/minimap2 -ax map-ont /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job8_db/ncbi_16s_18s_28s_ITS/ncbi_16s_18s_28s_ITS_db/ncbi_16s_18s_28s_ITS.mmi /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job5_metaSPAdes/barcode01/contigs.fasta
+[M::main] Real time: 23.863 sec; CPU: 58.248 sec; Peak RSS: 1.427 GB
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+[M::main::0.186*1.53] loaded/built the index for 55312 target sequence(s)
+[M::mm_mapopt_update::0.216*1.46] mid_occ = 4248
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 55312
+[M::mm_idx_stat::0.237*1.42] distinct minimizers: 1207899 (63.22% are singletons); average occurrences: 9.231; average spacing: 5.554; total length: 61933031
+[M::worker_pipeline::13.339*1.77] mapped 1164182 sequences
+[M::main] Version: 2.26-r1175
+[M::main] CMD: /minimap2-2.26_x64-linux/minimap2 -ax map-ont /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job8_db/ncbi_16s_18s_28s_ITS/ncbi_16s_18s_28s_ITS_db/ncbi_16s_18s_28s_ITS.mmi /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job5_metaSPAdes/barcode02/contigs.fasta
+[M::main] Real time: 13.431 sec; CPU: 23.761 sec; Peak RSS: 0.772 GB
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+[M::main::0.180*1.52] loaded/built the index for 55312 target sequence(s)
+[M::mm_mapopt_update::0.211*1.44] mid_occ = 4248
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 55312
+[M::mm_idx_stat::0.232*1.40] distinct minimizers: 1207899 (63.22% are singletons); average occurrences: 9.231; average spacing: 5.554; total length: 61933031
+[M::worker_pipeline::0.249*1.37] mapped 588 sequences
+[M::main] Version: 2.26-r1175
+[M::main] CMD: /minimap2-2.26_x64-linux/minimap2 -ax map-ont /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job8_db/ncbi_16s_18s_28s_ITS/ncbi_16s_18s_28s_ITS_db/ncbi_16s_18s_28s_ITS.mmi /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job4_merged_fastq/barcode03_merged.fastq
+[M::main] Real time: 0.267 sec; CPU: 0.355 sec; Peak RSS: 0.151 GB
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image

@@ -19,9 +19,14 @@ mkdir -p ${LOG_DIR}
 ## this yields an error that I can't really track back but still downloads the database
 
 # Run minimap2 and convert res to bam 
-JOBID_9=$(sbatch --parsable --job-name=minimap --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err" Job9_minimap2.sh)
+## this is for CHECKING!!!
+# JOBID_9=$(sbatch --parsable --job-name=minimap --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err" Job9_minimap2.sh)
+
 # JOBID_9=$(sbatch --parsable --dependency=afterok:${JOBID_8} --job-name=minimap --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err" Job9_minimap2.sh)
 
 # Convert minimap2 res to tsv
+## this is for CHECKING!! 
+JOBID_10=$(sbatch --parsable --job-name=tsv --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err" Job10_bam_to_tsv.sh)
+
 # JOBID_10=$(sbatch --parsable --dependency=afterok:${JOBID_9} --job-name=tsv --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err" Job10_bam_to_tsv.sh)
 
