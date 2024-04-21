@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 #SBATCH --partition=dmcshared
-#SBATCH --ntasks=1
 #SBATCH --cpus-per-task=32
-#SBATCH --mem=300G
+#SBATCH --mem=350G
 #SBATCH --mail-type=ALL
 
 set -u
@@ -23,7 +22,7 @@ export BARCODE03_FASTQ="${MERGED_DIR}/barcode03_merged.fastq"
 export OUTPUT_DIR="${CAFO_DIR}/Outputs"
 export DB_DIR="${OUTPUT_DIR}/Job8_db"
 export RESULTS_DIR="${OUTPUT_DIR}/Job8_wf_meta_barcode03_res"
-export SLURM_CPUS_PER_TASK="32" # CHANGE ME
+export SLURM_CPUS_PER_TASK="30" # CHANGE ME
 export MERGED_DIR="${OUTPUT_DIR}/Job4_merged_fastq"
 export BAR03_MERGED="${MERGED_DIR}/barcode03_merged.fastq"
 export SPADES_OUTPUT="${OUTPUT_DIR}/Job5_metaSPAdes"
@@ -80,12 +79,12 @@ singularity exec \
 #	-o $METAPHLAN_OUTPUT/barcode03_metaphlan.txt
  	
 # run metaphlan4 on barcode02
-cd $METAPHLAN_OUTPUT
+#cd $METAPHLAN_OUTPUT
 
-singularity exec \
-	--bind /work:/work \
-	--bind /hpc/group:/hpc/group \
-	docker://biobakery/metaphlan:4.0.2 \
-	merge_metaphlan_tables.py barcode01_metaphlan.txt \
-	barcode02_metaphlan.txt \
-	barcode03_metaphlan.txt > merged_abundance.txt
+#singularity exec \
+#	--bind /work:/work \
+#	--bind /hpc/group:/hpc/group \
+#	docker://biobakery/metaphlan:4.0.2 \
+#	merge_metaphlan_tables.py barcode01_metaphlan.txt \
+#	barcode02_metaphlan.txt \
+#	barcode03_metaphlan.txt > merged_abundance.txt
