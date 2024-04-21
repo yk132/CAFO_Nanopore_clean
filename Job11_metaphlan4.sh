@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #SBATCH --partition=dmcshared
 #SBATCH --cpus-per-task=32
-#SBATCH --mem=350G
+#SBATCH --mem=300G
 #SBATCH --mail-type=ALL
 
 set -u
@@ -55,7 +55,7 @@ mkdir -p $METAPHLAN_DB
 #	--bowtie2out $METAPHLAN_OUTPUT/barcode01.bowtie2.bz2 \
 #	--nproc $SLURM_CPUS_PER_TASK \
 #	-o $METAPHLAN_OUTPUT/barcode01_metaphlan.txt
- 	
+
 # run metaphlan4 on barcode02
 singularity exec \
 	--bind /work:/work \
@@ -66,6 +66,18 @@ singularity exec \
 	--bowtie2out $METAPHLAN_OUTPUT/barcode02.bowtie2.bz2 \
 	--nproc $SLURM_CPUS_PER_TASK \
 	-o $METAPHLAN_OUTPUT/barcode02_metaphlan.txt
+
+  
+# run metaphlan4 on barcode02
+#singularity exec \
+#	--bind /work:/work \
+#	--bind /hpc/group:/hpc/group \
+#	docker://biobakery/metaphlan:4.0.2 \
+#	metaphlan $CONTIG_02 --input_type fasta \
+#	--bowtie2db $METAPHLAN_DB \
+#	--bowtie2out $METAPHLAN_OUTPUT/barcode02.bowtie2.bz2 \
+#	--nproc $SLURM_CPUS_PER_TASK \
+#	-o $METAPHLAN_OUTPUT/barcode02_metaphlan.txt
  	
 # run metaphlan4 on barcode03
 #singularity exec \
