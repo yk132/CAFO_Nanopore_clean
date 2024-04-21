@@ -38,16 +38,40 @@ export ABRICATE_OUTPUT="${OUTPUT_DIR}/Job12_ABRicate"
 mkdir -p $ABRICATE_OUTPUT
 
 #get database 
+# cd $ABRICATE_OUTPUT
+#singularity exec \
+#	--bind /work:/work \
+#	--bind /hpc/group:/hpc/group \
+#	docker://staphb/abricate:1.0.1-insaflu-220727 \
+#	abricate-get_db --db ncbi --force
+
+# database list 
 cd $ABRICATE_OUTPUT
 singularity exec \
 	--bind /work:/work \
 	--bind /hpc/group:/hpc/group \
 	docker://staphb/abricate:1.0.1-insaflu-220727 \
-	abricate-get_db --db ncbi --force
+	abricate --list > database.tsv
 
-# database list 
+# Run ABRicate 
+### abricate doesn't accept raw fastq files, and as such, barcode03 cannot be run
 singularity exec \
 	--bind /work:/work \
 	--bind /hpc/group:/hpc/group \
 	docker://staphb/abricate:1.0.1-insaflu-220727 \
-	abricate --list
+	abricate $CONTIG_01 > amr_bar01.tsv
+
+singularity exec \
+	--bind /work:/work \
+	--bind /hpc/group:/hpc/group \
+	docker://staphb/abricate:1.0.1-insaflu-220727 \
+	abricate $CONTIG_02 > amr_bar02.tsv
+
+singularity exec \
+	--bind /work:/work \
+	--bind /hpc/group:/hpc/group \
+	docker://staphb/abricate:1.0.1-insaflu-220727 \
+	abricate --summary amr_bar01.tsv amr_bar02.tsv
+
+
+

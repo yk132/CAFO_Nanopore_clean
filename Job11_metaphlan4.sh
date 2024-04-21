@@ -40,22 +40,22 @@ mkdir -p $METAPHLAN_OUTPUT
 mkdir -p $METAPHLAN_DB
 
 # run metaphlan4 on barcode01
-singularity exec \
-	--bind /work:/work \
-	--bind /hpc/group:/hpc/group \
-	docker://biobakery/metaphlan:4.0.2 \
-	metaphlan --install --bowtie2db $METAPHLAN_DB
+# singularity exec \
+#	--bind /work:/work \
+#	--bind /hpc/group:/hpc/group \
+#	docker://biobakery/metaphlan:4.0.2 \
+#	metaphlan --install --bowtie2db $METAPHLAN_DB
 
 # run metaphlan4 on barcode01
-singularity exec \
-	--bind /work:/work \
-	--bind /hpc/group:/hpc/group \
-	docker://biobakery/metaphlan:4.0.2 \
-	metaphlan $CONTIG_01 --input_type fasta \
-	--bowtie2db $METAPHLAN_DB \
-	--bowtie2out $METAPHLAN_OUTPUT/barcode01.bowtie2.bz2 \
-	--nproc $SLURM_CPUS_PER_TASK \
-	-o $METAPHLAN_OUTPUT/barcode01_metaphlan.txt
+# singularity exec \
+#	--bind /work:/work \
+#	--bind /hpc/group:/hpc/group \
+#	docker://biobakery/metaphlan:4.0.2 \
+#	metaphlan $CONTIG_01 --input_type fasta \
+#	--bowtie2db $METAPHLAN_DB \
+#	--bowtie2out $METAPHLAN_OUTPUT/barcode01.bowtie2.bz2 \
+#	--nproc $SLURM_CPUS_PER_TASK \
+#	-o $METAPHLAN_OUTPUT/barcode01_metaphlan.txt
  	
 # run metaphlan4 on barcode02
 singularity exec \
@@ -69,13 +69,23 @@ singularity exec \
 	-o $METAPHLAN_OUTPUT/barcode02_metaphlan.txt
  	
 # run metaphlan4 on barcode03
+#singularity exec \
+#	--bind /work:/work \
+#	--bind /hpc/group:/hpc/group \
+#	docker://biobakery/metaphlan:4.0.2 \
+#	metaphlan $BAR03_MERGED --input_type fastq \
+#	--bowtie2db $METAPHLAN_DB \
+#	--bowtie2out $METAPHLAN_OUTPUT/barcode03.bowtie2.bz2 \
+#	--nproc $SLURM_CPUS_PER_TASK \
+#	-o $METAPHLAN_OUTPUT/barcode03_metaphlan.txt
+ 	
+# run metaphlan4 on barcode02
+cd $METAPHLAN_OUTPUT
+
 singularity exec \
 	--bind /work:/work \
 	--bind /hpc/group:/hpc/group \
 	docker://biobakery/metaphlan:4.0.2 \
-	metaphlan $BAR03_MERGED --input_type fastq \
-	--bowtie2db $METAPHLAN_DB \
-	--bowtie2out $METAPHLAN_OUTPUT/barcode01.bowtie2.bz2 \
-	--nproc $SLURM_CPUS_PER_TASK \
-	-o $METAPHLAN_OUTPUT/barcode01_metaphlan.txt
- 	
+	merge_metaphlan_tables.py barcode01_metaphlan.txt \
+	barcode02_metaphlan.txt \
+	barcode03_metaphlan.txt > merged_abundance.txt
