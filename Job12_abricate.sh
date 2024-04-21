@@ -31,47 +31,23 @@ export SPADES_1="${SPADES_OUTPUT}/barcode01"
 export SPADES_2="${SPADES_OUTPUT}/barcode02"
 export CONTIG_01="${SPADES_1}/contigs.fasta"
 export CONTIG_02="${SPADES_2}/contigs.fasta"
-export METAPHLAN_OUTPUT="${OUTPUT_DIR}/Job11_MetaPhlAn4"
-export METAPHLAN_DB="${METAPHLAN_OUTPUT}/Database"
+export ABRICATE_OUTPUT="${OUTPUT_DIR}/Job12_ABRicate"
 #------------------------------
 
 # make output directories 
-mkdir -p $METAPHLAN_OUTPUT
-mkdir -p $METAPHLAN_DB
+mkdir -p $ABRICATE_OUTPUT
 
-# make database
-metaphlan --install --bowtie2db $METAPHLAN_DB
+#get database 
+cd $ABRICATE_OUTPUT
+singularity exec \
+	--bind /work:/work \
+	--bind /hpc/group:/hpc/group \
+	docker://staphb/abricate:1.0.1-insaflu-220727 \
+	abricate-get_db --db ncbi --force
 
-# run metaphlan4 on barcode01
+# database list 
 singularity exec \
 	--bind /work:/work \
 	--bind /hpc/group:/hpc/group \
-	docker://biobakery/metaphlan:4.0.2 \
-	metaphlan $CONTIG_01 --input_type fasta \
-	--bowtie2db $METAPHLAN_DB \
-	--bowtie2out $METAPHLAN_OUTPUT/barcode01.bowtie2.bz2 \
-	--nproc $SLURM_CPUS_PER_TASK \
-	-o $METAPHLAN_OUTPUT/barcode01_metaphlan.txt
- 	
-# run metaphlan4 on barcode02
-singularity exec \
-	--bind /work:/work \
-	--bind /hpc/group:/hpc/group \
-	docker://biobakery/metaphlan:4.0.2 \
-	metaphlan $CONTIG_02 --input_type fasta \
-	--bowtie2db $METAPHLAN_DB \
-	--bowtie2out $METAPHLAN_OUTPUT/barcode02.bowtie2.bz2 \
-	--nproc $SLURM_CPUS_PER_TASK \
-	-o $METAPHLAN_OUTPUT/barcode02_metaphlan.txt
- 	
-# run metaphlan4 on barcode03
-singularity exec \
-	--bind /work:/work \
-	--bind /hpc/group:/hpc/group \
-	docker://biobakery/metaphlan:4.0.2 \
-	metaphlan $BAR03_MERGED --input_type fastq \
-	--bowtie2db $METAPHLAN_DB \
-	--bowtie2out $METAPHLAN_OUTPUT/barcode01.bowtie2.bz2 \
-	--nproc $SLURM_CPUS_PER_TASK \
-	-o $METAPHLAN_OUTPUT/barcode01_metaphlan.txt
- 	
+	docker://staphb/abricate:1.0.1-insaflu-220727 \
+	abricate --list

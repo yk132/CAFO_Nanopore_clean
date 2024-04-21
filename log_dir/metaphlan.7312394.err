@@ -1,0 +1,27 @@
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Converting OCI blobs to SIF format
+INFO:    Starting build...
+Getting image source signatures
+Copying blob sha256:7eca7cb9bc893d95f36f787733b5657562d23939da09bf0be5c478d654b9abf3
+Copying blob sha256:43aa9c49e28e6e404f4aff96dbca527090ac53db2f3ddcfde32ecce88c784adc
+Copying blob sha256:b49101bfe6aafbd1db73478d16eaa7dc32fdabc70e9e03b1d80838a627f0c744
+Copying blob sha256:af94966ce127e9d8eac81102ce1133d905cb7670deb4e53736c7005f1a9384f9
+Copying blob sha256:b9cfa51fcb90119f743d95d39197d51d4bafc532bd7696bd83e2e7deb42cb42f
+Copying blob sha256:e706e0a9f42365312b366bf4caa22f3cdd8fc7fd8f6f49b4dd3782711f66aca7
+Copying blob sha256:6009739e593d89a04bdefe3dbe7f8b7784af5fb81b5cc686f23d7cf190321f6b
+Copying blob sha256:f5185f6319bb80ee1c7e560f9dae8734499d575a9dfc7edfc10f0516e63fbd20
+Copying blob sha256:9589ec13eac7ac22543973f5ec6da40bd7310131c8e0a3f262118284d83a83ff
+Copying blob sha256:801457a996b7ce47c6d5ac25cecc0388c78fd811dfca1964da09b02bf17d862b
+Copying blob sha256:95d55f7349d1ddabcf8d62e2088a89091cf8ff8a6bbe61b04802f32713b255d3
+Copying config sha256:b34d57630d3dbd6b11dc72968dbb5e2a3b88fb485f8e95b75c7c552b4d51e38e
+Writing manifest to image destination
+Storing signatures
+2024/04/20 22:49:20  info unpack layer: sha256:e706e0a9f42365312b366bf4caa22f3cdd8fc7fd8f6f49b4dd3782711f66aca7
+2024/04/20 22:49:21  warn xattr{etc/gshadow} ignoring ENOTSUP on setxattr "user.rootlesscontainers"
+2024/04/20 22:49:21  warn xattr{/work/yk132/tmp/build-temp-2345338565/rootfs/etc/gshadow} destination filesystem does not support xattrs, further warnings will be suppressed
+2024/04/20 22:49:51  info unpack layer: sha256:43aa9c49e28e6e404f4aff96dbca527090ac53db2f3ddcfde32ecce88c784adc
+2024/04/20 22:49:55  warn xattr{etc/gshadow} ignoring ENOTSUP on setxattr "user.rootlesscontainers"
+2024/04/20 22:49:55  warn xattr{/work/yk132/tmp/build-temp-2345338565/rootfs/etc/gshadow} destination filesystem does not support xattrs, further warnings will be suppressed
+2024/04/20 22:56:42  info unpack layer: sha256:b9cfa51fcb90119f743d95d39197d51d4bafc532bd7696bd83e2e7deb42cb42f
+2024/04/20 22:56:45  warn xattr{usr/local/lib/python3.6} ignoring ENOTSUP on setxattr "user.rootlesscontainers"
+2024/04/20 22:56:45  warn xattr{/work/yk132/tmp/build-temp-2345338565/rootfs/usr/local/lib/python3.6} destination filesystem does not support xattrs, further warnings will be suppressed

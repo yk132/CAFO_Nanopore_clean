@@ -39,8 +39,12 @@ export METAPHLAN_DB="${METAPHLAN_OUTPUT}/Database"
 mkdir -p $METAPHLAN_OUTPUT
 mkdir -p $METAPHLAN_DB
 
-# make database
-metaphlan --install --bowtie2db $METAPHLAN_DB
+# run metaphlan4 on barcode01
+singularity exec \
+	--bind /work:/work \
+	--bind /hpc/group:/hpc/group \
+	docker://biobakery/metaphlan:4.0.2 \
+	metaphlan --install --bowtie2db $METAPHLAN_DB
 
 # run metaphlan4 on barcode01
 singularity exec \
