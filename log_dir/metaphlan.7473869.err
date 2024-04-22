@@ -1,0 +1,45 @@
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Converting OCI blobs to SIF format
+INFO:    Starting build...
+Getting image source signatures
+Copying blob sha256:e7985facb9ea981665557e157d85748e3d5b0da668031bb8db881d6c347550c5
+Copying blob sha256:c4034b47b146d0401ff70ace8c91e56e570723b819548751ac47f243ea63914d
+Copying blob sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1
+Copying blob sha256:98294d627d64e5f4f999e46793d5d90f6aa3ff1190a1ff05971a2d260b2477db
+Copying blob sha256:e1caac4eb9d2ec24aa3618e5992208321a92492aef5fef5eb9e470895f771c56
+Copying blob sha256:43da12fc18a5720e34ca6c692a699fba9e9220da30b948b157b22014e870e928
+Copying blob sha256:15d00b2d42b46c69fb90cbe19e589cbf90392025129cf3992c7a6fdaf163b344
+Copying blob sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1
+Copying blob sha256:cb4877bbb58f6387307c119dd486d57d8c90052e337776bad95dc9ed3ca411a3
+Copying blob sha256:eb94d76fc7c6d2ce8ac01dd2463bde5f5a9f5f6b4792c871406c86cbe539c18d
+Copying blob sha256:33e0936c07b0cf9696d4b2461ec20296237a950da238a888f0a4aa1fd76ccaab
+Copying blob sha256:f07284a9783a00e4d281cd8f291d5140297fc360f3ccc1bc9c26117f08e40f44
+Copying blob sha256:5b3bf18cf0f09dc6f734394c6c2c621e48414502a84a99a44d3a3984176db9b9
+Copying blob sha256:2a0bba0d4e9abbe3abe738855ef99e1a61bfc3c382dbd784413e0d4653ca77f4
+Copying blob sha256:1a86075d98125882b4b676b265f4d88cc8af3cbbccfa1847c9eb2dd514da5038
+Copying config sha256:cf7d31f81ca4ce5acac393258f58c53e3ca720fdfeb3aa46bff4b0f7fe150883
+Writing manifest to image destination
+Storing signatures
+2024/04/22 09:20:09  info unpack layer: sha256:e1caac4eb9d2ec24aa3618e5992208321a92492aef5fef5eb9e470895f771c56
+2024/04/22 09:20:10  warn xattr{etc/gshadow} ignoring ENOTSUP on setxattr "user.rootlesscontainers"
+2024/04/22 09:20:10  warn xattr{/work/yk132/tmp/build-temp-1518324780/rootfs/etc/gshadow} destination filesystem does not support xattrs, further warnings will be suppressed
+2024/04/22 09:20:50  info unpack layer: sha256:c4034b47b146d0401ff70ace8c91e56e570723b819548751ac47f243ea63914d
+2024/04/22 09:20:50  info unpack layer: sha256:43da12fc18a5720e34ca6c692a699fba9e9220da30b948b157b22014e870e928
+2024/04/22 09:20:50  info unpack layer: sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1
+2024/04/22 09:20:50  info unpack layer: sha256:98294d627d64e5f4f999e46793d5d90f6aa3ff1190a1ff05971a2d260b2477db
+2024/04/22 09:20:50  info unpack layer: sha256:e7985facb9ea981665557e157d85748e3d5b0da668031bb8db881d6c347550c5
+2024/04/22 09:20:50  info unpack layer: sha256:15d00b2d42b46c69fb90cbe19e589cbf90392025129cf3992c7a6fdaf163b344
+2024/04/22 09:20:50  warn xattr{etc/gshadow} ignoring ENOTSUP on setxattr "user.rootlesscontainers"
+2024/04/22 09:20:50  warn xattr{/work/yk132/tmp/build-temp-1518324780/rootfs/etc/gshadow} destination filesystem does not support xattrs, further warnings will be suppressed
+2024/04/22 09:20:50  info unpack layer: sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1
+2024/04/22 09:20:50  info unpack layer: sha256:cb4877bbb58f6387307c119dd486d57d8c90052e337776bad95dc9ed3ca411a3
+2024/04/22 09:20:50  info unpack layer: sha256:eb94d76fc7c6d2ce8ac01dd2463bde5f5a9f5f6b4792c871406c86cbe539c18d
+2024/04/22 09:20:50  info unpack layer: sha256:33e0936c07b0cf9696d4b2461ec20296237a950da238a888f0a4aa1fd76ccaab
+2024/04/22 09:20:50  info unpack layer: sha256:f07284a9783a00e4d281cd8f291d5140297fc360f3ccc1bc9c26117f08e40f44
+2024/04/22 09:20:50  info unpack layer: sha256:5b3bf18cf0f09dc6f734394c6c2c621e48414502a84a99a44d3a3984176db9b9
+2024/04/22 09:20:51  warn xattr{var/cache/apt/archives/partial} ignoring ENOTSUP on setxattr "user.rootlesscontainers"
+2024/04/22 09:20:51  warn xattr{/work/yk132/tmp/build-temp-1518324780/rootfs/var/cache/apt/archives/partial} destination filesystem does not support xattrs, further warnings will be suppressed
+2024/04/22 09:20:51  info unpack layer: sha256:2a0bba0d4e9abbe3abe738855ef99e1a61bfc3c382dbd784413e0d4653ca77f4
+2024/04/22 09:42:51  info unpack layer: sha256:1a86075d98125882b4b676b265f4d88cc8af3cbbccfa1847c9eb2dd514da5038
+INFO:    Creating SIF file...
+slurmstepd: error: *** JOB 7473869 ON dcc-chsi-09 CANCELLED AT 2024-04-22T10:22:22 ***

@@ -1,0 +1,39 @@
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Killed
+(ERR): bowtie2-align exited with value 137
+Traceback (most recent call last):
+  File "/usr/local/bin/read_fastx.py", line 11, in <module>
+    sys.exit(main())
+  File "/usr/local/lib/python3.6/dist-packages/metaphlan/utils/read_fastx.py", line 168, in main
+    f_nreads, f_avg_read_length = read_and_write_raw(f, opened=False, min_len=min_len, prefix_id=prefix_id)
+  File "/usr/local/lib/python3.6/dist-packages/metaphlan/utils/read_fastx.py", line 130, in read_and_write_raw
+    nreads, avg_read_length = read_and_write_raw_int(inf, min_len=min_len, prefix_id=prefix_id)
+  File "/usr/local/lib/python3.6/dist-packages/metaphlan/utils/read_fastx.py", line 109, in read_and_write_raw_int
+    print_record(description + "__{}{}{}".format(prefix_id, '.' if prefix_id else '', idx), sequence, qual, fmt))
+BrokenPipeError: [Errno 32] Broken pipe
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+Traceback (most recent call last):
+  File "/usr/local/bin/merge_metaphlan_tables.py", line 11, in <module>
+    sys.exit(main())
+  File "/usr/local/lib/python3.6/dist-packages/metaphlan/utils/merge_metaphlan_tables.py", line 78, in main
+    merge(args.aistms, open(args.o, 'w') if args.o else sys.stdout, args.gtdb_profiles)
+  File "/usr/local/lib/python3.6/dist-packages/metaphlan/utils/merge_metaphlan_tables.py", line 26, in merge
+    headers = [x.strip() for x in takewhile(lambda x: x.startswith('#'), open(f))]
+FileNotFoundError: [Errno 2] No such file or directory: 'barcode01_metaphlan.txt'
+slurmstepd: error: Detected 1 oom_kill event in StepId=7450449.batch. Some of the step tasks have been OOM Killed.

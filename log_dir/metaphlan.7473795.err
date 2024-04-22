@@ -1,0 +1,49 @@
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+Traceback (most recent call last):
+  File "/usr/local/bin/metaphlan", line 11, in <module>
+    sys.exit(main())
+  File "/usr/local/lib/python3.6/dist-packages/metaphlan/metaphlan.py", line 998, in main
+    pars['index'] = check_and_install_database(pars['index'], pars['bowtie2db'], pars['bowtie2_build'], pars['nproc'], pars['force_download'], pars['offline'])
+  File "/usr/local/lib/python3.6/dist-packages/metaphlan/__init__.py", line 290, in check_and_install_database
+    index = resolve_latest_database(bowtie2_db, mpa_latest, force_redownload_latest, offline)
+  File "/usr/local/lib/python3.6/dist-packages/metaphlan/__init__.py", line 245, in resolve_latest_database
+    os.rename(os.path.join(bowtie2_db,'mpa_latest'),os.path.join(bowtie2_db,'mpa_previous'))
+OSError: [Errno 30] Read-only file system: '/usr/local/lib/python3.6/dist-packages/metaphlan/metaphlan_databases/mpa_latest' -> '/usr/local/lib/python3.6/dist-packages/metaphlan/metaphlan_databases/mpa_previous'
+/var/spool/slurmd/job7473795/slurm_script: line 50: --bowtie2out: command not found
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+Traceback (most recent call last):
+  File "/usr/local/bin/metaphlan", line 11, in <module>
+    sys.exit(main())
+  File "/usr/local/lib/python3.6/dist-packages/metaphlan/metaphlan.py", line 998, in main
+    pars['index'] = check_and_install_database(pars['index'], pars['bowtie2db'], pars['bowtie2_build'], pars['nproc'], pars['force_download'], pars['offline'])
+  File "/usr/local/lib/python3.6/dist-packages/metaphlan/__init__.py", line 290, in check_and_install_database
+    index = resolve_latest_database(bowtie2_db, mpa_latest, force_redownload_latest, offline)
+  File "/usr/local/lib/python3.6/dist-packages/metaphlan/__init__.py", line 245, in resolve_latest_database
+    os.rename(os.path.join(bowtie2_db,'mpa_latest'),os.path.join(bowtie2_db,'mpa_previous'))
+OSError: [Errno 30] Read-only file system: '/usr/local/lib/python3.6/dist-packages/metaphlan/metaphlan_databases/mpa_latest' -> '/usr/local/lib/python3.6/dist-packages/metaphlan/metaphlan_databases/mpa_previous'
+/var/spool/slurmd/job7473795/slurm_script: line 60: --bowtie2out: command not found
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+Traceback (most recent call last):
+  File "/usr/local/bin/metaphlan", line 11, in <module>
+    sys.exit(main())
+  File "/usr/local/lib/python3.6/dist-packages/metaphlan/metaphlan.py", line 998, in main
+    pars['index'] = check_and_install_database(pars['index'], pars['bowtie2db'], pars['bowtie2_build'], pars['nproc'], pars['force_download'], pars['offline'])
+  File "/usr/local/lib/python3.6/dist-packages/metaphlan/__init__.py", line 290, in check_and_install_database
+    index = resolve_latest_database(bowtie2_db, mpa_latest, force_redownload_latest, offline)
+  File "/usr/local/lib/python3.6/dist-packages/metaphlan/__init__.py", line 245, in resolve_latest_database
+    os.rename(os.path.join(bowtie2_db,'mpa_latest'),os.path.join(bowtie2_db,'mpa_previous'))
+OSError: [Errno 30] Read-only file system: '/usr/local/lib/python3.6/dist-packages/metaphlan/metaphlan_databases/mpa_latest' -> '/usr/local/lib/python3.6/dist-packages/metaphlan/metaphlan_databases/mpa_previous'
+/var/spool/slurmd/job7473795/slurm_script: line 71: --bowtie2out: command not found
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+Traceback (most recent call last):
+  File "/usr/local/bin/merge_metaphlan_tables.py", line 11, in <module>
+    sys.exit(main())
+  File "/usr/local/lib/python3.6/dist-packages/metaphlan/utils/merge_metaphlan_tables.py", line 78, in main
+    merge(args.aistms, open(args.o, 'w') if args.o else sys.stdout, args.gtdb_profiles)
+  File "/usr/local/lib/python3.6/dist-packages/metaphlan/utils/merge_metaphlan_tables.py", line 26, in merge
+    headers = [x.strip() for x in takewhile(lambda x: x.startswith('#'), open(f))]
+FileNotFoundError: [Errno 2] No such file or directory: 'barcode01_metaphlan.txt'
