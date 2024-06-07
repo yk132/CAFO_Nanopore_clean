@@ -60,25 +60,25 @@ nextflow run epi2me-labs/wf-metagenomics/main.nf \
 	--store_dir $DB_DIR 
 
 # barcode02
-#nextflow run epi2me-labs/wf-metagenomics/main.nf \
-#	-profile singularity \
-#	-c ./nextflow.config \
-#	--bam $BAR02_BAM \
-#	--database_set ncbi_16s_18s_28s_ITS \
-#	--classifier minimap2 \
-#	--threads $SLURM_CPUS_PER_TASK \
-#	--out_dir $RES_DIR02 \
-#	--min_len 50 \
-#	--store_dir $DB_DIR 
+nextflow run epi2me-labs/wf-metagenomics/main.nf \
+	-profile singularity \
+	-c ./nextflow.config \
+	--bam $BAR02_BAM \
+	--database_set ncbi_16s_18s_28s_ITS \
+	--classifier minimap2 \
+	--threads $SLURM_CPUS_PER_TASK \
+	--out_dir $RES_DIR02 \
+	--min_len 50 \
+	--store_dir $DB_DIR 
  
 # barcode03
-#nextflow run epi2me-labs/wf-metagenomics/main.nf \
-#	-profile singularity \
-#	-c ./nextflow.config \
-#	--bam $BAR03_BAM \
-#	--database_set ncbi_16s_18s_28s_ITS \
-#	--classifier minimap2 \
-#	--threads $SLURM_CPUS_PER_TASK \
-#	--out_dir $RES_DIR03 \
-#	--min_len 50 \
-#	--store_dir $DB_DIR 
+nextflow run epi2me-labs/wf-metagenomics/main.nf \
+	-profile singularity \
+	-c ./nextflow.config \
+	--bam $BAR03_BAM \
+	--database_set ncbi_16s_18s_28s_ITS \
+	--classifier minimap2 \
+	--threads $SLURM_CPUS_PER_TASK \
+	--out_dir $RES_DIR03 \
+	--min_len 50 \
+	--store_dir $DB_DIR 

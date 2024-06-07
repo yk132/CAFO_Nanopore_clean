@@ -1,0 +1,16 @@
+Exception in thread "Thread-5" groovy.lang.GroovyRuntimeException: exception while reading process stream
+	at org.codehaus.groovy.runtime.ProcessGroovyMethods$TextDumper.run(ProcessGroovyMethods.java:500)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: Stream closed
+	at java.base/java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:176)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:289)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:181)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:326)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:392)
+	at org.codehaus.groovy.runtime.ProcessGroovyMethods$TextDumper.run(ProcessGroovyMethods.java:493)
+	... 1 more

@@ -1,0 +1,170 @@
+Apr-19 14:25:37.716 [main] DEBUG nextflow.cli.Launcher - $> nextflow run epi2me-labs/wf-metagenomics/main.nf -profile singularity -c ./nextflow.config --fastq /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job4_merged_fastq/barcode03_merged.fastq --database_set ncbi_16s_18s_28s_ITS --classifier minimap2 --threads 30 --out_dir /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job8_wf_meta_barcode03_res --min_len 50 --store_dir /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job8_db
+Apr-19 14:25:37.833 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.04.3
+Apr-19 14:25:37.857 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/hpc/home/yk132/.nextflow/plugins; core-plugins: nf-amazon@1.16.2,nf-azure@1.0.1,nf-codecommit@0.1.4,nf-console@1.0.5,nf-ga4gh@1.0.5,nf-google@1.7.3,nf-tower@1.5.12,nf-wave@0.8.4
+Apr-19 14:25:37.877 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Apr-19 14:25:37.879 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Apr-19 14:25:37.883 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Apr-19 14:25:37.897 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Apr-19 14:25:37.913 [main] DEBUG nextflow.scm.ProviderConfig - Using SCM config path: /hpc/home/yk132/.nextflow/scm
+Apr-19 14:25:38.797 [main] DEBUG nextflow.scm.AssetManager - Git config: /hpc/home/yk132/.nextflow/assets/epi2me-labs/wf-metagenomics/.git/config; branch: master; remote: origin; url: https://github.com/epi2me-labs/wf-metagenomics.git
+Apr-19 14:25:38.817 [main] DEBUG nextflow.scm.RepositoryFactory - Found Git repository result: [RepositoryFactory]
+Apr-19 14:25:38.829 [main] DEBUG nextflow.scm.AssetManager - Git config: /hpc/home/yk132/.nextflow/assets/epi2me-labs/wf-metagenomics/.git/config; branch: master; remote: origin; url: https://github.com/epi2me-labs/wf-metagenomics.git
+Apr-19 14:25:39.616 [main] INFO  nextflow.scm.AssetManager - NOTE: Your local project version looks outdated - a different revision is available in the remote repository [b12d893856]
+Apr-19 14:25:39.624 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /hpc/home/yk132/.nextflow/assets/epi2me-labs/wf-metagenomics/nextflow.config
+Apr-19 14:25:39.625 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /hpc/group/gunschlab/yk132/storage/20230908_Dust_Redo_R9/CAFO_Nanopore_clean/nextflow.config
+Apr-19 14:25:39.627 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /hpc/group/gunschlab/yk132/storage/20230908_Dust_Redo_R9/CAFO_Nanopore_clean/./nextflow.config
+Apr-19 14:25:39.628 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /hpc/home/yk132/.nextflow/assets/epi2me-labs/wf-metagenomics/nextflow.config
+Apr-19 14:25:39.628 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /hpc/group/gunschlab/yk132/storage/20230908_Dust_Redo_R9/CAFO_Nanopore_clean/nextflow.config
+Apr-19 14:25:39.628 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /hpc/group/gunschlab/yk132/storage/20230908_Dust_Redo_R9/CAFO_Nanopore_clean/nextflow.config
+Apr-19 14:25:39.637 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `singularity`
+Apr-19 14:25:39.767 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `singularity`
+Apr-19 14:25:39.786 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `singularity`
+Apr-19 14:25:39.793 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [standard, conda, singularity, awsbatch, local]
+Apr-19 14:25:39.826 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+Apr-19 14:25:39.826 [main] INFO  nextflow.cli.CmdRun - Launching `https://github.com/epi2me-labs/wf-metagenomics` [jovial_moriondo] DSL2 - revision: 441c081893 [master]
+Apr-19 14:25:39.827 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Apr-19 14:25:39.827 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Apr-19 14:25:39.830 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /hpc/home/yk132/.nextflow/secrets/store.json
+Apr-19 14:25:39.833 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@4f3356c0] - activable => nextflow.secret.LocalSecretsProvider@4f3356c0
+Apr-19 14:25:39.899 [main] DEBUG nextflow.Session - Session UUID: bf989bd9-6d16-4d0e-8108-1da98395deb3
+Apr-19 14:25:39.899 [main] DEBUG nextflow.Session - Run name: jovial_moriondo
+Apr-19 14:25:39.900 [main] DEBUG nextflow.Session - Executor pool size: 30
+Apr-19 14:25:39.912 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=90; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Apr-19 14:25:39.953 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.04.3 build 5875
+  Created: 11-08-2023 18:37 UTC (14:37 EDT)
+  System: Linux 5.14.0-362.8.1.el9_3.x86_64
+  Runtime: Groovy 3.0.16 on OpenJDK 64-Bit Server VM 11.0.13+7-b1751.21
+  Encoding: UTF-8 (UTF-8)
+  Process: 2830967@dcc-gunschlab-01 [10.183.15.34]
+  CPUs: 30 - Mem: 343.7 GB (3 GB) - Swap: 3.9 GB (3.7 GB)
+Apr-19 14:25:39.998 [main] DEBUG nextflow.Session - Work-dir: /work/yk132/CAFO_Nanopore_work/nf_working [nfs]
+Apr-19 14:25:40.038 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Apr-19 14:25:40.049 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Apr-19 14:25:40.131 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Apr-19 14:25:40.143 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 31; maxThreads: 1000
+Apr-19 14:25:40.311 [main] DEBUG nextflow.Session - Session start
+Apr-19 14:25:40.320 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job8_wf_meta_barcode03_res/execution/trace.txt
+Apr-19 14:25:40.346 [main] DEBUG nextflow.Session - Using default localLib path: /hpc/home/yk132/.nextflow/assets/epi2me-labs/wf-metagenomics/lib
+Apr-19 14:25:40.362 [main] DEBUG nextflow.Session - Adding to the classpath library: /hpc/home/yk132/.nextflow/assets/epi2me-labs/wf-metagenomics/lib
+Apr-19 14:25:40.363 [main] DEBUG nextflow.Session - Adding to the classpath library: /hpc/home/yk132/.nextflow/assets/epi2me-labs/wf-metagenomics/lib/nfcore_external_java_deps.jar
+Apr-19 14:25:41.920 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Apr-19 14:25:49.732 [main] WARN  nextflow.NextflowMeta$Preview - NEXTFLOW RECURSION IS A PREVIEW FEATURE - SYNTAX AND FUNCTIONALITY CAN CHANGE IN FUTURE RELEASES
+Apr-19 14:25:49.896 [main] INFO  nextflow.Nextflow - 
+[0;92m||||||||||   [0m[2m_____ ____ ___ ____  __  __ _____      _       _
+[0;92m||||||||||  [0m[2m| ____|  _ \_ _|___ \|  \/  | ____|    | | __ _| |__  ___
+[0;33m|||||       [0m[2m|  _| | |_) | |  __) | |\/| |  _| _____| |/ _` | '_ \/ __|
+[0;33m|||||       [0m[2m| |___|  __/| | / __/| |  | | |__|_____| | (_| | |_) \__ \
+[0;94m||||||||||  [0m[2m|_____|_|  |___|_____|_|  |_|_____|    |_|\__,_|_.__/|___/
+[0;94m||||||||||  [0m[1mwf-metagenomics v2.9.1-g441c081[0m
+[2m--------------------------------------------------------------------------------[0m
+[1mCore Nextflow options[0m
+  [0;34mrevision       : [0;32mmaster[0m
+  [0;34mrunName        : [0;32mjovial_moriondo[0m
+  [0;34mcontainerEngine: [0;32msingularity[0m
+  [0;34mlaunchDir      : [0;32m/hpc/group/gunschlab/yk132/storage/20230908_Dust_Redo_R9/CAFO_Nanopore_clean[0m
+  [0;34mworkDir        : [0;32m/work/yk132/CAFO_Nanopore_work/nf_working[0m
+  [0;34mprojectDir     : [0;32m/hpc/home/yk132/.nextflow/assets/epi2me-labs/wf-metagenomics[0m
+  [0;34muserName       : [0;32myk132[0m
+  [0;34mprofile        : [0;32msingularity[0m
+  [0;34mconfigFiles    : [0;32m/hpc/home/yk132/.nextflow/assets/epi2me-labs/wf-metagenomics/nextflow.config, /hpc/group/gunschlab/yk132/storage/20230908_Dust_Redo_R9/CAFO_Nanopore_clean/nextflow.config, /hpc/group/gunschlab/yk132/storage/20230908_Dust_Redo_R9/CAFO_Nanopore_clean/./nextflow.config[0m
+
+[1mInput Options[0m
+  [0;34mfastq          : [0;32m/hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job4_merged_fastq/barcode03_merged.fastq[0m
+  [0;34mclassifier     : [0;32mminimap2[0m
+
+[1mReference Options[0m
+  [0;34mdatabase_set   : [0;32mncbi_16s_18s_28s_ITS[0m
+  [0;34mstore_dir      : [0;32m/hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job8_db[0m
+  [0;34mdatabase_sets  : [0;32m[ncbi_16s_18s:[reference:https://ont-exd-int-s3-euwst1-epi2me-labs.s3.amazonaws.com/wf-metagenomics/ncbi_16s_18s/ncbi_targeted_loci_16s_18s.fna, database:https://ont-exd-int-s3-euwst1-epi2me-labs.s3.amazonaws.com/wf-metagenomics/ncbi_16s_18s/ncbi_targeted_loci_kraken2.tar.gz, ref2taxid:https://ont-exd-int-s3-euwst1-epi2me-labs.s3.amazonaws.com/wf-metagenomics/ncbi_16s_18s/ref2taxid.targloci.tsv, taxonomy:https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump_archive/taxdmp_2023-01-01.zip], ncbi_16s_18s_28s_ITS:[reference:https://ont-exd-int-s3-euwst1-epi2me-labs.s3.amazonaws.com/wf-metagenomics/ncbi_16s_18s_28s_ITS/ncbi_16s_18s_28s_ITS.fna, database:https://ont-exd-int-s3-euwst1-epi2me-labs.s3.amazonaws.com/wf-metagenomics/ncbi_16s_18s_28s_ITS/ncbi_16s_18s_28s_ITS_kraken2.tar.gz, ref2taxid:https://ont-exd-int-s3-euwst1-epi2me-labs.s3.amazonaws.com/wf-metagenomics/ncbi_16s_18s_28s_ITS/ref2taxid.ncbi_16s_18s_28s_ITS.tsv, taxonomy:https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump_archive/taxdmp_2023-01-01.zip], SILVA_138_1:[database:null], Standard-8:[database:https://genome-idx.s3.amazonaws.com/kraken/k2_standard_08gb_20231009.tar.gz, taxonomy:https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump_archive/new_taxdump_2023-03-01.zip], PlusPF-8:[database:https://genome-idx.s3.amazonaws.com/kraken/k2_pluspf_08gb_20230314.tar.gz, taxonomy:https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump_archive/new_taxdump_2023-03-01.zip], PlusPFP-8:[database:https://genome-idx.s3.amazonaws.com/kraken/k2_pluspfp_08gb_20230314.tar.gz, taxonomy:https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump_archive/new_taxdump_2023-03-01.zip]][0m
+
+[1mOutput Options[0m
+  [0;34mout_dir        : [0;32m/hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job8_wf_meta_barcode03_res[0m
+
+[1mAdvanced Options[0m
+  [0;34mmin_len        : [0;32m50[0m
+  [0;34mthreads        : [0;32m30[0m
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+[2m--------------------------------------------------------------------------------[0m
+If you use epi2me-labs/wf-metagenomics for your analysis please cite:
+
+* The nf-core framework
+  https://doi.org/10.1038/s41587-020-0439-x
+
+
+[2m--------------------------------------------------------------------------------[0m
+This is epi2me-labs/wf-metagenomics v2.9.1-g441c081.
+[2m--------------------------------------------------------------------------------[0m
+Apr-19 14:25:50.466 [main] INFO  nextflow.Nextflow - Checking inputs.
+Apr-19 14:25:50.475 [main] INFO  nextflow.Nextflow - Searching input for [.fastq, .fastq.gz, .fq, .fq.gz] files.
+Apr-19 14:25:50.648 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:wf_common` matches labels `ingress,wf_common` for process with name fastcat
+Apr-19 14:25:50.655 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Apr-19 14:25:50.655 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Apr-19 14:25:50.670 [main] DEBUG nextflow.executor.Executor - [warm up] executor > slurm
+Apr-19 14:25:50.676 [main] DEBUG n.processor.TaskPollingMonitor - Creating task monitor for executor 'slurm' > capacity: 100; pollInterval: 5s; dumpInterval: 5m 
+Apr-19 14:25:50.681 [main] DEBUG n.executor.AbstractGridExecutor - Creating executor 'slurm' > queue-stat-interval: 1m
+Apr-19 14:25:50.774 [main] INFO  nextflow.Nextflow - Minimap2 pipeline.
+Apr-19 14:25:50.776 [main] INFO  nextflow.Nextflow - Preparing databases.
+Apr-19 14:25:50.776 [main] INFO  nextflow.Nextflow - Using default taxonomy database.
+Apr-19 14:25:50.786 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:wfmetagenomics` matches labels `wfmetagenomics` for process with name prepare_databases:download_unpack_taxonomy
+Apr-19 14:25:50.787 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Apr-19 14:25:50.788 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Apr-19 14:25:50.792 [main] INFO  nextflow.Nextflow - Using a default database.
+Apr-19 14:25:50.797 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:wfmetagenomics` matches labels `wfmetagenomics` for process with name prepare_databases:download_reference_ref2taxid
+Apr-19 14:25:50.799 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Apr-19 14:25:50.799 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Apr-19 14:25:50.819 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:wfmetagenomics` matches labels `wfmetagenomics` for process with name minimap_pipeline:run_common:getVersions
+Apr-19 14:25:50.819 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Apr-19 14:25:50.819 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Apr-19 14:25:50.823 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:wfmetagenomics` matches labels `wfmetagenomics` for process with name minimap_pipeline:run_common:getParams
+Apr-19 14:25:50.823 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Apr-19 14:25:50.823 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Apr-19 14:25:50.844 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:wfmetagenomics` matches labels `wfmetagenomics` for process with name minimap_pipeline:minimap
+Apr-19 14:25:50.846 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Apr-19 14:25:50.846 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Apr-19 14:25:50.862 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:wfmetagenomics` matches labels `wfmetagenomics` for process with name minimap_pipeline:createAbundanceTables
+Apr-19 14:25:50.863 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Apr-19 14:25:50.863 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Apr-19 14:25:50.877 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:wf_common` matches labels `wf_common` for process with name minimap_pipeline:makeReport
+Apr-19 14:25:50.877 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Apr-19 14:25:50.877 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Apr-19 14:25:50.893 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:wfmetagenomics` matches labels `wfmetagenomics` for process with name minimap_pipeline:output_results
+Apr-19 14:25:50.894 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Apr-19 14:25:50.894 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Apr-19 14:25:50.896 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: move_or_compress_fq_file, sortBam, concatAssignments, minimap_pipeline:run_common:getParams, validate_sample_sheet, kraken_server, download_unpack_taxonomy, createAbundanceTables, getAlignmentStats, checkBamHeaders, progressive_stats, prepare_databases:download_reference_ref2taxid, mergeBams, output, stop_kraken_server, output_kraken2_read_assignments, abricate, progressive_amr, makeReport, minimap, getVersions, extractMinimap2Reads, rebatchFastq, output_results, minimap_pipeline:createAbundanceTables, minimap_pipeline:makeReport, check_reference_ref2taxid, kraken2_client, prepareSILVA, bamstats, run_kraken2, prepare_databases:download_unpack_taxonomy, progressive_bracken, minimap_pipeline:minimap, minimap_pipeline:output_results, determine_bracken_length, fastcat, progressive_kraken_reports, stopCondition, unpack_download_kraken2_database, minimap_pipeline:run_common:getVersions, abricateVersion, download_reference_ref2taxid, exclude_host_reads, getParams, catSortBams, run_bracken, abricate_json
+Apr-19 14:25:50.899 [main] DEBUG nextflow.Session - Igniting dataflow network (14)
+Apr-19 14:25:50.901 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > fastcat
+Apr-19 14:25:50.902 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > prepare_databases:download_unpack_taxonomy
+Apr-19 14:25:50.902 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > prepare_databases:download_reference_ref2taxid
+Apr-19 14:25:50.903 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > minimap_pipeline:run_common:getVersions
+Apr-19 14:25:50.904 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > minimap_pipeline:run_common:getParams
+Apr-19 14:25:50.905 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > minimap_pipeline:minimap
+Apr-19 14:25:50.908 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > minimap_pipeline:createAbundanceTables
+Apr-19 14:25:50.910 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > minimap_pipeline:makeReport
+Apr-19 14:25:50.911 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > minimap_pipeline:output_results
+Apr-19 14:25:50.911 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Apr-19 14:25:50.911 [main] DEBUG nextflow.Session - Session await
+Apr-19 14:25:51.066 [Actor Thread 19] INFO  nextflow.processor.TaskProcessor - [skipping] Stored process > prepare_databases:download_reference_ref2taxid
+Apr-19 14:25:51.068 [Actor Thread 17] INFO  nextflow.processor.TaskProcessor - [skipping] Stored process > prepare_databases:download_unpack_taxonomy
+Apr-19 14:25:51.093 [Actor Thread 30] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76; path=/work/yk132/.singularity/cache/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img
+Apr-19 14:25:51.093 [Actor Thread 22] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=docker://ontresearch/wf-common:sha1c5febff9f75143710826498b093d9769a5edbb9; path=/work/yk132/.singularity/cache/ontresearch-wf-common-sha1c5febff9f75143710826498b093d9769a5edbb9.img
+Apr-19 14:25:51.470 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process minimap_pipeline:run_common:getParams > jobId: 7122607; workDir: /work/yk132/CAFO_Nanopore_work/nf_working/d2/e0e091ca827d7d9221bb93a067aafa
+Apr-19 14:25:51.471 [Task submitter] INFO  nextflow.Session - [d2/e0e091] Submitted process > minimap_pipeline:run_common:getParams
+Apr-19 14:25:51.626 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process minimap_pipeline:run_common:getVersions > jobId: 7122608; workDir: /work/yk132/CAFO_Nanopore_work/nf_working/bc/0a4e7812418741adb0a72cf1a0aea4
+Apr-19 14:25:51.626 [Task submitter] INFO  nextflow.Session - [bc/0a4e78] Submitted process > minimap_pipeline:run_common:getVersions
+Apr-19 14:25:51.826 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process fastcat (1) > jobId: 7122609; workDir: /work/yk132/CAFO_Nanopore_work/nf_working/e6/a4366d5683b7c1a20ddc7ae1495a49
+Apr-19 14:25:51.826 [Task submitter] INFO  nextflow.Session - [e6/a4366d] Submitted process > fastcat (1)
+Apr-19 14:25:55.765 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 7122607; id: 1; name: minimap_pipeline:run_common:getParams; status: COMPLETED; exit: 0; error: -; workDir: /work/yk132/CAFO_Nanopore_work/nf_working/d2/e0e091ca827d7d9221bb93a067aafa started: 1713551155757; exited: 2024-04-19T18:25:53.893084Z; ]
+Apr-19 14:25:55.918 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process minimap_pipeline:output_results (1) > jobId: 7122612; workDir: /work/yk132/CAFO_Nanopore_work/nf_working/d6/0bf3d2efad74bf66faad66ed6ad22f
+Apr-19 14:25:55.918 [Task submitter] INFO  nextflow.Session - [d6/0bf3d2] Submitted process > minimap_pipeline:output_results (1)
+Apr-19 14:26:00.789 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 7122612; id: 6; name: minimap_pipeline:output_results (1); status: COMPLETED; exit: 0; error: -; workDir: /work/yk132/CAFO_Nanopore_work/nf_working/d6/0bf3d2efad74bf66faad66ed6ad22f started: 1713551160781; exited: 2024-04-19T18:25:57.390892Z; ]
+Apr-19 14:26:00.840 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=90; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Apr-19 14:26:25.766 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 7122608; id: 3; name: minimap_pipeline:run_common:getVersions; status: COMPLETED; exit: 0; error: -; workDir: /work/yk132/CAFO_Nanopore_work/nf_working/bc/0a4e7812418741adb0a72cf1a0aea4 started: 1713551155791; exited: 2024-04-19T18:25:56.688035Z; ]
+Apr-19 14:26:25.820 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 7122609; id: 5; name: fastcat (1); status: COMPLETED; exit: 0; error: -; workDir: /work/yk132/CAFO_Nanopore_work/nf_working/e6/a4366d5683b7c1a20ddc7ae1495a49 started: 1713551155911; exited: 2024-04-19T18:25:56.731204Z; ]
+Apr-19 14:26:25.895 [Actor Thread 31] DEBUG nextflow.util.CacheHelper - Hash asset file sha-256: /hpc/home/yk132/.nextflow/assets/epi2me-labs/wf-metagenomics/bin/workflow-glue
+Apr-19 14:26:25.967 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process minimap_pipeline:output_results (2) > jobId: 7122640; workDir: /work/yk132/CAFO_Nanopore_work/nf_working/25/58936f89842f702392e8fc9062b082
+Apr-19 14:26:25.967 [Task submitter] INFO  nextflow.Session - [25/58936f] Submitted process > minimap_pipeline:output_results (2)
+Apr-19 14:26:26.093 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process minimap_pipeline:minimap (barcode03_merged) > jobId: 7122641; workDir: /work/yk132/CAFO_Nanopore_work/nf_working/86/ee8150a8f4ede993ddadec6b67a30d
+Apr-19 14:26:26.094 [Task submitter] INFO  nextflow.Session - [86/ee8150] Submitted process > minimap_pipeline:minimap (barcode03_merged)
+Apr-19 14:26:30.767 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 7122640; id: 7; name: minimap_pipeline:output_results (2); status: COMPLETED; exit: 0; error: -; workDir: /work/yk132/CAFO_Nanopore_work/nf_working/25/58936f89842f702392e8fc9062b082 started: 1713551190759; exited: 2024-04-19T18:26:27.56625Z; ]

@@ -1,0 +1,66 @@
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+[M::mm_idx_gen::2.440*0.93] collected minimizers
+[M::mm_idx_gen::2.780*1.18] sorted minimizers
+[M::main::2.941*1.17] loaded/built the index for 55312 target sequence(s)
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 55312
+[M::mm_idx_stat::2.962*1.17] distinct minimizers: 1207899 (63.22% are singletons); average occurrences: 9.231; average spacing: 5.554; total length: 61933031
+[M::main] Version: 2.26-r1175
+[M::main] CMD: /minimap2-2.26_x64-linux/minimap2 -ax map-ont -d /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job8_db/ncbi_16s_18s_28s_ITS/ncbi_16s_18s_28s_ITS_db/ncbi_16s_18s_28s_ITS.mmi /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job8_db/ncbi_16s_18s_28s_ITS/ncbi_16s_18s_28s_ITS_db/ncbi_16s_18s_28s_ITS.fna
+[M::main] Real time: 3.617 sec; CPU: 3.504 sec; Peak RSS: 0.399 GB
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+[M::main::0.526*0.68] loaded/built the index for 55312 target sequence(s)
+[M::mm_mapopt_update::0.655*0.59] mid_occ = 4248
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 55312
+[M::mm_idx_stat::0.674*0.60] distinct minimizers: 1207899 (63.22% are singletons); average occurrences: 9.231; average spacing: 5.554; total length: 61933031
+[M::worker_pipeline::12.321*2.35] mapped 543793 sequences
+[M::worker_pipeline::19.415*2.64] mapped 1881692 sequences
+[M::worker_pipeline::20.547*2.63] mapped 745633 sequences
+[M::main] Version: 2.26-r1175
+[M::main] CMD: /minimap2-2.26_x64-linux/minimap2 -ax map-ont /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job8_db/ncbi_16s_18s_28s_ITS/ncbi_16s_18s_28s_ITS_db/ncbi_16s_18s_28s_ITS.mmi /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job5_metaSPAdes/barcode01/contigs.fasta
+[M::main] Real time: 20.567 sec; CPU: 54.065 sec; Peak RSS: 1.432 GB
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+[M::main::0.184*1.30] loaded/built the index for 55312 target sequence(s)
+[M::mm_mapopt_update::0.215*1.25] mid_occ = 4248
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 55312
+[M::mm_idx_stat::0.234*1.23] distinct minimizers: 1207899 (63.22% are singletons); average occurrences: 9.231; average spacing: 5.554; total length: 61933031
+[M::worker_pipeline::10.923*2.00] mapped 1164182 sequences
+[M::main] Version: 2.26-r1175
+[M::main] CMD: /minimap2-2.26_x64-linux/minimap2 -ax map-ont /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job8_db/ncbi_16s_18s_28s_ITS/ncbi_16s_18s_28s_ITS_db/ncbi_16s_18s_28s_ITS.mmi /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job5_metaSPAdes/barcode02/contigs.fasta
+[M::main] Real time: 11.002 sec; CPU: 21.881 sec; Peak RSS: 0.779 GB
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+[M::main::0.323*0.95] loaded/built the index for 55312 target sequence(s)
+[M::mm_mapopt_update::0.504*0.69] mid_occ = 4248
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 55312
+[M::mm_idx_stat::0.524*0.71] distinct minimizers: 1207899 (63.22% are singletons); average occurrences: 9.231; average spacing: 5.554; total length: 61933031
+[M::worker_pipeline::1.158*0.33] mapped 588 sequences
+[M::main] Version: 2.26-r1175
+[M::main] CMD: /minimap2-2.26_x64-linux/minimap2 -ax map-ont /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job8_db/ncbi_16s_18s_28s_ITS/ncbi_16s_18s_28s_ITS_db/ncbi_16s_18s_28s_ITS.mmi /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job4_merged_fastq/barcode03_merged.fastq
+[M::main] Real time: 1.171 sec; CPU: 0.401 sec; Peak RSS: 0.150 GB
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Converting OCI blobs to SIF format
+INFO:    Starting build...
+Getting image source signatures
+Copying blob sha256:eff716e84d9b96c424d21a18c01d8beed8a8dd82d0c8a5c80d672a576b674408
+Copying blob sha256:a486411936734b0d1d201c8a0ed8e9d449a64d5033fdc33411ec95bc26460efb
+Copying blob sha256:b82750dd147bb0944ab8773d68590486f59fed9e6f12f94448d97b419ce1b2b0
+Copying blob sha256:5177ce6d46913cf0ba2188b379078bd01e147b074af76db39bc826e064f92888
+Copying config sha256:3a96f1e5452da5a738f83c2390cb0ea0627ae109dc9798a7a2c4c958a367b367
+Writing manifest to image destination
+Storing signatures
+2024/06/07 09:03:13  info unpack layer: sha256:a486411936734b0d1d201c8a0ed8e9d449a64d5033fdc33411ec95bc26460efb
+2024/06/07 09:03:13  warn xattr{etc/gshadow} ignoring ENOTSUP on setxattr "user.rootlesscontainers"
+2024/06/07 09:03:13  warn xattr{/work/yk132/tmp/build-temp-4136511748/rootfs/etc/gshadow} destination filesystem does not support xattrs, further warnings will be suppressed
+2024/06/07 09:04:07  info unpack layer: sha256:b82750dd147bb0944ab8773d68590486f59fed9e6f12f94448d97b419ce1b2b0
+2024/06/07 09:04:12  warn xattr{etc/gshadow} ignoring ENOTSUP on setxattr "user.rootlesscontainers"
+2024/06/07 09:04:12  warn xattr{/work/yk132/tmp/build-temp-4136511748/rootfs/etc/gshadow} destination filesystem does not support xattrs, further warnings will be suppressed
+2024/06/07 09:09:13  info unpack layer: sha256:5177ce6d46913cf0ba2188b379078bd01e147b074af76db39bc826e064f92888
+2024/06/07 09:09:13  info unpack layer: sha256:eff716e84d9b96c424d21a18c01d8beed8a8dd82d0c8a5c80d672a576b674408
+INFO:    Creating SIF file...
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
