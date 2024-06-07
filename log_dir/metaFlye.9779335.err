@@ -1,0 +1,36 @@
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Converting OCI blobs to SIF format
+INFO:    Starting build...
+Getting image source signatures
+Copying blob sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1
+Copying blob sha256:a8b1c5f80c2d2a757adc963e3fe2dad0b4d229f83df3349fbb70e4d12dd48822
+Copying blob sha256:ef8d46aaf8a2fa7ab18f945a3f321fbc2728cbe08ac37f0cb47057ef1c31125c
+Copying blob sha256:515612b6742f84a16ce30e547225ea710e7d72bb234fec235eb63df34a43f449
+Copying config sha256:705f0b10dfd868030270a6305bdd28f875be55c55b764c97d681b3d0c16a4212
+Writing manifest to image destination
+Storing signatures
+2024/05/29 10:27:08  info unpack layer: sha256:a8b1c5f80c2d2a757adc963e3fe2dad0b4d229f83df3349fbb70e4d12dd48822
+2024/05/29 10:27:08  warn xattr{etc/gshadow} ignoring ENOTSUP on setxattr "user.rootlesscontainers"
+2024/05/29 10:27:08  warn xattr{/work/yk132/tmp/build-temp-2614274085/rootfs/etc/gshadow} destination filesystem does not support xattrs, further warnings will be suppressed
+2024/05/29 10:27:32  info unpack layer: sha256:ef8d46aaf8a2fa7ab18f945a3f321fbc2728cbe08ac37f0cb47057ef1c31125c
+2024/05/29 10:28:24  warn xattr{var/log/apt/term.log} ignoring ENOTSUP on setxattr "user.rootlesscontainers"
+2024/05/29 10:28:24  warn xattr{/work/yk132/tmp/build-temp-2614274085/rootfs/var/log/apt/term.log} destination filesystem does not support xattrs, further warnings will be suppressed
+2024/05/29 10:28:24  info unpack layer: sha256:515612b6742f84a16ce30e547225ea710e7d72bb234fec235eb63df34a43f449
+2024/05/29 10:28:36  info unpack layer: sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1
+INFO:    Creating SIF file...
+[2024-05-29 10:29:10] INFO: Starting Flye 2.9.4-b1799
+[2024-05-29 10:29:10] INFO: >>>STAGE: configure
+[2024-05-29 10:29:10] INFO: Configuring run
+[2024-05-29 10:29:10] INFO: Total read length: 88272042
+[2024-05-29 10:29:10] INFO: Reads N50/N90: 145240 / 27412
+[2024-05-29 10:29:10] INFO: Minimum overlap set to 10000
+[2024-05-29 10:29:10] INFO: >>>STAGE: assembly
+[2024-05-29 10:29:10] INFO: Assembling disjointigs
+[2024-05-29 10:29:10] INFO: Reading sequences
+[2024-05-29 10:29:10] INFO: Building minimizer index
+[2024-05-29 10:29:10] INFO: Pre-calculating index storage
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2024-05-29 10:29:12] INFO: Filling index
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2024-05-29 10:30:26] INFO: Extending reads
+slurmstepd: error: *** JOB 9779335 ON dcc-chsi-07 CANCELLED AT 2024-05-29T10:30:42 ***

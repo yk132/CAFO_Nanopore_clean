@@ -34,23 +34,24 @@ export METAPHLAN_DB="${METAPHLAN_OUTPUT}/Database"
 mkdir -p $METAPHLAN_OUTPUT
 mkdir -p $METAPHLAN_DB
 
-# obtain latest database 
+# obtain latest database and store in a database folder: recommended for HPC cluster
+## https://github.com/biobakery/MetaPhlAn/wiki/MetaPhlAn-4
 singularity exec \
 	--bind /work:/work \
 	--bind /hpc/group:/hpc/group \
-	docker://staphb/metaphlan:4.1.0 \
+	docker://biobakery/metaphlan:4.0.2 \
 	metaphlan --install --bowtie2db $METAPHLAN_DB
 
 # run metaphlan4 on barcode01
-# singularity exec \
-#	--bind /work:/work \
-#	--bind /hpc/group:/hpc/group \
-#	docker://biobakery/metaphlan:4.0.2 \
-#	metaphlan $CONTIG_01 --input_type fasta \
-#	--bowtie2db $METAPHLAN_DB \
-#	--bowtie2out $METAPHLAN_OUTPUT/barcode01.bowtie2.bz2 \
-#	--nproc $SLURM_CPUS_PER_TASK \
-#	-o $METAPHLAN_OUTPUT/barcode01_metaphlan.txt
+singularity exec \
+	--bind /work:/work \
+	--bind /hpc/group:/hpc/group \
+	docker://biobakery/metaphlan:4.0.2 \
+	metaphlan $CONTIG_01 --input_type fasta \
+	--bowtie2db $METAPHLAN_DB \
+	--bowtie2out $METAPHLAN_OUTPUT/barcode01.bowtie2.bz2 \
+	--nproc $SLURM_CPUS_PER_TASK \
+	-o $METAPHLAN_OUTPUT/barcode01_metaphlan.txt
 
 # run metaphlan4 on barcode02
 #singularity exec \

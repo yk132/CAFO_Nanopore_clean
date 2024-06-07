@@ -14,10 +14,10 @@ mkdir -p ${LOG_DIR}
 # this file covers: make abundance tables with MetaPhlAn4. 
 
 # Run metaphlan4
-#JOBID_11=$(sbatch --parsable --job-name=metaphlan --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err" Job11_metaphlan4.sh)
+JOBID_11=$(sbatch --parsable --job-name=metaphlan --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err" Job11_metaphlan_retry_v2.sh)
 
 ## RETRY code
-JOBID_11=$(sbatch --parsable --job-name=metaphlan --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err" Job11_metaphlan_retry.sh)
+#JOBID_11=$(sbatch --parsable --job-name=metaphlan --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err" Job11_metaphlan_retry.sh)
 # Run ABRicate. This can be done concurrently 
 # JOBID_12=$(sbatch --parsable --job-name=abricate --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err" Job12_abricate.sh)
 

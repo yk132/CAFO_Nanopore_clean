@@ -1,0 +1,24 @@
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+WARNING: The metagenome profile contains clades that represent multiple species merged into a single representant.
+An additional column listing the merged species is added to the MetaPhlAn output.
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+BowTie2 output file detected: /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job11_MetaPhlAn4_retry2/barcode03.bowtie2.bz2
+Please use it as input or remove it if you want to re-perform the BowTie2 run.
+Exiting...
+
