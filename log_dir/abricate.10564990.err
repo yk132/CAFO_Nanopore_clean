@@ -1,0 +1,22 @@
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+Setting up 'ncbi' in '/abricate-1.0.1/db/ncbi'
+mkdir /abricate-1.0.1/db/ncbi/src: Read-only file system at /abricate-1.0.1/bin/abricate-get_db line 56.
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+Using nucl database ncbi:  5386 sequences -  2022-Nov-16
+Processing: /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job5_metaSPAdes/barcode01/contigs.fasta
+Found 17 genes in /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job5_metaSPAdes/barcode01/contigs.fasta
+Tip: you can use the --summary option to combine reports in a presence/absence matrix.
+Done.
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+Using nucl database ncbi:  5386 sequences -  2022-Nov-16
+Processing: /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job5_metaSPAdes/barcode02/contigs.fasta
+Found 6 genes in /hpc/home/yk132/storage/20230908_Dust_Redo_R9/Outputs/Job5_metaSPAdes/barcode02/contigs.fasta
+Tip: it's important to realise abricate uses DNA matching, not AA.
+Done.
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image

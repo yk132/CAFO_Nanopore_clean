@@ -11,10 +11,10 @@ export LOG_DIR="${CAFO_GIT_DIR}/log_dir"
 #-----------------------------
 
 mkdir -p ${LOG_DIR}
-# this file covers: make abundance tables with MetaPhlAn4. 
+# this file covers: ABRicate 
 
 # Run metaphlan4
-JOBID_11=$(sbatch --parsable --job-name=metaphlan --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err" Job11_metaphlan_retry_v2.sh)
+JOBID_11=$(sbatch --parsable --job-name=abricate --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err" Job11_abricate.sh)
 
 ## RETRY code
 #JOBID_11=$(sbatch --parsable --job-name=metaphlan --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err" Job11_metaphlan_retry.sh)

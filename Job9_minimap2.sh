@@ -22,19 +22,15 @@ export MERGED_DIR="${DATA_DIR}/dorado_fastq_results/Merged_bam_fastq"
 export BARCODE03_FASTQ="${MERGED_DIR}/barcode03_merged.fastq"
 export OUTPUT_DIR="${CAFO_DIR}/Outputs"
 export DB_DIR="${OUTPUT_DIR}/Job8_db"
-export RESULTS_DIR="${OUTPUT_DIR}/Job8_wf_meta_barcode03_res"
 export SLURM_CPUS_PER_TASK="32" # CHANGE ME
 export MERGED_DIR="${OUTPUT_DIR}/Job4_merged_fastq"
+export BAR01_MERGED="${MERGED_DIR}/barcode01_merged.fastq"
+export BAR02_MERGED="${MERGED_DIR}/barcode02_merged.fastq"
 export BAR03_MERGED="${MERGED_DIR}/barcode03_merged.fastq"
-export SPADES_OUTPUT="${OUTPUT_DIR}/Job5_metaSPAdes"
-export SPADES_1="${SPADES_OUTPUT}/barcode01"
-export SPADES_2="${SPADES_OUTPUT}/barcode02"
-export CONTIG_01="${SPADES_1}/contigs.fasta"
-export CONTIG_02="${SPADES_2}/contigs.fasta"
-export MINIMAP2_OUTPUT="${OUTPUT_DIR}/Job9_Minimap"
 export DATABASE_DIR="${DB_DIR}/ncbi_16s_18s_28s_ITS/ncbi_16s_18s_28s_ITS_db"
 export DATABASE_FNA="${DATABASE_DIR}/ncbi_16s_18s_28s_ITS.fna"
 export DATABASE_MMI="${DATABASE_DIR}/ncbi_16s_18s_28s_ITS.mmi"
+export MINIMAP2_OUTPUT="${OUTPUT_DIR}/Job9_Minimap"
 export BAR01_SAM="${MINIMAP2_OUTPUT}/barcode01_alignment.sam"
 export BAR02_SAM="${MINIMAP2_OUTPUT}/barcode02_alignment.sam"
 export BAR03_SAM="${MINIMAP2_OUTPUT}/barcode03_alignment.sam"
@@ -60,7 +56,7 @@ singularity exec \
 	--bind /hpc/group:/hpc/group \
         docker://staphb/minimap2:2.26 \
 	minimap2 -ax map-ont \
- 	$DATABASE_MMI $CONTIG_01 > $BAR01_SAM
+ 	$DATABASE_MMI $BAR01_MERGED > $BAR01_SAM
  	
 # Run minimap2 on barcode02
 singularity exec \
@@ -68,7 +64,7 @@ singularity exec \
 	--bind /hpc/group:/hpc/group \
         docker://staphb/minimap2:2.26 \
 	minimap2 -ax map-ont \
- 	$DATABASE_MMI $CONTIG_02 > $BAR02_SAM
+ 	$DATABASE_MMI $BAR02_MERGED > $BAR02_SAM
  	
 # Run minimap2 on barcode03
 singularity exec \
