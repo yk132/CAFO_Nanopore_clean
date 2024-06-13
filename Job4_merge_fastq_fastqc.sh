@@ -21,7 +21,7 @@ export BAR01_MERGED="${MERGED_DIR}/barcode01_merged.fastq"
 export BAR02_MERGED="${MERGED_DIR}/barcode02_merged.fastq"
 export BAR03_MERGED="${MERGED_DIR}/barcode03_merged.fastq"
 export FASTQC_DIR="${OUTPUT_DIR}/Job4_fastqc"
-
+export ILAB_DIR="${STORE_DIR}/ILAB_Dust"
 #------------------------------
 
 # merge fastq files 
@@ -38,13 +38,21 @@ mkdir -p $FASTQC_DIR
 singularity exec \
 	--bind /work:/work \
 	--bind /hpc/group:/hpc/group \
-        docker://staphb/fastqc:latest \
+        docker://staphb/fastqc:0.12.1 \
 	fastqc -o $FASTQC_DIR --extract --memory 10000 -t 24 -f fastq \
 	$MERGED_DIR/* 
+
+# Run FastQC on raw reads:Illumina
+singularity exec \
+	--bind /work:/work \
+	--bind /hpc/group:/hpc/group \
+        docker://staphb/fastqc:0.12.1 \
+	fastqc -o $FASTQC_DIR --extract --memory 10000 -t 24 -f fastq \
+	$ILAB_DIR/*.gz
 
 # Get FastQC version for reproducibility
 singularity exec \
 	--bind /work:/work \
 	--bind /hpc/group:/hpc/group \
-        docker://staphb/fastqc:latest \
+        docker://staphb/fastqc:0.12.1 \
 	fastqc -v 
