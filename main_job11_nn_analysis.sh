@@ -11,17 +11,12 @@ export LOG_DIR="${CAFO_GIT_DIR}/log_dir"
 #-----------------------------
 
 mkdir -p ${LOG_DIR}
-# this file covers: ABRicate 
+# this file covers: metaphlan4
 
 # Run metaphlan4
-JOBID_11=$(sbatch --parsable --job-name=abricate --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err" Job11_abricate.sh)
+JOBID_12=$(sbatch --parsable --job-name=metaphlan --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err" Job12_metaphlan4.sh)
 
-## RETRY code
-#JOBID_11=$(sbatch --parsable --job-name=metaphlan --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err" Job11_metaphlan_retry.sh)
-# Run ABRicate. This can be done concurrently 
-# JOBID_12=$(sbatch --parsable --job-name=abricate --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err" Job12_abricate.sh)
+# Job13_metaphlan4.sh, this time without the unclassified
 
-
-
-#JOBID_10=$(sbatch --parsable --dependency=afterok:${JOBID_8}:${JOBID_9} --job-name=tsv --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err" Job10_bam_to_tsv.sh)
+#JOBID_13=$(sbatch --parsable --job-name=MPA --output="$LOG_DIR/%x.%j.out" --error="$LOG_DIR/%x.%j.err" Job13_metaphlan4_nounclassified.sh)
 

@@ -1,0 +1,46 @@
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+WARNING: The metagenome profile contains clades that represent multiple species merged into a single representant.
+An additional column listing the merged species is added to the MetaPhlAn output.
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+WARNING: The metagenome profile contains clades that represent multiple species merged into a single representant.
+An additional column listing the merged species is added to the MetaPhlAn output.
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    Using cached SIF image
+Traceback (most recent call last):
+  File "/usr/local/bin/merge_metaphlan_tables.py", line 11, in <module>
+    sys.exit(main())
+  File "/usr/local/lib/python3.6/dist-packages/metaphlan/utils/merge_metaphlan_tables.py", line 78, in main
+    merge(args.aistms, open(args.o, 'w') if args.o else sys.stdout, args.gtdb_profiles)
+  File "/usr/local/lib/python3.6/dist-packages/metaphlan/utils/merge_metaphlan_tables.py", line 27, in merge
+    listmpaVersion.add(headers[0])
+IndexError: list index out of range
